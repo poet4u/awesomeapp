@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_879347_emergen_0.selfReportQueryService</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>selfReportQueryService</name>
+        <script><![CDATA[var selfReportQueryService = Class.create();
+selfReportQueryService.prototype = {
+    initialize: function() {},
+
+    updateStatusData: function(table, sysID, returnFields) {
+        var output = {};
+        var labelWithValues = [];
+        var description = '';
+        var glideObject = new GlideRecord(table);
+        glideObject.get(sysID);
+
+        labelWithValues.push({
+            "label": gs.getMessage("Emergency start"),
+            "value": {
+                "type": "string",
+                "value": glideObject.getDisplayValue("start_date")
+            }
+        });
+        labelWithValues.push({
+            "label": gs.getMessage("Emergency"),
+            "value": {
+                "type": "string",
+                "value": glideObject.getDisplayValue("type_of_emergency")
+            }
+        });
+        labelWithValues.push({
+            "label": gs.getMessage("Location"),
+            "value": {
+                "type": "string",
+                "value": glideObject.name.location.getDisplayValue()
+            }
+        });
+        labelWithValues.push({
+            "label": gs.getMessage("Manager"),
+            "value": {
+                "type": "string",
+                "value": glideObject.name.manager.getDisplayValue()
+            }
+        });
+        description = (glideObject.emergency_details.toString()).replace(/\n/g, '<br/>');
+        output['sidebarContent'] = labelWithValues;
+        output['description'] = description || '';
+        return output;
+    },
+
+    alertQueryService: function() {
+        var output = {};
+		var message1 = gs.getMessage("Need to report an emergency or request sick time?");
+		var message2 = gs.getMessage("Create a new status report to get started.");
+		var finalMessage = "<p>" + message1 + "</p><p>" + message2 + "</p>";
+		output['rich_text_need_attention'] = finalMessage;
+        var loggedInUser = gs.getUserID();
+        var gr = new GlideRecord('x_879347_emergen_0_status_report');
+        gr.addQuery('name', loggedInUser);
+        gr.addQuery('status', 'status_requested');
+        gr.orderByDesc('sys_updated_on');
+        gr.query();
+        if (gr.next()) {
+            var href = ["updatereport/x_879347_emergen_0_status_report/", gr.sys_id].join('');
+            output['action'] = {
+                "type": "open",
+                "href": href,
+                "label": gs.getMessage("Update status")
+            };
+            output['invisible'] = false;
+        } else {
+            output['invisible'] = true;
+            output['action'] = null;
+        }
+        output['newAlertInvisible'] = true;
+        output['newAlertAction'] = null;
+        var alerts = new GlideRecord('x_879347_emergen_0_emergency_alert');
+        alerts.addActiveQuery();
+        alerts.orderByDesc('sys_updated_on');
+        alerts.query();
+
+        while (alerts.next()) {
+            var recordURL = ["emergency-information/x_879347_emergen_0_emergency_alert/", alerts.sys_id, "/", alerts.kb_article].join('');
+            var readUsers = (alerts.list_of_read_users).toString();
+            if (readUsers.indexOf(loggedInUser) == -1) {
+                output['newAlertInvisible'] = false;
+                output['newAlertAction'] = {
+                    "type": "open",
+                    "href": recordURL,
+                    "label": gs.getMessage("Read")
+                };
+                break;
+            }
+        }
+        return output;
+    },
+
+    checkSelfReportsCreated: function(current) {
+        var othersAffected = current.who_else_was_affected;
+        var staRepReq = new GlideRecord('x_879347_emergen_0_status_report_requests');
+        staRepReq.addQuery('self_report', current.sys_id);
+        staRepReq.query();
+        if (staRepReq.next()) {
+            var staRep = new GlideRecord('x_879347_emergen_0_status_report');
+            staRep.addQuery('status_report_request', staRepReq.sys_id);
+            staRep.addQuery('name.sys_id', 'IN', othersAffected);
+            staRep.query();
+            return staRep.getRowCount() != othersAffected.split(',').length;
+        } else {
+            return true;
+        }
+    },
+
+    checkWorkRequestStatus: function(current) {
+		/* On Self report condition for Approve/Reject buttons display */
+        var workStatusReq = new GlideRecord('x_879347_emergen_0_work_status_request_task');
+        workStatusReq.addQuery('self_report', current.sys_id);
+        workStatusReq.addQuery('state', 'Requested');
+        if (gs.getUser().hasRole('x_879347_emergen_0.emergency_alert_manager')) {
+            workStatusReq.addQuery('assigned_to', gs.getUserID());
+        } else if (gs.getUser().hasRole('x_879347_emergen_0.emergency_alert_admin')) {
+            workStatusReq.addNotNullQuery('sys_id');
+        } else {
+            workStatusReq.addNullQuery('sys_id');
+        }
+        workStatusReq.query();
+        if (workStatusReq.getRowCount() > 0) {
+            return 'true';
+        } else {
+            return 'false';
+        }
+    },
+	
+	checkWorkRequestStatus1: function(current) {
+		/* On Work status task condition for Approve/Reject buttons display */
+        var workStatusReq = new GlideRecord('x_879347_emergen_0_work_status_request_task');
+		workStatusReq.addQuery('sys_id',current.sys_id);
+        workStatusReq.addQuery('state', 'Requested');
+        if (gs.getUser().hasRole('x_879347_emergen_0.emergency_alert_manager')) {
+            workStatusReq.addQuery('assigned_to', gs.getUserID());
+        } else if (gs.getUser().hasRole('x_879347_emergen_0.emergency_alert_admin')) {
+            workStatusReq.addNotNullQuery('sys_id');
+        } else {
+            workStatusReq.addNullQuery('sys_id');
+        }
+        workStatusReq.query();
+        if (workStatusReq.getRowCount() > 0) {
+            return 'true';
+        } else {
+            return 'false';
+        }
+    },
+		
+    type: 'selfReportQueryService'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:00</sys_created_on>
+        <sys_id>02c25725bd361110472b3d2e75ee9ca8</sys_id>
+        <sys_name>selfReportQueryService</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_script_include_02c25725bd361110472b3d2e75ee9ca8</sys_update_name>
+    </sys_script_include>
+</record_update>

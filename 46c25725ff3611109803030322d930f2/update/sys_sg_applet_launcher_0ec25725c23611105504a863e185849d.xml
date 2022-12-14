@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_applet_launcher">
+    <sys_sg_applet_launcher action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <available_offline>false</available_offline>
+        <header_button display_value="Jump Logged In User Profile">b4bafa0687103300a785940307cb0b3a</header_button>
+        <header_titles>375a2a347330330018eea18d4ef6a79a</header_titles>
+        <hide_empty_sections>true</hide_empty_sections>
+        <name>My status reports</name>
+        <required_roles>x_879347_emergen_0.emergency_alert_employee</required_roles>
+        <search_config/>
+        <sys_class_name>sys_sg_applet_launcher</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:58:49</sys_created_on>
+        <sys_id>0ec25725c23611105504a863e185849d</sys_id>
+        <sys_name>My status reports</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_applet_launcher_0ec25725c23611105504a863e185849d</sys_update_name>
+        <title>My status reports</title>
+    </sys_sg_applet_launcher>
+</record_update>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category/>
+        <format/>
+        <height/>
+        <image>4ec25725ad36111041bfc640b09095ef</image>
+        <name>x_879347_emergen_0.Spinner.svg</name>
+        <size_bytes>666</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:16</sys_created_on>
+        <sys_id>cac25725c2361110aceb3d40665f04ef</sys_id>
+        <sys_name>x_879347_emergen_0.Spinner.svg</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>db_image_cac25725c2361110aceb3d40665f04ef</sys_update_name>
+        <thumbnail/>
+        <width/>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/svg+xml</content_type>
+        <file_name>image</file_name>
+        <hash>8c2a26f49344cf4207226eb151e98cf1d0de90bb79316ce6e647d9561c4bdc36</hash>
+        <image_height/>
+        <image_width/>
+        <size_bytes>666</size_bytes>
+        <size_compressed>343</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:16</sys_created_on>
+        <sys_id>4ec25725ad36111041bfc640b09095ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:16</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>cac25725c2361110aceb3d40665f04ef</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="4ec25725ad36111041bfc640b09095ef">4ec25725ad36111041bfc640b09095ef</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:16</sys_created_on>
+        <sys_id>02c257252f3611107fe4b61bc3785ef0</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>fVLBboMwDL33Kyzv0kmFhLIyOjU9bOfttB9IIUA0SFAIpf37JZROVcfmWLKVPDt+tnfdsYRB5rZimFCESsiyshf/KMXwqk8MKVCIU6cIp6ZWHcPK2vaFkGEYwiEOtSnJmlJKXDKEzhr9JRg+FLE/uF+Ak10JhaxrhkorgaMfmL52OHEUSuf5hJuw1nDVFdo0DEe35lYsI4ger/mDqej1TdwYm0mT1QJ+yjDlYRltVpA8r2CzmYm/XuiWZ9KeGYZbhMzRjhzf7HyxZjTk7q+W2wpyhu9xAlGa0WAbbp+CNKRJEKUXvStvDONKNo7P55XjL4QXbq2Rh96KD96IqQsejLNoe249V21d3nlEYXTjRxmlTv9IohnGyb+QvHedWHfzj0a0gts33Su3QVLlopBKunru20Z8327GTcppR7yz81u0Xyy+Ac98qxmaAgAA</data>
+        <length>444</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="4ec25725ad36111041bfc640b09095ef">4ec25725ad36111041bfc640b09095ef</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:16</sys_created_on>
+        <sys_id>cec257256e361110610e2c0fb77f9bef</sys_id>
+    </sys_attachment_doc>
+</record_update>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_stream_m2m_master_item">
+    <sys_sg_item_stream_m2m_master_item action="INSERT_OR_UPDATE">
+        <item_stream display_value="Emergency Update  Item Stream">06c2572535361110fe7f479a47dc2b91</item_stream>
+        <master_item display_value="Emergency Update  Main Item">86c25725cd361110e15e19eb9c1ba590</master_item>
+        <sys_class_name>sys_sg_item_stream_m2m_master_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:58:59</sys_created_on>
+        <sys_id>0ec25725973611100bac785e15adf18f</sys_id>
+        <sys_name/>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_item_stream_m2m_master_item_0ec25725973611100bac785e15adf18f</sys_update_name>
+    </sys_sg_item_stream_m2m_master_item>
+</record_update>

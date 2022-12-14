@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config display_value="Emergency Alert - Workspace Config">0ec25725b8361110624fba1e7d94cbf1</app_config>
+        <description/>
+        <extension_point/>
+        <fields>table</fields>
+        <icon/>
+        <name>List Modal Page</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="List">8ec25725db361110f9cffd54ab55165c</parent_macroponent>
+        <parent_macroponent_composition_element_id>modalContainerViewport</parent_macroponent_composition_element_id>
+        <route_type>list_modal_page</route_type>
+        <screen_type display_value="List Modal Page">42c25725fb3611101b0ab1048741415a</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:05</sys_created_on>
+        <sys_id>c6c257253f3611104a1112413488e659</sys_id>
+        <sys_name>List Modal Page</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_ux_app_route_c6c257253f3611104a1112413488e659</sys_update_name>
+    </sys_ux_app_route>
+    <sys_translated_text action="delete_multiple" query="documentkey=c6c257253f3611104a1112413488e659"/>
+</record_update>

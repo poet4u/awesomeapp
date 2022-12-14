@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_template">
+    <sys_ux_composite_data_template action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <name>Self Report Template</name>
+        <sys_class_name>sys_ux_composite_data_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:12</sys_created_on>
+        <sys_id>cac25725bf361110ae055a3610c1e150</sys_id>
+        <sys_name>Self Report Template</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_ux_composite_data_template_cac25725bf361110ae055a3610c1e150</sys_update_name>
+        <template>{&#13;
+	"component": "now-card-evam-record",&#13;
+	"staticValues": {&#13;
+		"highlightedHeaderBkgColor": "moderate",&#13;
+        "highlightedHeaderIcon":"presence-fill",&#13;
+		"detailLabelOne": "Health Status",&#13;
+		"detailLabelTwo": "Work Status",&#13;
+        "detailLabelThree": "Work request status"&#13;
+	},&#13;
+	"mappings": {&#13;
+		"highlightedHeaderLabel": "status",&#13;
+        "textHeaderLabel":"sys_updated_on",&#13;
+		"titleLabel": "type_of_emergency",&#13;
+        "avatarName":"sys_created_by",&#13;
+		"subtitle": "emergency_details",&#13;
+		"detailValueOne": "your_health_status",&#13;
+		"detailValueTwo": "your_work_status",&#13;
+        "detailValueThree":"your_work_status"&#13;
+	},&#13;
+"actionMappings":{&#13;
+"clickAction":"navigation",&#13;
+"mainActions": ["updatestatus"]&#13;
+}&#13;
+}</template>
+    </sys_ux_composite_data_template>
+</record_update>

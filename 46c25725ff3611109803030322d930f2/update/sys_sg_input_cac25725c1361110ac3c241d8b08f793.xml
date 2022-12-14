@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_input">
+    <sys_sg_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <autofill_variable display_value="start_date">4ac25725ea3611108bb7946a2a732293</autofill_variable>
+        <category/>
+        <description/>
+        <label>Start date</label>
+        <mandatory>false</mandatory>
+        <name>start_date</name>
+        <order>20</order>
+        <page/>
+        <parameter_screen display_value="Edit">42c25725693611104ddcb430e0576694</parameter_screen>
+        <parameter_section/>
+        <placeholder/>
+        <readonly>true</readonly>
+        <sys_class_name>sys_sg_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:07</sys_created_on>
+        <sys_id>cac25725c1361110ac3c241d8b08f793</sys_id>
+        <sys_name>Start date</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_input_cac25725c1361110ac3c241d8b08f793</sys_update_name>
+        <type display_value="Date/Time">2c0c605517021010f2b43b9fadb9590a</type>
+    </sys_sg_input>
+</record_update>

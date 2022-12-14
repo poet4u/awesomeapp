@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="emergency-info">8ec257255c361110af26e32fcb449552</macroponent>
+        <name>addUsertoReadList</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+ 
+    var readUsers =  api.data.look_up_record_1.result.list_of_read_users.value;
+    var loggedInUser = api.data.logged_in_user_1.output.user;
+    var updateReadUsers = '';
+    if (readUsers) {
+        readUsers = readUsers.toString();
+        if (readUsers.indexOf(loggedInUser) == -1) {
+            updateReadUsers = [readUsers, ',', loggedInUser].join('');
+        } else {
+            return;
+        }
+    } else {
+        updateReadUsers = [loggedInUser].join('');
+    }
+    
+    var templateFields = ['list_of_read_users', '=', updateReadUsers].join('');
+    api.data.update_record_1.execute({
+        table: api.context.props.table,
+        recordId: api.context.props.sysId,
+        templateFields
+    });
+
+
+
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:58:45</sys_created_on>
+        <sys_id>02c2572588361110913aa16ee32ad152</sys_id>
+        <sys_name>addUsertoReadList</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_ux_client_script_02c2572588361110913aa16ee32ad152</sys_update_name>
+        <target/>
+        <type/>
+    </sys_ux_client_script>
+</record_update>

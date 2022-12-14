@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>true</action_insert>
+        <action_update>true</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <collection>x_879347_emergen_0_status_report</collection>
+        <condition table="x_879347_emergen_0_status_report">name.managerISEMPTY^EQ<item endquery="false" field="name.manager" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <content_type>text/html</content_type>
+        <default_interval/>
+        <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p><br /></p>
+<hr />
+<p><br /></p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digestable>false</digestable>
+        <enable_dynamic_translation>false</enable_dynamic_translation>
+        <event_name>activate.life.cycle.migration</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>triggered</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<center><img style="align: baseline;" title="" src="x_879347_emergen_0.emergency_alert_red_exclamation.png" alt="" width="40" height="40" align="bottom" border="" hspace="" vspace="" /></center>
+<p style="text-align: center;"><strong><span style="font-family: arial, helvetica, sans-serif; font-size: 18pt;">An employee submitted a report without naming a manager.</span></strong></p>
+<p style="text-align: center;"><br /></p>
+<p style="text-align: center;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #808080;">You can manage this request or assign it to someone else.</span></p>
+<p style="text-align: center;"><br /></p>
+<center>${mail_script:x_879347_emergen_0.emapp_wsselfrep}</center>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Self-report submitted without manager</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields/>
+        <recipient_groups/>
+        <recipient_users>6816f79cc0a8016401c5a33be04be441</recipient_users>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>New report: no manager provided</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4ec25725d9361110ccc57bc89f85baeb</sys_id>
+        <sys_name>Self-report submitted without manager</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sysevent_email_action_4ec25725d9361110ccc57bc89f85baeb</sys_update_name>
+        <sys_version>2</sys_version>
+        <template display_value="Emergency alert self report">86c25725de361110f6a86f9fc830f8ec</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>

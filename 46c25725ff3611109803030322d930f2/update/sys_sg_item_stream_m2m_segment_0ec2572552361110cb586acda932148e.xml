@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_stream_m2m_segment">
+    <sys_sg_item_stream_m2m_segment action="INSERT_OR_UPDATE">
+        <item_stream display_value="Not responded Item Stream">42c257259d3611102acac02e9813b091</item_stream>
+        <segment display_value="Item Stream Segment">4ec25725db36111051bbb03a1504598e</segment>
+        <sys_class_name>sys_sg_item_stream_m2m_segment</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:14</sys_created_on>
+        <sys_id>0ec2572552361110cb586acda932148e</sys_id>
+        <sys_name/>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_item_stream_m2m_segment_0ec2572552361110cb586acda932148e</sys_update_name>
+    </sys_sg_item_stream_m2m_segment>
+</record_update>

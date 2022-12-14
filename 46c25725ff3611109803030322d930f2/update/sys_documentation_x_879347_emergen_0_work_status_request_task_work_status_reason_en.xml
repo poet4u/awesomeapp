@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="work_status_reason" label="Work status reason" language="en" table="x_879347_emergen_0_work_status_request_task">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>work_status_reason</element>
+            <help/>
+            <hint/>
+            <label>Work status reason</label>
+            <language>en</language>
+            <name>x_879347_emergen_0_work_status_request_task</name>
+            <plural>Work status reasons</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by/>
+            <sys_created_on/>
+            <sys_name>Work status reason</sys_name>
+            <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+            <sys_update_name>sys_documentation_x_879347_emergen_0_work_status_request_task_work_status_reason_en</sys_update_name>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

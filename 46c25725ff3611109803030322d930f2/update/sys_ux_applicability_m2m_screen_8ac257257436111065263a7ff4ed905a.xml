@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_screen">
+    <sys_ux_applicability_m2m_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applicability display_value="Emergency Alert Admin">cec2572563361110de816d7e07d04a5b</applicability>
+        <order>0</order>
+        <screen display_value="Home Admin">cac25725ac361110ad1a64f14d66a171</screen>
+        <sys_class_name>sys_ux_applicability_m2m_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:23</sys_created_on>
+        <sys_id>8ac257257436111065263a7ff4ed905a</sys_id>
+        <sys_name/>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_ux_applicability_m2m_screen_8ac257257436111065263a7ff4ed905a</sys_update_name>
+    </sys_ux_applicability_m2m_screen>
+</record_update>

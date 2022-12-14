@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_m2m_action_assignment_action_config">
+    <sys_ux_m2m_action_assignment_action_config action="INSERT_OR_UPDATE">
+        <action_assignment display_value="send emergency alert">06c257256a3611102909429a1d4290e1</action_assignment>
+        <action_configuration display_value="Emergency Alert Action Config">c2c2572514361110aa08e4b480f8c45d</action_configuration>
+        <sys_class_name>sys_ux_m2m_action_assignment_action_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:08</sys_created_on>
+        <sys_id>0ec257252436111078692df410884e4c</sys_id>
+        <sys_name/>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_ux_m2m_action_assignment_action_config_0ec257252436111078692df410884e4c</sys_update_name>
+    </sys_ux_m2m_action_assignment_action_config>
+</record_update>

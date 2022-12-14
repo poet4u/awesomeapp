@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_declarative_action_payload_mapping">
+    <sys_declarative_action_payload_mapping action="INSERT_OR_UPDATE">
+        <action_payload_definition display_value="Record Open New Tab">86c2572504361110d1daa7de6a4ee9e1</action_payload_definition>
+        <label>Record Open New Tab  Form</label>
+        <model display_value="Form">360935e9534723003eddddeeff7b127d</model>
+        <payload_map>fields@sysId=-1^fields@table=x_snc_emergency_0_emergency_alert^params@views=sendemergencyalertws_x_snc_emergency_0^route=record^EQ</payload_map>
+        <sys_class_name>sys_declarative_action_payload_mapping</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:23</sys_created_on>
+        <sys_id>4ac25725ab36111052121fe9e49029dd</sys_id>
+        <sys_name>Record Open New Tab  Form</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_declarative_action_payload_mapping_4ac25725ab36111052121fe9e49029dd</sys_update_name>
+    </sys_declarative_action_payload_mapping>
+</record_update>

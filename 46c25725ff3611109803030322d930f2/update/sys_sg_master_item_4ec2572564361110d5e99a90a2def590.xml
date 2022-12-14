@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_master_item">
+    <sys_sg_master_item action="INSERT_OR_UPDATE">
+        <condition_order/>
+        <datasource_table>x_879347_emergen_0_status_report</datasource_table>
+        <datasource_table_condition/>
+        <embedded_screen display_value="Your Status Reports Form">cec257258e36111011818fffae74ca96</embedded_screen>
+        <item_view/>
+        <name>Your Status Reports Main Item</name>
+        <sys_class_name>sys_sg_master_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:16</sys_created_on>
+        <sys_id>4ec2572564361110d5e99a90a2def590</sys_id>
+        <sys_name>Your Status Reports Main Item</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_master_item_4ec2572564361110d5e99a90a2def590</sys_update_name>
+        <use_view_config>true</use_view_config>
+        <view_config display_value="Your Status Reports View Config">c2c257255136111064fb7354bd22fb8e</view_config>
+    </sys_sg_master_item>
+</record_update>

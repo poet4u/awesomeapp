@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_graphql">
+    <sys_ux_data_broker_graphql action="INSERT_OR_UPDATE">
+        <api_name>x_879347_emergen_0.Emergency Alert GlideRecord Query</api_name>
+        <description/>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Emergency Alert GlideRecord Query</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+  {&#13;
+  "name": "table",&#13;
+  "label": "Table",&#13;
+  "description": "Table to look up",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "table_name",&#13;
+  "mandatory": true&#13;
+},&#13;
+{&#13;
+  "name": "recordId",&#13;
+  "label": "Record",&#13;
+  "description": "Record to look up (sys_id or display value)",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "string",&#13;
+  "mandatory": true,&#13;
+  "defaultValue": ""&#13;
+},&#13;
+{&#13;
+  "name": "returnFields",&#13;
+  "label": "Return fields",&#13;
+  "description": "Returned field values",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "field_list",&#13;
+  "mandatory": false,&#13;
+  "defaultValue": "",&#13;
+  "typeMetadata": {&#13;
+        "table": "@table"&#13;
+  }&#13;
+},&#13;
+{&#13;
+  "name": "returnTableMetadata",&#13;
+  "label": "Return table metadata",&#13;
+  "description": "Return table metadata",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "boolean",&#13;
+  "mandatory": false,&#13;
+  "defaultValue": false&#13;
+},&#13;
+{&#13;
+  "name": "returnFieldMetadata",&#13;
+  "label": "Return field metadata",&#13;
+  "description": "Return field metadata",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "boolean",&#13;
+  "mandatory": false,&#13;
+  "defaultValue": false&#13;
+}&#13;
+]</props>
+        <query/>
+        <required_translations>[{"message":"Table","comment":""},{"message":"Table to look up","comment":""},{"message":"Return field metadata","comment":""},{"message":"Returned field values","comment":""},{"message":"Record","comment":""},{"message":"Return table metadata","comment":""},{"message":"Record to look up (sys_id or display value)","comment":""},{"message":"Return fields","comment":""}]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[(function buildQuery(query, inputs) { 
+         var qb = new GraphQLQueryBuilder(query, inputs);
+   // return appropriate query here
+    return qb; 
+   })(query, inputs);]]></script>
+        <sys_class_name>sys_ux_data_broker_graphql</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:09</sys_created_on>
+        <sys_id>0ac257257936111069b0cf2e3bbffd50</sys_id>
+        <sys_name>Emergency Alert GlideRecord Query</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_ux_data_broker_graphql_0ac257257936111069b0cf2e3bbffd50</sys_update_name>
+        <type>script</type>
+        <use_record_domain>false</use_record_domain>
+    </sys_ux_data_broker_graphql>
+    <sys_translated_text action="delete_multiple" query="documentkey=0ac257257936111069b0cf2e3bbffd50"/>
+</record_update>

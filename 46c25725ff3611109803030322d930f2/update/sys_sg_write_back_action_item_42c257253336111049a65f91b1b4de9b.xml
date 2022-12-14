@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_write_back_action_item">
+    <sys_sg_write_back_action_item action="INSERT_OR_UPDATE">
+        <description/>
+        <execution_script><![CDATA[(function WriteBackAction(input) {
+    //Type appropriate comment here, and begin script below
+})(input);]]></execution_script>
+        <name>Edit (Requested)</name>
+        <parameter_screen display_value="Edit">42c25725693611104ddcb430e0576694</parameter_screen>
+        <query_condition/>
+        <sys_class_name>sys_sg_write_back_action_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:05</sys_created_on>
+        <sys_id>42c257253336111049a65f91b1b4de9b</sys_id>
+        <sys_name>Edit (Requested)</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_write_back_action_item_42c257253336111049a65f91b1b4de9b</sys_update_name>
+        <table>x_879347_emergen_0_status_report</table>
+        <template>your_health_status={{Input: your_health_status}}^your_work_status={{Input: your_work_status}}^emergency_update={{Input: emergency_update}}^were_other_employees_affected_by_this_emergency={{Input: were_others_effected}}^who_else_was_affected={{Input: who_else_was_affected}}^status=submitted^EQ</template>
+        <type>update</type>
+        <use_current_record_as_condition>true</use_current_record_as_condition>
+        <use_fields_for_ref_lookup>false</use_fields_for_ref_lookup>
+    </sys_sg_write_back_action_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=42c257253336111049a65f91b1b4de9b"/>
+</record_update>

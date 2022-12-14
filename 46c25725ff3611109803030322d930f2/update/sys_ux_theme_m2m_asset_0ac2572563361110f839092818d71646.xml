@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_theme_m2m_asset">
+    <sys_ux_theme_m2m_asset action="INSERT_OR_UPDATE">
+        <asset display_value="Roboto">0ac25725a83611106cb09e223eb0db47</asset>
+        <properties/>
+        <sys_class_name>sys_ux_theme_m2m_asset</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0ac2572563361110f839092818d71646</sys_id>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_ux_theme_m2m_asset_0ac2572563361110f839092818d71646</sys_update_name>
+        <theme display_value="emergency portal theme">86c257254d3611102d34bd57ce36e9ef</theme>
+    </sys_ux_theme_m2m_asset>
+</record_update>

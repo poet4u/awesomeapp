@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Report Summary">0ec25725d0361110accbd3f008a5d159</macroponent>
+        <name>ShowCloseAlert</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+
+    api.setState('hideCloseAlert',false);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:58:53</sys_created_on>
+        <sys_id>cac2572508361110a1f4e4c363f39754</sys_id>
+        <sys_name>ShowCloseAlert</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_ux_client_script_cac2572508361110a1f4e4c363f39754</sys_update_name>
+        <target/>
+        <type/>
+    </sys_ux_client_script>
+</record_update>

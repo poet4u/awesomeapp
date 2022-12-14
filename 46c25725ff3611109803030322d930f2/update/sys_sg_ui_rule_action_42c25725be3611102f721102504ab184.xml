@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_ui_rule_action">
+    <sys_sg_ui_rule_action action="INSERT_OR_UPDATE">
+        <operation display_value="Set Visibility">7e75bedc5b031010da168d8fa881c710</operation>
+        <order>20</order>
+        <sys_class_name>sys_sg_ui_rule_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:21</sys_created_on>
+        <sys_id>42c25725be3611102f721102504ab184</sys_id>
+        <sys_name/>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_ui_rule_action_42c25725be3611102f721102504ab184</sys_update_name>
+        <target>who_else_was_affected</target>
+        <ui_rule display_value="Hide status and who else affected">0ec25725a7361110a601c02aa20e8089</ui_rule>
+        <value>false</value>
+    </sys_sg_ui_rule_action>
+</record_update>

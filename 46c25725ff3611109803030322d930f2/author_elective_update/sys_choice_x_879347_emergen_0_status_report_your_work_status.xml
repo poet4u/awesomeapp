@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="your_work_status" table="x_879347_emergen_0_status_report" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>your_work_status</element>
+            <name>x_879347_emergen_0_status_report</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by/>
+            <sys_created_on/>
+            <sys_name>your_work_status</sys_name>
+            <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+            <sys_update_name>sys_choice_x_879347_emergen_0_status_report_your_work_status</sys_update_name>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>your_work_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Able to stay at work</label>
+            <language>en</language>
+            <name>x_879347_emergen_0_status_report</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-27 15:59:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>at_work</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>your_work_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Work from Home</label>
+            <language>en</language>
+            <name>x_879347_emergen_0_status_report</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-27 15:59:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>wfh</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>your_work_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Time off</label>
+            <language>en</language>
+            <name>x_879347_emergen_0_status_report</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-27 15:59:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>timeoff</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>your_work_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Unknown</label>
+            <language>en</language>
+            <name>x_879347_emergen_0_status_report</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-27 15:59:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>unknown</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>your_work_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Returned to work</label>
+            <language>en</language>
+            <name>x_879347_emergen_0_status_report</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-27 15:59:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>returned</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

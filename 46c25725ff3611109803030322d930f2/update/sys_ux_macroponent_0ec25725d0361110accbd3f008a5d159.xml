@@ -1,0 +1,1464 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types/>
+        <category>page</category>
+        <component_dependencies/>
+        <composition>[ {
+  "elementId" : "confirm_1",
+  "elementLabel" : "Confirm 1",
+  "propertyValues" : {
+    "headerLabel" : {
+      "type" : "JSON_LITERAL",
+      "value" : "Close this report ?"
+    },
+    "content" : {
+      "type" : "JSON_LITERAL",
+      "value" : "You won't be able to reopen the report once it's closed"
+    },
+    "primaryButtonLabel" : {
+      "type" : "JSON_LITERAL",
+      "value" : "Yes"
+    },
+    "secondaryButtonLabel" : {
+      "type" : "JSON_LITERAL",
+      "value" : "No"
+    },
+    "size" : {
+      "type" : "JSON_LITERAL",
+      "value" : "sm"
+    },
+    "preventDefaultPrimaryAction" : {
+      "type" : "JSON_LITERAL",
+      "value" : true
+    },
+    "preventDefaultSecondaryAction" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "defer" : {
+      "type" : "JSON_LITERAL",
+      "value" : true
+    }
+  },
+  "eventMappings" : [ {
+    "eventMappingId" : "ckhvwjjiftaaaacckccaiidhhaaqmbbnej",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_canvas_chrome.NOW_CONFIRM_MODAL#POSITIVE_BUTTON_CLICKED",
+    "sourceEventDefinition" : {
+      "apiName" : "sn_canvas_chrome.NOW_CONFIRM_MODAL#POSITIVE_BUTTON_CLICKED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : {
+        "dataBrokerId" : "9b4b978353211010cbc2ddeeff7b1245",
+        "operationName" : "EXECUTE",
+        "parentResourceId" : "close_report",
+        "payload" : {
+          "type" : "MAP_CONTAINER",
+          "container" : {
+            "table" : {
+              "type" : "JSON_LITERAL",
+              "value" : "x_879347_emergen_0_status_report"
+            },
+            "recordId" : {
+              "type" : "CONTEXT_BINDING",
+              "binding" : {
+                "address" : [ "sysId" ],
+                "category" : "props"
+              }
+            },
+            "templateFields" : {
+              "type" : "JSON_LITERAL",
+              "value" : "status=closed"
+            },
+            "useSetDisplayValue" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            }
+          }
+        }
+      },
+      "targetId" : "ckhvwjjiftaaaacclccaiidkjekgbicc",
+      "type" : "DATABROKER_OP"
+    }, {
+      "broker" : null,
+      "clientScript" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : null,
+        "payload" : {
+          "type" : "JSON_LITERAL",
+          "value" : { }
+        },
+        "sysId" : null
+      },
+      "operation" : null,
+      "targetId" : "ckhvwcbbeaaaaaddhccaiidtinuffbbwhh",
+      "type" : "EVENT"
+    } ]
+  } ],
+  "slot" : null,
+  "definition" : {
+    "id" : "13ecfe155b630010b913cbd59b81c7d6",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : null,
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isNonDestructive" : false,
+  "styles" : { }
+}, {
+  "elementId" : "container_1",
+  "elementLabel" : "Container 1",
+  "propertyValues" : { },
+  "eventMappings" : [ ],
+  "slot" : "Main",
+  "definition" : {
+    "id" : "d356d14b6e293a3020a244b63d278d8f",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ {
+      "elementId" : "container_2",
+      "elementLabel" : "Header and Bread crum",
+      "propertyValues" : { },
+      "eventMappings" : [ ],
+      "slot" : "Row 1",
+      "definition" : {
+        "id" : "d356d14b6e293a3020a244b63d278d8f",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : {
+        "composition" : [ {
+          "elementId" : "container_4",
+          "elementLabel" : "Record Header",
+          "propertyValues" : { },
+          "eventMappings" : [ ],
+          "slot" : "Row 2",
+          "definition" : {
+            "id" : "d356d14b6e293a3020a244b63d278d8f",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : {
+            "composition" : [ {
+              "elementId" : "button_1",
+              "elementLabel" : "Button 1",
+              "propertyValues" : {
+                "variant" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "primary"
+                },
+                "size" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "md"
+                },
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Update status",
+                    "comment" : ""
+                  }
+                },
+                "icon" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "disabled" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "tooltipContent" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Update status",
+                    "comment" : ""
+                  }
+                },
+                "configAria" : {
+                  "type" : "MAP_CONTAINER",
+                  "container" : { }
+                }
+              },
+              "eventMappings" : [ {
+                "eventMappingId" : "ckhqddlebbiiaaaaaarddhhhkrojjeevgkq",
+                "isConfiguration" : false,
+                "offRowStorageId" : null,
+                "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
+                "sourceEventDefinition" : {
+                  "apiName" : "sn_button.NOW_BUTTON#CLICKED",
+                  "id" : null,
+                  "type" : "UXEVENT"
+                },
+                "sourceEventSysId" : null,
+                "targets" : [ {
+                  "broker" : null,
+                  "clientScript" : {
+                    "sysId" : "0ec25725bb361110822960e12742af53"
+                  },
+                  "declarativeAction" : null,
+                  "event" : null,
+                  "operation" : null,
+                  "targetId" : "ckhqddlebbiiaaaaaasddhhhklupddwebh",
+                  "type" : "CLIENT_SCRIPT"
+                } ]
+              } ],
+              "slot" : "Column 2",
+              "definition" : {
+                "id" : "d37ce8abca89d02905fed903c8e34d8e",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "DATA_OUTPUT_BINDING",
+                "binding" : {
+                  "address" : [ "self_report_summary_1", "output", "hideClose" ]
+                }
+              },
+              "isNonDestructive" : false,
+              "styles" : { }
+            }, {
+              "elementId" : "close_report_btn",
+              "elementLabel" : "close_report_btn",
+              "propertyValues" : {
+                "variant" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "secondary"
+                },
+                "size" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "md"
+                },
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Close report",
+                    "comment" : ""
+                  }
+                },
+                "icon" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "disabled" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "tooltipContent" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Close report",
+                    "comment" : ""
+                  }
+                },
+                "configAria" : {
+                  "type" : "MAP_CONTAINER",
+                  "container" : { }
+                }
+              },
+              "eventMappings" : [ {
+                "eventMappingId" : "ckhvwdnbbccaaaaddxccaiidgttoggdix",
+                "isConfiguration" : false,
+                "offRowStorageId" : null,
+                "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
+                "sourceEventDefinition" : {
+                  "apiName" : "sn_button.NOW_BUTTON#CLICKED",
+                  "id" : null,
+                  "type" : "UXEVENT"
+                },
+                "sourceEventSysId" : null,
+                "targets" : [ {
+                  "broker" : null,
+                  "clientScript" : null,
+                  "declarativeAction" : null,
+                  "event" : {
+                    "apiName" : "sn_canvas_core.MODAL_SELECTED",
+                    "payload" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : { }
+                    },
+                    "sysId" : "882eed4091382d3a41f1bb3f382ae089"
+                  },
+                  "operation" : null,
+                  "targetId" : "ckhvwdnbbccaaaaddyccaiiddhoiidffbp",
+                  "type" : "EVENT"
+                }, {
+                  "broker" : null,
+                  "clientScript" : null,
+                  "declarativeAction" : null,
+                  "event" : {
+                    "apiName" : "sn_canvas_core.MODAL_SELECTED",
+                    "payload" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : { }
+                    },
+                    "sysId" : "882eed4091382d3a41f1bb3f382ae089"
+                  },
+                  "operation" : null,
+                  "targetId" : "ckjtugnosaaaabgccaiiddwdkxiifip",
+                  "type" : "EVENT"
+                }, {
+                  "broker" : null,
+                  "clientScript" : null,
+                  "declarativeAction" : null,
+                  "event" : {
+                    "apiName" : "sn_canvas_core.MODAL_SELECTED",
+                    "payload" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : { }
+                    },
+                    "sysId" : "882eed4091382d3a41f1bb3f382ae089"
+                  },
+                  "operation" : null,
+                  "targetId" : "ckjtukirtaaaacxccaiiddccqhijggjm",
+                  "type" : "EVENT"
+                }, {
+                  "broker" : null,
+                  "clientScript" : {
+                    "sysId" : "02c2572553361110e52756df5069c854"
+                  },
+                  "declarativeAction" : null,
+                  "event" : null,
+                  "operation" : null,
+                  "targetId" : "ckjtuveixaaaaccbccaiiddqggwccvaaop",
+                  "type" : "CLIENT_SCRIPT"
+                } ]
+              } ],
+              "slot" : "Column 2",
+              "definition" : {
+                "id" : "d37ce8abca89d02905fed903c8e34d8e",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "DATA_OUTPUT_BINDING",
+                "binding" : {
+                  "address" : [ "self_report_summary_1", "output", "hideClose" ]
+                }
+              },
+              "isNonDestructive" : false,
+              "styles" : {
+                "position" : "relative",
+                "right" : "13px"
+              }
+            }, {
+              "elementId" : "container_7",
+              "elementLabel" : "Container 7",
+              "propertyValues" : { },
+              "eventMappings" : [ ],
+              "slot" : "Column 1",
+              "definition" : {
+                "id" : "d356d14b6e293a3020a244b63d278d8f",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : {
+                "composition" : [ {
+                  "elementId" : "Closed",
+                  "elementLabel" : "Highlighted value 1",
+                  "propertyValues" : {
+                    "label" : {
+                      "type" : "DATA_OUTPUT_BINDING",
+                      "binding" : {
+                        "address" : [ "self_report_summary_1", "output", "statusWithNumber", "0", "value", "label" ]
+                      }
+                    },
+                    "color" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "low"
+                    },
+                    "variant" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "tertiary"
+                    },
+                    "icon" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "presence-fill"
+                    }
+                  },
+                  "eventMappings" : [ ],
+                  "slot" : "Row 1",
+                  "definition" : {
+                    "id" : "7fdccde954f753ae89139c6c24551be5",
+                    "type" : "MACROPONENT"
+                  },
+                  "overrides" : null,
+                  "isHidden" : {
+                    "type" : "DATA_OUTPUT_BINDING",
+                    "binding" : {
+                      "address" : [ "self_report_summary_1", "output", "dontShowClosedIcon" ]
+                    }
+                  },
+                  "isNonDestructive" : false,
+                  "styles" : {
+                    "width" : "fit-content",
+                    "position" : "relative",
+                    "top" : "4px"
+                  }
+                }, {
+                  "elementId" : "Submitted",
+                  "elementLabel" : "Highlighted value 2",
+                  "propertyValues" : {
+                    "label" : {
+                      "type" : "DATA_OUTPUT_BINDING",
+                      "binding" : {
+                        "address" : [ "self_report_summary_1", "output", "statusWithNumber", "0", "value", "label" ]
+                      }
+                    },
+                    "color" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "positive"
+                    },
+                    "variant" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "tertiary"
+                    },
+                    "icon" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "check-fill"
+                    }
+                  },
+                  "eventMappings" : [ ],
+                  "slot" : "Row 1",
+                  "definition" : {
+                    "id" : "7fdccde954f753ae89139c6c24551be5",
+                    "type" : "MACROPONENT"
+                  },
+                  "overrides" : null,
+                  "isHidden" : {
+                    "type" : "DATA_OUTPUT_BINDING",
+                    "binding" : {
+                      "address" : [ "self_report_summary_1", "output", "dontShowSubmitIcon" ]
+                    }
+                  },
+                  "isNonDestructive" : false,
+                  "styles" : {
+                    "width" : "fit-content",
+                    "position" : "relative",
+                    "top" : "4px"
+                  }
+                }, {
+                  "elementId" : "StatusRequested",
+                  "elementLabel" : "Highlighted value 3",
+                  "propertyValues" : {
+                    "label" : {
+                      "type" : "DATA_OUTPUT_BINDING",
+                      "binding" : {
+                        "address" : [ "self_report_summary_1", "output", "statusWithNumber", "0", "value", "label" ]
+                      }
+                    },
+                    "color" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "high"
+                    },
+                    "variant" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "tertiary"
+                    },
+                    "icon" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "presence-fill"
+                    }
+                  },
+                  "eventMappings" : [ ],
+                  "slot" : "Row 1",
+                  "definition" : {
+                    "id" : "7fdccde954f753ae89139c6c24551be5",
+                    "type" : "MACROPONENT"
+                  },
+                  "overrides" : null,
+                  "isHidden" : {
+                    "type" : "DATA_OUTPUT_BINDING",
+                    "binding" : {
+                      "address" : [ "self_report_summary_1", "output", "dontShowStatusRequestedIcon" ]
+                    }
+                  },
+                  "isNonDestructive" : false,
+                  "styles" : {
+                    "width" : "fit-content",
+                    "position" : "relative",
+                    "top" : "4px"
+                  }
+                }, {
+                  "elementId" : "highlighted_value_4",
+                  "elementLabel" : "Highlighted value 4",
+                  "propertyValues" : {
+                    "label" : {
+                      "type" : "DATA_OUTPUT_BINDING",
+                      "binding" : {
+                        "address" : [ "self_report_summary_1", "output", "statusWithNumber", "0", "value", "label" ]
+                      }
+                    },
+                    "color" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "critical"
+                    },
+                    "variant" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "tertiary"
+                    },
+                    "icon" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "circle-exclamation-outline"
+                    }
+                  },
+                  "eventMappings" : [ ],
+                  "slot" : "Row 1",
+                  "definition" : {
+                    "id" : "7fdccde954f753ae89139c6c24551be5",
+                    "type" : "MACROPONENT"
+                  },
+                  "overrides" : null,
+                  "isHidden" : {
+                    "type" : "DATA_OUTPUT_BINDING",
+                    "binding" : {
+                      "address" : [ "self_report_summary_1", "output", "dontShowRiskIcon" ]
+                    }
+                  },
+                  "isNonDestructive" : false,
+                  "styles" : {
+                    "width" : "fit-content",
+                    "position" : "relative",
+                    "top" : "4px"
+                  }
+                }, {
+                  "elementId" : "stylized_text_1",
+                  "elementLabel" : "Stylized text 1",
+                  "propertyValues" : {
+                    "text" : {
+                      "type" : "DATA_OUTPUT_BINDING",
+                      "binding" : {
+                        "address" : [ "self_report_summary_1", "output", "statusWithNumber", "1", "value", "value" ]
+                      }
+                    },
+                    "tag" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "span"
+                    },
+                    "css" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "* { \n    font-size: 18px;\n}"
+                    }
+                  },
+                  "eventMappings" : [ ],
+                  "slot" : "Row 1",
+                  "definition" : {
+                    "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+                    "type" : "MACROPONENT"
+                  },
+                  "overrides" : null,
+                  "isHidden" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : ""
+                  },
+                  "isNonDestructive" : false,
+                  "styles" : {
+                    "position" : "relative",
+                    "left" : "12px"
+                  }
+                }, {
+                  "elementId" : "heading_1",
+                  "elementLabel" : "Heading 1",
+                  "propertyValues" : {
+                    "label" : {
+                      "type" : "DATA_OUTPUT_BINDING",
+                      "binding" : {
+                        "address" : [ "self_report_summary_1", "output", "emergencyType" ]
+                      }
+                    },
+                    "level" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "1"
+                    },
+                    "variant" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "header-primary"
+                    },
+                    "wontWrap" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : false
+                    },
+                    "hasNoMargin" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : true
+                    }
+                  },
+                  "eventMappings" : [ ],
+                  "slot" : "Row 2",
+                  "definition" : {
+                    "id" : "1f6e0643eca7a637e36bd7833549ec9e",
+                    "type" : "MACROPONENT"
+                  },
+                  "overrides" : null,
+                  "isHidden" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : ""
+                  },
+                  "isNonDestructive" : false,
+                  "styles" : {
+                    "padding-top" : "14px"
+                  }
+                }, {
+                  "elementId" : "stylized_text_2",
+                  "elementLabel" : "Stylized text 2",
+                  "propertyValues" : {
+                    "text" : {
+                      "type" : "DATA_OUTPUT_BINDING",
+                      "binding" : {
+                        "address" : [ "self_report_summary_1", "output", "emergencyDetails" ]
+                      }
+                    },
+                    "tag" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "p"
+                    },
+                    "css" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "* { \n    font-size: 1rem;\n    margin: 0px;\n}"
+                    }
+                  },
+                  "eventMappings" : [ ],
+                  "slot" : "Row 2",
+                  "definition" : {
+                    "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+                    "type" : "MACROPONENT"
+                  },
+                  "overrides" : null,
+                  "isHidden" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : ""
+                  },
+                  "isNonDestructive" : false,
+                  "styles" : { }
+                } ],
+                "layout" : {
+                  "default" : {
+                    "children" : null,
+                    "items" : [{"slotName":"Row 1","rules":{"grid-area":"row1"},"styles":{"display":"flex","flex-direction":"row","justify-content":"flex-start"}},{"slotName":"Row 2","rules":{"grid-area":"row2"},"styles":{"display":"flex","flex-direction":"column"}}],
+                    "root" : null,
+                    "rules" : {"grid-template-columns":"100%","grid-template-areas":"\"row1\" \"row2\"","grid-gap":"0rem","height":"100%"},
+                    "styles" : null,
+                    "templateId" : "f348f94153071010e6bcddeeff7b12dd",
+                    "type" : "grid"
+                  }
+                }
+              },
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : ""
+              },
+              "isNonDestructive" : false,
+              "styles" : { }
+            } ],
+            "layout" : {
+              "default" : {
+                "children" : null,
+                "items" : [{"slotName":"Column 1","rules":{"grid-area":"column1"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 2","rules":{"grid-area":"column2"},"styles":{"display":"flex","flex-direction":"row-reverse","align-items":"center"}}],
+                "root" : null,
+                "rules" : {"grid-template-rows":"auto","grid-template-areas":"\"column1 column2\"","grid-gap":"2rem","height":"100%"},
+                "styles" : null,
+                "templateId" : "a653f1cd53c31010e6bcddeeff7b128c",
+                "type" : "grid"
+              }
+            }
+          },
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isNonDestructive" : false,
+          "styles" : {
+            "padding" : "24px"
+          }
+        }, {
+          "elementId" : "alert_1",
+          "elementLabel" : "Alert 1",
+          "propertyValues" : {
+            "status" : {
+              "type" : "JSON_LITERAL",
+              "value" : "positive"
+            },
+            "content" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "message" : "You successfully updated this emergency report",
+                "comment" : ""
+              }
+            },
+            "icon" : {
+              "type" : "JSON_LITERAL",
+              "value" : "check-outline"
+            },
+            "header" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "message" : "Emergency report updated",
+                "comment" : ""
+              }
+            },
+            "textLinkProps" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "action" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "type" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "dismiss"
+                }
+              }
+            },
+            "expanded" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "maxHeight" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            }
+          },
+          "eventMappings" : [ {
+            "eventMappingId" : "ckhvpggjjhiaaaabbiiddghhnppigggnjm",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "sn_alert.NOW_ALERT#ACTION_CLICKED",
+            "sourceEventDefinition" : {
+              "apiName" : "sn_alert.NOW_ALERT#ACTION_CLICKED",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : {
+                "sysId" : "8ac2572530361110404b22859730e055"
+              },
+              "declarativeAction" : null,
+              "event" : null,
+              "operation" : null,
+              "targetId" : "ckhvpggjjhjaaaabbjjddghhnbmhiidaamd",
+              "type" : "CLIENT_SCRIPT"
+            } ]
+          } ],
+          "slot" : "Row 1",
+          "definition" : {
+            "id" : "553e398f150099fe18ece6938b5bea46",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "STATE_BINDING",
+            "binding" : {
+              "address" : [ "hideReportUpdate" ]
+            }
+          },
+          "isNonDestructive" : false,
+          "styles" : {
+            "margin" : "10px"
+          }
+        }, {
+          "elementId" : "alert_2",
+          "elementLabel" : "Alert 2",
+          "propertyValues" : {
+            "status" : {
+              "type" : "JSON_LITERAL",
+              "value" : "positive"
+            },
+            "content" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "message" : "",
+                "comment" : ""
+              }
+            },
+            "icon" : {
+              "type" : "JSON_LITERAL",
+              "value" : "check-fill"
+            },
+            "header" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "message" : "Emergency report closed.",
+                "comment" : ""
+              }
+            },
+            "textLinkProps" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "action" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "type" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "dismiss"
+                }
+              }
+            },
+            "expanded" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "maxHeight" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            }
+          },
+          "eventMappings" : [ {
+            "eventMappingId" : "ckhybkxviiaaaacciiccaiiccrxkffhzffz",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "sn_alert.NOW_ALERT#ACTION_CLICKED",
+            "sourceEventDefinition" : {
+              "apiName" : "sn_alert.NOW_ALERT#ACTION_CLICKED",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : {
+                "sysId" : "46c2572590361110d31ea52348576753"
+              },
+              "declarativeAction" : null,
+              "event" : null,
+              "operation" : null,
+              "targetId" : "ckhybkxviiaaaaccjjccaiiccjjahheeecccck",
+              "type" : "CLIENT_SCRIPT"
+            } ]
+          } ],
+          "slot" : "Row 1",
+          "definition" : {
+            "id" : "553e398f150099fe18ece6938b5bea46",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "STATE_BINDING",
+            "binding" : {
+              "address" : [ "hideCloseAlert" ]
+            }
+          },
+          "isNonDestructive" : false,
+          "styles" : {
+            "margin" : "10px"
+          }
+        }, {
+          "elementId" : "breadcrumbs_1",
+          "elementLabel" : "Breadcrumbs 1",
+          "propertyValues" : {
+            "items" : {
+              "type" : "DATA_OUTPUT_BINDING",
+              "binding" : {
+                "address" : [ "self_report_summary_1", "output", "breadcrumb" ]
+              }
+            },
+            "delimiter" : {
+              "type" : "JSON_LITERAL",
+              "value" : "chevron"
+            },
+            "overflow" : {
+              "type" : "JSON_LITERAL",
+              "value" : "collapse"
+            }
+          },
+          "eventMappings" : [ ],
+          "slot" : "Row 1",
+          "definition" : {
+            "id" : "9c2e48402c6c25d281faeb20637f6106",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isNonDestructive" : false,
+          "styles" : {
+            "padding-top" : "24px",
+            "padding-bottom" : "40px"
+          }
+        } ],
+        "layout" : {
+          "default" : {
+            "children" : null,
+            "items" : [{"slotName":"Row 1","rules":{"grid-area":"row1"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Row 2","rules":{"grid-area":"row2"},"styles":{"display":"flex","flex-direction":"column","background-color":"#c4d1d3"}}],
+            "root" : null,
+            "rules" : {"grid-template-rows":"0.5fr 1.5fr","grid-template-columns":"100%","grid-template-areas":"\"row1\" \"row2\"","grid-gap":"0rem","height":"100%"},
+            "styles" : null,
+            "templateId" : "f348f94153071010e6bcddeeff7b12dd",
+            "type" : "grid"
+          }
+        }
+      },
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : { }
+    }, {
+      "elementId" : "container_3",
+      "elementLabel" : "Content and tabs",
+      "propertyValues" : { },
+      "eventMappings" : [ ],
+      "slot" : "Row 2",
+      "definition" : {
+        "id" : "d356d14b6e293a3020a244b63d278d8f",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : {
+        "composition" : [ {
+          "elementId" : "container_5",
+          "elementLabel" : "Container 5",
+          "propertyValues" : { },
+          "eventMappings" : [ ],
+          "slot" : "Row 1",
+          "definition" : {
+            "id" : "d356d14b6e293a3020a244b63d278d8f",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : {
+            "composition" : [ {
+              "elementId" : "display_value_block",
+              "elementLabel" : "Display value block",
+              "propertyValues" : {
+                "title" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Your emergency report",
+                    "comment" : ""
+                  }
+                },
+                "items" : {
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "self_report_summary_1", "output", "displayBlock" ]
+                  }
+                },
+                "layoutType" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "distributed"
+                },
+                "delimiter" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : ""
+                },
+                "hideLabels" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "displayInline" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "maxLinesPerValue" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : 1
+                },
+                "rowsBeforeToggleShown" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : 1
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Main",
+              "definition" : {
+                "id" : "c573bd7eec7d763a1009669c8c97825c",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : ""
+              },
+              "isNonDestructive" : false,
+              "styles" : {
+                "padding" : "24px"
+              }
+            } ],
+            "layout" : {
+              "default" : {
+                "children" : null,
+                "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","border":"1px solid #ACB4B5","background-color":"#ffffff"}}],
+                "root" : null,
+                "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
+                "styles" : null,
+                "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+                "type" : "grid"
+              }
+            }
+          },
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isNonDestructive" : false,
+          "styles" : {
+            "width" : "100%"
+          }
+        }, {
+          "elementId" : "container_6",
+          "elementLabel" : "Container 6",
+          "propertyValues" : { },
+          "eventMappings" : [ ],
+          "slot" : "Row 1",
+          "definition" : {
+            "id" : "d356d14b6e293a3020a244b63d278d8f",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : {
+            "composition" : [ {
+              "elementId" : "display_value_block_2",
+              "elementLabel" : "Display value block 2",
+              "propertyValues" : {
+                "title" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Emergency update",
+                    "comment" : ""
+                  }
+                },
+                "items" : {
+                  "type" : "DATA_OUTPUT_BINDING",
+                  "binding" : {
+                    "address" : [ "self_report_summary_1", "output", "emergencyUpdate" ]
+                  }
+                },
+                "layoutType" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "distributed"
+                },
+                "delimiter" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : ""
+                },
+                "hideLabels" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "displayInline" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "maxLinesPerValue" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : 1
+                },
+                "rowsBeforeToggleShown" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : 1
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "Main",
+              "definition" : {
+                "id" : "c573bd7eec7d763a1009669c8c97825c",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : ""
+              },
+              "isNonDestructive" : false,
+              "styles" : {
+                "padding" : "24px"
+              }
+            } ],
+            "layout" : {
+              "default" : {
+                "children" : null,
+                "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","border":"1px solid #ACB4B5","background-color":"#ffffff"}}],
+                "root" : null,
+                "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
+                "styles" : null,
+                "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+                "type" : "grid"
+              }
+            }
+          },
+          "isHidden" : {
+            "type" : "DATA_OUTPUT_BINDING",
+            "binding" : {
+              "address" : [ "self_report_summary_1", "output", "emergencyUpdateVisible" ]
+            }
+          },
+          "isNonDestructive" : false,
+          "styles" : {
+            "margin-top" : "30px"
+          }
+        }, {
+          "elementId" : "tab_set_1",
+          "elementLabel" : "Tab Set 1",
+          "propertyValues" : {
+            "dynamicTabData" : {
+              "type" : "JSON_LITERAL",
+              "value" : ""
+            },
+            "defaultRoute" : {
+              "type" : "JSON_LITERAL",
+              "value" : "activity"
+            },
+            "viewportConfiguration" : {
+              "type" : "JSON_LITERAL",
+              "value" : {
+                "validation" : {
+                  "name" : {
+                    "required" : true
+                  },
+                  "order" : {
+                    "required" : false
+                  },
+                  "icon" : {
+                    "required" : false
+                  }
+                },
+                "enableDataDrivenTabs" : true
+              }
+            },
+            "selectedTabIndex" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            }
+          },
+          "eventMappings" : [ ],
+          "slot" : "Row 2",
+          "definition" : {
+            "id" : "b324da974cef96f2db1d484cfeda4e3e",
+            "type" : "MACROPONENT_VIEWPORT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isNonDestructive" : false,
+          "styles" : { }
+        } ],
+        "layout" : {
+          "default" : {
+            "children" : null,
+            "items" : [{"slotName":"Row 1","rules":{"grid-area":"row1"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Row 2","rules":{"grid-area":"row2"},"styles":{"display":"flex","flex-direction":"column"}}],
+            "root" : null,
+            "rules" : {"grid-template-rows":"0.2fr 1.8fr","grid-template-columns":"100%","grid-template-areas":"\"row1\" \"row2\"","grid-gap":"24px","height":"100%"},
+            "styles" : null,
+            "templateId" : "f348f94153071010e6bcddeeff7b12dd",
+            "type" : "grid"
+          }
+        }
+      },
+      "isHidden" : {
+        "type" : "STATE_BINDING",
+        "binding" : {
+          "address" : [ "hideContainer" ]
+        }
+      },
+      "isNonDestructive" : false,
+      "styles" : { }
+    } ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "items" : [{"slotName":"Row 1","rules":{"grid-area":"row1"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Row 2","rules":{"grid-area":"row2"},"styles":{"display":"flex","flex-direction":"column"}}],
+        "root" : null,
+        "rules" : {"grid-template-rows":"0.2fr 1.8fr","grid-template-columns":"100%","grid-template-areas":"\"row1\" \"row2\"","grid-gap":"24px","height":"100%"},
+        "styles" : null,
+        "templateId" : "f348f94153071010e6bcddeeff7b12dd",
+        "type" : "grid"
+      }
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isNonDestructive" : false,
+  "styles" : { }
+} ]</composition>
+        <da_relay_models/>
+        <data>[ {
+  "definition" : {
+    "id" : "9664d48053461010cbc2ddeeff7b128e",
+    "type" : "COMPOSITE"
+  },
+  "elementId" : "look_up_record_1",
+  "elementLabel" : "Look Up Record 1",
+  "eventMappings" : [ ],
+  "inputValues" : {
+    "table" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "table" ],
+        "category" : "props"
+      }
+    },
+    "recordId" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "sysId" ],
+        "category" : "props"
+      }
+    },
+    "returnFields" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    },
+    "returnTableMetadata" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "returnFieldMetadata" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    }
+  },
+  "readEvaluationMode" : "EAGER"
+}, {
+  "definition" : {
+    "id" : "0ec257256536111007e9c2b5161554a5",
+    "type" : "TRANSFORM"
+  },
+  "elementId" : "self_report_summary_1",
+  "elementLabel" : "Self report Summary 1",
+  "eventMappings" : [ {
+    "eventMappingId" : "ckkquxmrsaaaajjeeddghhxwoaazmoddc",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+    "sourceEventDefinition" : {
+      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "64bdc2fae48e2010f877612eeea2de70"
+      },
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "ckkquxmrsaaaajjffddghhxmoxehhggccl",
+      "type" : "CLIENT_SCRIPT"
+    }, {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "0ac2572597361110fe13111ddb294654"
+      },
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "ckkqvrplaaaaaaevddghhxrwshhddjaad",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  } ],
+  "inputValues" : {
+    "table" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "table" ],
+        "category" : "props"
+      }
+    },
+    "recordId" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "sysId" ],
+        "category" : "props"
+      }
+    }
+  },
+  "readEvaluationMode" : "EAGER"
+}, {
+  "definition" : {
+    "id" : "9b4b978353211010cbc2ddeeff7b1245",
+    "type" : "GRAPHQL"
+  },
+  "elementId" : "close_report",
+  "elementLabel" : "Close report",
+  "eventMappings" : [ {
+    "eventMappingId" : "ckhvwsnjjhaaaahhhhccaiidoffiidchyb",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_uxf.DATA_OP_SUCCEEDED",
+    "sourceEventDefinition" : {
+      "apiName" : "sn_uxf.DATA_OP_SUCCEEDED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : "sn_canvas_core.MODAL_SELECTED",
+        "payload" : {
+          "type" : "JSON_LITERAL",
+          "value" : { }
+        },
+        "sysId" : "882eed4091382d3a41f1bb3f382ae089"
+      },
+      "operation" : null,
+      "targetId" : "ckhvwsnjjhaaaahhiiccaiidlbbtmchwd",
+      "type" : "EVENT"
+    }, {
+      "broker" : null,
+      "clientScript" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : {
+        "dataBrokerId" : "0ec257256536111007e9c2b5161554a5",
+        "operationName" : "REFRESH",
+        "parentResourceId" : "self_report_summary_1",
+        "payload" : {
+          "type" : "JSON_LITERAL",
+          "value" : { }
+        }
+      },
+      "targetId" : "ckhxldddjggaaaabbjccaiicchhochhdffddj",
+      "type" : "DATABROKER_OP"
+    }, {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "cac2572508361110a1f4e4c363f39754"
+      },
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "ckhyanrjaaaaabbggccaiiccfgmehvaax",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  } ],
+  "inputValues" : { },
+  "readEvaluationMode" : "EAGER"
+} ]</data>
+        <description/>
+        <dispatched_events>82c2572543361110f6abccc61f79f44f</dispatched_events>
+        <ext_controller_dep/>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{
+  "MACROPONENT_PROPERTY_CHANGED" : [ {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "82c25725f9361110e85db418eba0e253"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "ckhvpgueiaaaaiiffddghhnddggdiiqelm",
+    "type" : "CLIENT_SCRIPT"
+  } ]
+}</internal_event_mappings>
+        <layout>{
+  "default" : {
+    "children" : null,
+    "items" : [{"slotName":"Sidebar 1","rules":{"grid-area":"sidebar1"},"styles":{"background-color":"#f6f7f7"}},{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","height":"100%","background-color":"#f6f7f7"}},{"slotName":"Sidebar 2","rules":{"grid-area":"sidebar2"},"styles":{"background-color":"#f6f7f7"}}],
+    "root" : null,
+    "rules" : {"grid-template-rows":"minmax(400px,auto)","grid-template-columns":"2fr 8fr 2fr","grid-template-areas":"\"sidebar1 main sidebar2\"","grid-gap":"0rem","height":"100%"},
+    "styles" : null,
+    "templateId" : "90dfe54d53c31010e6bcddeeff7b12d1",
+    "type" : "grid"
+  }
+}</layout>
+        <macroponent_dependencies/>
+        <name>Report Summary</name>
+        <output_prop_mapping/>
+        <props>[ {
+  "name" : "updateEmergency",
+  "label" : "updateEmergency",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : "",
+  "description" : null,
+  "readOnly" : true,
+  "selectable" : false
+}, {
+  "name" : "table",
+  "label" : "Table",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : "",
+  "description" : "",
+  "readOnly" : true,
+  "selectable" : false
+}, {
+  "name" : "sysId",
+  "label" : "sysId",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : "",
+  "description" : "",
+  "readOnly" : true,
+  "selectable" : false
+} ]</props>
+        <required_translations>[{"message":"Close report","comment":""},{"message":"Emergency update","comment":""},{"message":"Emergency report updated","comment":""},{"message":"Your emergency report","comment":""},{"message":"Update status","comment":""},{"message":"You successfully updated this emergency report","comment":""},{"message":"Emergency report closed.","comment":""}]</required_translations>
+        <root_component/>
+        <root_component_config>{ }</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_properties>[ {
+  "name" : "hideReportUpdate",
+  "label" : "hideReportUpdate",
+  "fieldType" : "boolean",
+  "valueType" : "boolean",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : true
+  }
+}, {
+  "name" : "hideCloseAlert",
+  "label" : "hideCloseAlert",
+  "fieldType" : "boolean",
+  "valueType" : "boolean",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : true
+  }
+}, {
+  "name" : "hideContainer",
+  "label" : "hideContainer",
+  "fieldType" : "boolean",
+  "valueType" : "boolean",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : true
+  }
+} ]</state_properties>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:58:57</sys_created_on>
+        <sys_id>0ec25725d0361110accbd3f008a5d159</sys_id>
+        <sys_name>Report Summary</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_ux_macroponent_0ec25725d0361110accbd3f008a5d159</sys_update_name>
+    </sys_ux_macroponent>
+    <sys_translated_text action="delete_multiple" query="documentkey=0ec25725d0361110accbd3f008a5d159"/>
+</record_update>

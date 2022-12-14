@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>x_879347_emergen_0.emergency_alert_app__</internal_name>
+        <label_cache>[{"name":"312b4e41-1183-4357-a0ef-7075367cbdfb.Record","label":"1➛Status Report Request Record","reference":"x_snc_emergency_0_status_report_requests","reference_display":"Status Report Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"312b4e41-1183-4357-a0ef-7075367cbdfb.Table","label":"1➛Status Report Request Table","reference":"x_snc_emergency_0_status_report_requests","reference_display":"Status Report Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"312b4e41-1183-4357-a0ef-7075367cbdfb.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"312b4e41-1183-4357-a0ef-7075367cbdfb.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"subflow.self_report","label":"Input➛Self Report","reference":"x_snc_emergency_0_status_report","reference_display":"Self Report","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"d2f60b8b-f3da-4d30-b0e6-bde0068c7fc3"}},{"name":"ccf05b28-c2b8-4f45-b2f6-d3d547b8a1ae.record","label":"3➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ccf05b28-c2b8-4f45-b2f6-d3d547b8a1ae.table_name","label":"3➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dd2e3d5c-aa3a-4bb0-a7ca-6dda84ffe06a.record","label":"3➛Status Report Request Record","reference":"x_snc_emergency_0_status_report_requests","reference_display":"Status Report Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dd2e3d5c-aa3a-4bb0-a7ca-6dda84ffe06a.table_name","label":"3➛Status Report Request Table","reference":"x_snc_emergency_0_status_report_requests","reference_display":"Status Report Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.self_report.who_else_was_affected","label":"Input➛Self Report➛Who else was affected?","reference":"sys_user","reference_display":"User","type":"glide_list","base_type":"glide_list","parent_table_name":"x_snc_emergency_0_status_report","column_name":"who_else_was_affected"},{"name":"657c3eba-faf6-4814-ae35-08f2037c5901.record","label":"6➛Status Report Request Record","reference":"x_snc_emergency_0_status_report_requests","reference_display":"Status Report Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"657c3eba-faf6-4814-ae35-08f2037c5901.table_name","label":"6➛Status Report Request Table","reference":"x_snc_emergency_0_status_report_requests","reference_display":"Status Report Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.self_report.start_date","label":"Input➛Self Report➛Start date","reference":"","reference_display":"Start date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_snc_emergency_0_status_report","column_name":"start_date"},{"name":"subflow.self_report.name.location","label":"Input➛Self Report➛Name➛Location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"location"},{"name":"subflow.self_report.end_date","label":"Input➛Self Report➛End date","reference":"","reference_display":"End date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_snc_emergency_0_status_report","column_name":"end_date"},{"name":"subflow.self_report.emergency_details","label":"Input➛Self Report➛Emergency details","reference":"","reference_display":"Emergency details","type":"string","base_type":"string","parent_table_name":"x_snc_emergency_0_status_report","column_name":"emergency_details"},{"name":"subflow.self_report.name.manager","label":"Input➛Self Report➛Name➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"312b4e41-1183-4357-a0ef-7075367cbdfb.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"312b4e41-1183-4357-a0ef-7075367cbdfb.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dd2e3d5c-aa3a-4bb0-a7ca-6dda84ffe06a.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dd2e3d5c-aa3a-4bb0-a7ca-6dda84ffe06a.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"657c3eba-faf6-4814-ae35-08f2037c5901.__action_status__","label":"6➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"657c3eba-faf6-4814-ae35-08f2037c5901.__dont_treat_as_error__","label":"6➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>02c2572597361110468ad5211bfb56bd</master_snapshot>
+        <name>Emergency Alert App - Create Status Report Requests for Affected</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>c2c25725f6361110a866b85ea55da6f0</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>42c257250d3611105539f0fb91c7bebd</sys_id>
+        <sys_name>Emergency Alert App - Create Status Report Requests for Affected</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_hub_flow_42c257250d3611105539f0fb91c7bebd</sys_update_name>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=42c257250d3611105539f0fb91c7bebd"/>
+    <sys_variable_value action="delete_multiple" query="document_key=42c257250d3611105539f0fb91c7bebd"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=42c257250d3611105539f0fb91c7bebd"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=42c257250d3611105539f0fb91c7bebd"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=42c257250d3611105539f0fb91c7bebd^sys_idNOT IN82c25725fb36111061ece25ae4d41fbd"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>42c257250d3611105539f0fb91c7bebd</id>
+        <name>Emergency Alert App - Create Status Report Requests for Affected</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:18</sys_created_on>
+        <sys_id>82c25725fb36111061ece25ae4d41fbd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:18</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=82c25725fb36111061ece25ae4d41fbd"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=42c257250d3611105539f0fb91c7bebd^sys_idNOT INcec25725f4361110883c18c1aeb8a4bc"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=d2f60b8b-f3da-4d30-b0e6-bde0068c7fc3</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_879347_emergen_0_status_report</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>self_report</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Self Report</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Emergency Alert App - Create Status Report Requests for Affected">42c257250d3611105539f0fb91c7bebd</model>
+        <model_id>42c257250d3611105539f0fb91c7bebd</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_42c257250d3611105539f0fb91c7bebd</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_879347_emergen_0_status_report">x_879347_emergen_0_status_report</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:18</sys_created_on>
+        <sys_id>cec25725f4361110883c18c1aeb8a4bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=42c257250d3611105539f0fb91c7bebd"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=42c257250d3611105539f0fb91c7bebd"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=42c257250d3611105539f0fb91c7bebd^sys_idNOT IN06c2572578361110df9a4365becbbcbc,4ac257256e361110927d94c3fb32cfbc,4ec2572541361110dd701ce83ae803bc"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Emergency Alert App - Create Status Report Requests for Affected">42c257250d3611105539f0fb91c7bebd</flow>
+        <order>6</order>
+        <parent_ui_id>054d17c1-bc5f-49b0-813e-baa7af962cdf</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>06c2572578361110df9a4365becbbcbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <ui_id>657c3eba-faf6-4814-ae35-08f2037c5901</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=06c2572578361110df9a4365becbbcbc"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>06c2572578361110df9a4365becbbcbc</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>0ec25725cc361110ece2308881425cbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <value>x_879347_emergen_0_status_report_requests</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=06c2572578361110df9a4365becbbcbc"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>06c2572578361110df9a4365becbbcbc</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>0ac25725aa361110953ae09f4728e1bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>send_report_to={{subflow.self_report.who_else_was_affected}}^emergency_start={{subflow.self_report.start_date}}^location={{subflow.self_report.name.location}}^emergency_end={{subflow.self_report.end_date}}^emergency_details={{subflow.self_report.emergency_details}}^requester={{subflow.self_report.name.manager}}^self_report={{subflow.self_report}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=06c2572578361110df9a4365becbbcbc"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=06c2572578361110df9a4365becbbcbc"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Emergency Alert App - Create Status Report Requests for Affected">42c257250d3611105539f0fb91c7bebd</flow>
+        <order>3</order>
+        <parent_ui_id>1ac73670-2920-497e-9157-fd33b5fc77c9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>4ac257256e361110927d94c3fb32cfbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <ui_id>dd2e3d5c-aa3a-4bb0-a7ca-6dda84ffe06a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4ac257256e361110927d94c3fb32cfbc"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4ac257256e361110927d94c3fb32cfbc</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>8ec257252d361110cab17268c31447bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <value>x_879347_emergen_0_status_report_requests</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4ac257256e361110927d94c3fb32cfbc"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>4ac257256e361110927d94c3fb32cfbc</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>86c25725e33611100c53a6c6b805dbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{312b4e41-1183-4357-a0ef-7075367cbdfb.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>4ac257256e361110927d94c3fb32cfbc</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>8ac25725bb3611107e268a343b9c44bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>send_report_to={{subflow.self_report.who_else_was_affected}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4ac257256e361110927d94c3fb32cfbc"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4ac257256e361110927d94c3fb32cfbc"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Emergency Alert App - Create Status Report Requests for Affected">42c257250d3611105539f0fb91c7bebd</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>4ec2572541361110dd701ce83ae803bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <ui_id>312b4e41-1183-4357-a0ef-7075367cbdfb</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4ec2572541361110dd701ce83ae803bc"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4ec2572541361110dd701ce83ae803bc</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>46c25725a836111003c2f5719ef73abc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <value>x_879347_emergen_0_status_report_requests</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4ec2572541361110dd701ce83ae803bc</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>c6c257257c361110dd47f7397e2a53bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Don't fail on error">ceab42a673110010d70877186bf6a74f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4ec2572541361110dd701ce83ae803bc"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>4ec2572541361110dd701ce83ae803bc</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>cac25725f83611103564761663848ebc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>self_report={{subflow.self_report}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4ec2572541361110dd701ce83ae803bc"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4ec2572541361110dd701ce83ae803bc"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=42c257250d3611105539f0fb91c7bebd"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=42c257250d3611105539f0fb91c7bebd^sys_idNOT IN42c2572514361110ae55bb33eddbf7bc,4ec25725ec361110157c5196e1e39ebb,82c2572576361110f2ac323d76d243bc,cac2572508361110aac932ef52e95bbb"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">cec257258a36111011de52a4f41944bb</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Emergency Alert App - Create Status Report Requests for Affected">42c257250d3611105539f0fb91c7bebd</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>1ac73670-2920-497e-9157-fd33b5fc77c9</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>42c2572514361110ae55bb33eddbf7bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <ui_id>db41e865-4db6-4ae7-b181-4ab6a50c5fe4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=42c2572514361110ae55bb33eddbf7bc"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=42c2572514361110ae55bb33eddbf7bc"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=42c2572514361110ae55bb33eddbf7bc"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">02c25725113611104ba8e24deea632bc</block>
+        <comment/>
+        <connected_to>1ac73670-2920-497e-9157-fd33b5fc77c9</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Emergency Alert App - Create Status Report Requests for Affected">42c257250d3611105539f0fb91c7bebd</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>4ec25725ec361110157c5196e1e39ebb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <ui_id>054d17c1-bc5f-49b0-813e-baa7af962cdf</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=4ec25725ec361110157c5196e1e39ebb"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=4ec25725ec361110157c5196e1e39ebb"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4ec25725ec361110157c5196e1e39ebb"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">8ec25725d9361110b2afc8e84f6420bb</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Emergency Alert App - Create Status Report Requests for Affected">42c257250d3611105539f0fb91c7bebd</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>054d17c1-bc5f-49b0-813e-baa7af962cdf</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>82c2572576361110f2ac323d76d243bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <ui_id>fc30a075-d30d-417c-b207-5176be690efa</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=82c2572576361110f2ac323d76d243bc"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=82c2572576361110f2ac323d76d243bc"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=82c2572576361110f2ac323d76d243bc"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">c2c257255c361110f1c41842b31dc8bc</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Emergency Alert App - Create Status Report Requests for Affected">42c257250d3611105539f0fb91c7bebd</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>cac2572508361110aac932ef52e95bbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <ui_id>1ac73670-2920-497e-9157-fd33b5fc77c9</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=cac2572508361110aac932ef52e95bbb"/>
+    <sys_element_mapping action="delete_multiple" query="id=cac2572508361110aac932ef52e95bbb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>cac2572508361110aac932ef52e95bbb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>0ec25725e436111047135bbe6fe8c7bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{312b4e41-1183-4357-a0ef-7075367cbdfb.status}}=0</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=cac2572508361110aac932ef52e95bbb"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=cac2572508361110aac932ef52e95bbb"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=42c257250d3611105539f0fb91c7bebd"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=42c257250d3611105539f0fb91c7bebd"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_42c257250d3611105539f0fb91c7bebd^sys_idNOT IN8ac2572504361110da34e59f82dbe7bb"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>self_report</element>
+        <help/>
+        <hint/>
+        <label>Self Report</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_42c257250d3611105539f0fb91c7bebd</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>8ac2572504361110da34e59f82dbe7bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Self Report</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_documentation_!!!table_name_456!!!_self_report_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_42c257250d3611105539f0fb91c7bebd"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_42c257250d3611105539f0fb91c7bebd"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_42c257250d3611105539f0fb91c7bebd"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=42c257250d3611105539f0fb91c7bebd"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=42c257250d3611105539f0fb91c7bebd^sys_idNOT IN4ac257257e361110b571523596ff63bb"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>com.snc.process_flow.engine.ProcessPlan@40859a55</plan>
+        <plan_id display_value="Emergency Alert App - Create Status Report Requests for Affected">42c257250d3611105539f0fb91c7bebd</plan_id>
+        <snapshot>2b0a48aea7fba010f4adcc5f83a1aeff</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4ac257257e361110b571523596ff63bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+    </sys_flow_subflow_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>x_879347_emergen_0.emergency_alert_app__</internal_name>
+        <label_cache>[{"name":"312b4e41-1183-4357-a0ef-7075367cbdfb.Record","label":"1➛Status Report Request Record","reference":"x_snc_emergency_0_status_report_requests","reference_display":"Status Report Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"312b4e41-1183-4357-a0ef-7075367cbdfb.Table","label":"1➛Status Report Request Table","reference":"x_snc_emergency_0_status_report_requests","reference_display":"Status Report Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"312b4e41-1183-4357-a0ef-7075367cbdfb.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"312b4e41-1183-4357-a0ef-7075367cbdfb.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"subflow.self_report","label":"Input➛Self Report","reference":"x_snc_emergency_0_status_report","reference_display":"Self Report","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"d2f60b8b-f3da-4d30-b0e6-bde0068c7fc3"}},{"name":"ccf05b28-c2b8-4f45-b2f6-d3d547b8a1ae.record","label":"3➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ccf05b28-c2b8-4f45-b2f6-d3d547b8a1ae.table_name","label":"3➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dd2e3d5c-aa3a-4bb0-a7ca-6dda84ffe06a.record","label":"3➛Status Report Request Record","reference":"x_snc_emergency_0_status_report_requests","reference_display":"Status Report Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dd2e3d5c-aa3a-4bb0-a7ca-6dda84ffe06a.table_name","label":"3➛Status Report Request Table","reference":"x_snc_emergency_0_status_report_requests","reference_display":"Status Report Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.self_report.who_else_was_affected","label":"Input➛Self Report➛Who else was affected?","reference":"sys_user","reference_display":"User","type":"glide_list","base_type":"glide_list","parent_table_name":"x_snc_emergency_0_status_report","column_name":"who_else_was_affected"},{"name":"657c3eba-faf6-4814-ae35-08f2037c5901.record","label":"6➛Status Report Request Record","reference":"x_snc_emergency_0_status_report_requests","reference_display":"Status Report Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"657c3eba-faf6-4814-ae35-08f2037c5901.table_name","label":"6➛Status Report Request Table","reference":"x_snc_emergency_0_status_report_requests","reference_display":"Status Report Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.self_report.start_date","label":"Input➛Self Report➛Start date","reference":"","reference_display":"Start date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_snc_emergency_0_status_report","column_name":"start_date"},{"name":"subflow.self_report.name.location","label":"Input➛Self Report➛Name➛Location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"location"},{"name":"subflow.self_report.end_date","label":"Input➛Self Report➛End date","reference":"","reference_display":"End date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_snc_emergency_0_status_report","column_name":"end_date"},{"name":"subflow.self_report.emergency_details","label":"Input➛Self Report➛Emergency details","reference":"","reference_display":"Emergency details","type":"string","base_type":"string","parent_table_name":"x_snc_emergency_0_status_report","column_name":"emergency_details"},{"name":"subflow.self_report.name.manager","label":"Input➛Self Report➛Name➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"312b4e41-1183-4357-a0ef-7075367cbdfb.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"312b4e41-1183-4357-a0ef-7075367cbdfb.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dd2e3d5c-aa3a-4bb0-a7ca-6dda84ffe06a.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dd2e3d5c-aa3a-4bb0-a7ca-6dda84ffe06a.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"657c3eba-faf6-4814-ae35-08f2037c5901.__action_status__","label":"6➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"657c3eba-faf6-4814-ae35-08f2037c5901.__dont_treat_as_error__","label":"6➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Emergency Alert App - Create Status Report Requests for Affected</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Emergency Alert App - Create Status Report Requests for Affected">42c257250d3611105539f0fb91c7bebd</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>02c2572597361110468ad5211bfb56bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=02c2572597361110468ad5211bfb56bd"/>
+    <sys_variable_value action="delete_multiple" query="document_key=02c2572597361110468ad5211bfb56bd"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=02c2572597361110468ad5211bfb56bd"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=02c2572597361110468ad5211bfb56bd"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=02c2572597361110468ad5211bfb56bd^sys_idNOT IN0ac25725f436111053e2f795545123bb"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>02c2572597361110468ad5211bfb56bd</id>
+        <name>Emergency Alert App - Create Status Report Requests for Affected</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>0ac25725f436111053e2f795545123bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=0ac25725f436111053e2f795545123bb"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=02c2572597361110468ad5211bfb56bd^sys_idNOT INc6c25725ef3611102e3c33ef99cc63bb"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=d2f60b8b-f3da-4d30-b0e6-bde0068c7fc3</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_879347_emergen_0_status_report</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>self_report</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Self Report</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Emergency Alert App - Create Status Report Requests for Affected">02c2572597361110468ad5211bfb56bd</model>
+        <model_id>02c2572597361110468ad5211bfb56bd</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_02c2572597361110468ad5211bfb56bd</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_879347_emergen_0_status_report">x_879347_emergen_0_status_report</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>c6c25725ef3611102e3c33ef99cc63bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type/>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=02c2572597361110468ad5211bfb56bd"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=02c2572597361110468ad5211bfb56bd"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=02c2572597361110468ad5211bfb56bd^sys_idNOT IN06c25725d83611100f4b64e1e9b999bb,42c257256e36111093368488949c1ebb,82c257257f36111012f491c973a93ebb"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Emergency Alert App - Create Status Report Requests for Affected">02c2572597361110468ad5211bfb56bd</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>06c25725d83611100f4b64e1e9b999bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <ui_id>312b4e41-1183-4357-a0ef-7075367cbdfb</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=06c25725d83611100f4b64e1e9b999bb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>06c25725d83611100f4b64e1e9b999bb</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>c2c257256b3611102bfee0cc761522bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <value>x_879347_emergen_0_status_report_requests</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>06c25725d83611100f4b64e1e9b999bb</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>cac25725373611109fc300caa33d09ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Don't fail on error">ceab42a673110010d70877186bf6a74f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=06c25725d83611100f4b64e1e9b999bb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>06c25725d83611100f4b64e1e9b999bb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>86c2572586361110ca8cf42bf7c120bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>self_report={{subflow.self_report}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=06c25725d83611100f4b64e1e9b999bb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=06c25725d83611100f4b64e1e9b999bb"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Emergency Alert App - Create Status Report Requests for Affected">02c2572597361110468ad5211bfb56bd</flow>
+        <order>6</order>
+        <parent_ui_id>054d17c1-bc5f-49b0-813e-baa7af962cdf</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>42c257256e36111093368488949c1ebb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <ui_id>657c3eba-faf6-4814-ae35-08f2037c5901</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=42c257256e36111093368488949c1ebb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>42c257256e36111093368488949c1ebb</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>4ec25725cc361110df04aced901cdeba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <value>x_879347_emergen_0_status_report_requests</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=42c257256e36111093368488949c1ebb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>42c257256e36111093368488949c1ebb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>02c25725bb361110d9d90ce7c020d0bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>send_report_to={{subflow.self_report.who_else_was_affected}}^emergency_start={{subflow.self_report.start_date}}^location={{subflow.self_report.name.location}}^emergency_end={{subflow.self_report.end_date}}^emergency_details={{subflow.self_report.emergency_details}}^requester={{subflow.self_report.name.manager}}^self_report={{subflow.self_report}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=42c257256e36111093368488949c1ebb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=42c257256e36111093368488949c1ebb"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Emergency Alert App - Create Status Report Requests for Affected">02c2572597361110468ad5211bfb56bd</flow>
+        <order>3</order>
+        <parent_ui_id>1ac73670-2920-497e-9157-fd33b5fc77c9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>82c257257f36111012f491c973a93ebb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <ui_id>dd2e3d5c-aa3a-4bb0-a7ca-6dda84ffe06a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=82c257257f36111012f491c973a93ebb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>82c257257f36111012f491c973a93ebb</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>cec25725bc361110211da6da320bccba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <value>x_879347_emergen_0_status_report_requests</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=82c257257f36111012f491c973a93ebb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>82c257257f36111012f491c973a93ebb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>46c257252d36111000104a15a3062cbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{312b4e41-1183-4357-a0ef-7075367cbdfb.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>82c257257f36111012f491c973a93ebb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>8ec25725a4361110301427dd299dc7ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>send_report_to={{subflow.self_report.who_else_was_affected}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=82c257257f36111012f491c973a93ebb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=82c257257f36111012f491c973a93ebb"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=02c2572597361110468ad5211bfb56bd"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=02c2572597361110468ad5211bfb56bd^sys_idNOT IN0ac257250f361110ba822b9770e127ba,0ec257255c36111033467a3079442eba,86c257252b3611100f246b550bea33ba,8ac257253e361110b4ca411e01ab42ba"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">8ec25725d9361110b2afc8e84f6420bb</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Emergency Alert App - Create Status Report Requests for Affected">02c2572597361110468ad5211bfb56bd</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>054d17c1-bc5f-49b0-813e-baa7af962cdf</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>0ac257250f361110ba822b9770e127ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <ui_id>fc30a075-d30d-417c-b207-5176be690efa</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=0ac257250f361110ba822b9770e127ba"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=0ac257250f361110ba822b9770e127ba"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0ac257250f361110ba822b9770e127ba"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">02c25725113611104ba8e24deea632bc</block>
+        <comment/>
+        <connected_to>1ac73670-2920-497e-9157-fd33b5fc77c9</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Emergency Alert App - Create Status Report Requests for Affected">02c2572597361110468ad5211bfb56bd</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>0ec257255c36111033467a3079442eba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <ui_id>054d17c1-bc5f-49b0-813e-baa7af962cdf</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=0ec257255c36111033467a3079442eba"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=0ec257255c36111033467a3079442eba"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0ec257255c36111033467a3079442eba"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">cec257258a36111011de52a4f41944bb</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Emergency Alert App - Create Status Report Requests for Affected">02c2572597361110468ad5211bfb56bd</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>1ac73670-2920-497e-9157-fd33b5fc77c9</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>86c257252b3611100f246b550bea33ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <ui_id>db41e865-4db6-4ae7-b181-4ab6a50c5fe4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=86c257252b3611100f246b550bea33ba"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=86c257252b3611100f246b550bea33ba"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=86c257252b3611100f246b550bea33ba"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">c2c257255c361110f1c41842b31dc8bc</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Emergency Alert App - Create Status Report Requests for Affected">02c2572597361110468ad5211bfb56bd</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>8ac257253e361110b4ca411e01ab42ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <ui_id>1ac73670-2920-497e-9157-fd33b5fc77c9</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=8ac257253e361110b4ca411e01ab42ba"/>
+    <sys_element_mapping action="delete_multiple" query="id=8ac257253e361110b4ca411e01ab42ba"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>8ac257253e361110b4ca411e01ab42ba</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>c6c257254236111006c298590fcc4cba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{312b4e41-1183-4357-a0ef-7075367cbdfb.status}}=0</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=8ac257253e361110b4ca411e01ab42ba"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8ac257253e361110b4ca411e01ab42ba"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=02c2572597361110468ad5211bfb56bd"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=02c2572597361110468ad5211bfb56bd"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_02c2572597361110468ad5211bfb56bd^sys_idNOT IN46c257256b36111090f294e5fee5e2ba"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>self_report</element>
+        <help/>
+        <hint/>
+        <label>Self Report</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_02c2572597361110468ad5211bfb56bd</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:19</sys_created_on>
+        <sys_id>46c257256b36111090f294e5fee5e2ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Self Report</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_documentation_!!!table_name_383!!!_self_report_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_02c2572597361110468ad5211bfb56bd"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_02c2572597361110468ad5211bfb56bd"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_02c2572597361110468ad5211bfb56bd"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>42c257250d3611105539f0fb91c7bebd</sys_id>
+        <latest_snapshot>02c2572597361110468ad5211bfb56bd</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+</record_update>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_applet_launcher_m2m_section">
+    <sys_sg_applet_launcher_m2m_section action="INSERT_OR_UPDATE">
+        <applet_launcher display_value="My Status Report (Manager)">4ec257254936111056a122cad09c859d</applet_launcher>
+        <order>20</order>
+        <section display_value="Employee Status Dashboard">82c25725db361110f95b9b5f31bb289d</section>
+        <sys_class_name>sys_sg_applet_launcher_m2m_section</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:23</sys_created_on>
+        <sys_id>0ec25725aa361110204fa1c7326d2f9c</sys_id>
+        <sys_name/>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_applet_launcher_m2m_section_0ec25725aa361110204fa1c7326d2f9c</sys_update_name>
+    </sys_sg_applet_launcher_m2m_section>
+</record_update>

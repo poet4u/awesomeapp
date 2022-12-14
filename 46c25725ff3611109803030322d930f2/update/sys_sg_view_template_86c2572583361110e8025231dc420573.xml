@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_template">
+    <sys_sg_view_template action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>template for manager role</description>
+        <name>Emergency Alert Manager</name>
+        <preview_image/>
+        <root_view_attrs_json/>
+        <sys_class_name>sys_sg_view_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:10</sys_created_on>
+        <sys_id>86c2572583361110e8025231dc420573</sys_id>
+        <sys_name>Emergency Alert Manager</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_view_template_86c2572583361110e8025231dc420573</sys_update_name>
+        <template_json>{"Type":"ViewGroup","Margin":{"Top":"","Bottom":""},"Orientation":"Vertical","Alignment":"Left","Distribution":"Auto","Id":"Root","Children":[{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Id":"viewgroup_01","Height":"","Width":"","Children":[{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":20},"MaxLines":3,"CellId":"text_01","Id":"text_01"}]},{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Id":"viewgroup_04","Margin":{"Top":0},"Height":"","Width":"","Children":[{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Id":"viewgroup_05","CornerRadius":3,"Children":[{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":10},"MaxLines":1,"CellId":"text_07","Id":"text_07","Margin":{"Top":3,"Bottom":3,"Left":5,"Right":5}},{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":13},"MaxLines":1,"CellId":"text_08","Id":"text_08","Margin":{"Top":3,"Bottom":3,"Right":5}}]},{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Id":"viewgroup_06","Children":[{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":13},"MaxLines":1,"CellId":"text_09","Id":"text_09","Margin":{"Right":4,"Left":4}},{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"bold","Size":13},"MaxLines":1,"CellId":"text_10","Id":"text_10"}]}]},{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Bottom","Distribution":"Auto","Id":"viewgroup_03","Margin":{"Top":0},"Height":"","Width":"","Children":[{"Type":"Image","Scaling":"fit","CellId":"image_02","Id":"image_02","Height":20,"Width":20,"CornerRadius":10,"Margin":{"Left":4,"Right":4}},{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":13},"MaxLines":1,"CellId":"text_05","Id":"text_05","Margin":{"Right":4,"Left":4}},{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":13},"MaxLines":1,"CellId":"text_06","Id":"text_06","Margin":{"Left":4}}]}]}</template_json>
+    </sys_sg_view_template>
+    <sys_translated_text action="delete_multiple" query="documentkey=86c2572583361110e8025231dc420573"/>
+</record_update>

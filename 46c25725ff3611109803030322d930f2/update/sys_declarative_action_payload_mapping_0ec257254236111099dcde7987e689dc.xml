@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_declarative_action_payload_mapping">
+    <sys_declarative_action_payload_mapping action="INSERT_OR_UPDATE">
+        <action_payload_definition display_value="Respond to request">cac25725de361110beb77ce07affbce0</action_payload_definition>
+        <label>Respond to request  List</label>
+        <model display_value="List">c3547169534723003eddddeeff7b126c</model>
+        <payload_map>EQ</payload_map>
+        <sys_class_name>sys_declarative_action_payload_mapping</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:17</sys_created_on>
+        <sys_id>0ec257254236111099dcde7987e689dc</sys_id>
+        <sys_name>Respond to request  List</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_declarative_action_payload_mapping_0ec257254236111099dcde7987e689dc</sys_update_name>
+    </sys_declarative_action_payload_mapping>
+</record_update>

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types/>
+        <category>page</category>
+        <component_dependencies/>
+        <composition>[ {
+  "elementId" : "container_1",
+  "elementLabel" : "breadcrumContainer",
+  "propertyValues" : { },
+  "eventMappings" : [ ],
+  "slot" : "Main",
+  "definition" : {
+    "id" : "d356d14b6e293a3020a244b63d278d8f",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ {
+      "elementId" : "breadcrumbs_1",
+      "elementLabel" : "Breadcrumbs 1",
+      "propertyValues" : {
+        "items" : {
+          "type" : "LIST_CONTAINER",
+          "container" : [ {
+            "type" : "MAP_CONTAINER",
+            "container" : {
+              "label" : {
+                "type" : "TRANSLATION_LITERAL",
+                "value" : {
+                  "message" : "First Item",
+                  "comment" : ""
+                }
+              },
+              "href" : {
+                "type" : "JSON_LITERAL",
+                "value" : "#"
+              },
+              "icon" : {
+                "type" : "JSON_LITERAL",
+                "value" : "home-outline"
+              },
+              "hideLabel" : {
+                "type" : "JSON_LITERAL",
+                "value" : true
+              }
+            }
+          }, {
+            "type" : "MAP_CONTAINER",
+            "container" : {
+              "label" : {
+                "type" : "TRANSLATION_LITERAL",
+                "value" : {
+                  "message" : "Breadcrumbs1",
+                  "comment" : ""
+                }
+              },
+              "href" : {
+                "type" : "JSON_LITERAL",
+                "value" : "#"
+              }
+            }
+          }, {
+            "type" : "MAP_CONTAINER",
+            "container" : {
+              "label" : {
+                "type" : "TRANSLATION_LITERAL",
+                "value" : {
+                  "message" : "Breadcrumbs2",
+                  "comment" : ""
+                }
+              },
+              "href" : {
+                "type" : "JSON_LITERAL",
+                "value" : "#"
+              }
+            }
+          }, {
+            "type" : "MAP_CONTAINER",
+            "container" : {
+              "label" : {
+                "type" : "TRANSLATION_LITERAL",
+                "value" : {
+                  "message" : "Breadcrumbs3",
+                  "comment" : ""
+                }
+              }
+            }
+          } ]
+        },
+        "delimiter" : {
+          "type" : "JSON_LITERAL",
+          "value" : "chevron"
+        },
+        "overflow" : {
+          "type" : "JSON_LITERAL",
+          "value" : "collapse"
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : "Main",
+      "definition" : {
+        "id" : "9c2e48402c6c25d281faeb20637f6106",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : {
+        "margin-top" : "10px"
+      }
+    } ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column"}}],
+        "root" : null,
+        "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
+        "styles" : null,
+        "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+        "type" : "grid"
+      }
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isNonDestructive" : false,
+  "styles" : { }
+}, {
+  "elementId" : "container_2",
+  "elementLabel" : "sn_knowledge_Container",
+  "propertyValues" : { },
+  "eventMappings" : [ ],
+  "slot" : "Main",
+  "definition" : {
+    "id" : "d356d14b6e293a3020a244b63d278d8f",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ {
+      "elementId" : "knowledge_content_1",
+      "elementLabel" : "Knowledge content 1",
+      "propertyValues" : {
+        "articleDetails" : {
+          "type" : "JSON_LITERAL",
+          "value" : {
+            "articleHTML" : "&lt;h2&gt;Getting Around in Windows&lt;/h2&gt; &lt;h3&gt;Windows 8.x&lt;/h3&gt; &lt;p&gt;Windows 8.x is designed for using touch, mouse, and keyboard together, on hardware ranging from touch-enabled tablets and laptops to PCs and all-in-one computers, including those without touch capability. &lt;/p&gt; &lt;h3&gt;&lt;span style=\"font-size: 12pt;\"&gt;Start screen and Desktop&lt;/span&gt;&lt;/h3&gt;",
+            "isEditable" : true,
+            "articleSysId" : "460e0955dbd020105de6f9751d9619ee",
+            "templateFieldData" : [ ],
+            "articleInfo" : {
+              "author" : "System Administrator",
+              "displayAttachments" : false,
+              "kbCategory" : "Java",
+              "workflowState" : "published",
+              "kbKnowledgeBase" : "IT",
+              "number" : "KB0010001",
+              "shortDescription" : "Getting Around in Windows",
+              "sysId" : "460e0955dbd020105de6f9751d9619ee",
+              "sysUpdatedOn" : "2015-06-11 17:10:53",
+              "sysViewCount" : 7,
+              "rating" : 5,
+              "revisedBy" : null,
+              "baseVersion" : null,
+              "isExpired" : false
+            }
+          }
+        },
+        "hideArticleHeader" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "secondaryFields" : {
+          "type" : "LIST_CONTAINER",
+          "container" : [ ]
+        },
+        "hideKbCategoryInfo" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hideNumberLink" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
+        "hideAuthorInfo" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hideActions" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hideBlocksInformation" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
+        "blocksInformation" : {
+          "type" : "JSON_LITERAL",
+          "value" : ""
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : "Main",
+      "definition" : {
+        "id" : "6cc10e80b365b928029e6adbb704006f",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : { }
+    }, {
+      "elementId" : "nested_comments_1",
+      "elementLabel" : "Nested comments 1",
+      "propertyValues" : {
+        "comments" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "userInformation" : {
+          "type" : "CONTEXT_BINDING",
+          "binding" : {
+            "address" : [ "user" ],
+            "category" : "session"
+          }
+        },
+        "actions" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "reactionLabel" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "message" : "like",
+            "comment" : ""
+          }
+        },
+        "reactionIcon" : {
+          "type" : "JSON_LITERAL",
+          "value" : "thumbs-up"
+        },
+        "initialDisplayCount" : {
+          "type" : "JSON_LITERAL",
+          "value" : 3
+        },
+        "indentationLimit" : {
+          "type" : "JSON_LITERAL",
+          "value" : 3
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : "Main",
+      "definition" : {
+        "id" : "556d420ecbb471307b6be5ccfa9beb22",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : { }
+    } ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column"}}],
+        "root" : null,
+        "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
+        "styles" : null,
+        "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+        "type" : "grid"
+      }
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isNonDestructive" : false,
+  "styles" : { }
+} ]</composition>
+        <da_relay_models/>
+        <data>[ ]</data>
+        <description/>
+        <dispatched_events/>
+        <ext_controller_dep/>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{ }</internal_event_mappings>
+        <layout>{
+  "default" : {
+    "children" : null,
+    "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column"}}],
+    "root" : null,
+    "rules" : {"grid-template-rows":"minmax(400px,auto)","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
+    "styles" : null,
+    "templateId" : "28bde4cd53431010e6bcddeeff7b12cc",
+    "type" : "grid"
+  }
+}</layout>
+        <macroponent_dependencies/>
+        <name>emergencyAlertInformation</name>
+        <output_prop_mapping/>
+        <props>[ {
+  "name" : "sysId",
+  "label" : "sysId",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : "",
+  "description" : null,
+  "readOnly" : true,
+  "selectable" : false
+} ]</props>
+        <required_translations>[{"message":"First Item","comment":""},{"message":"Breadcrumbs3","comment":""},{"message":"like","comment":""},{"message":"Breadcrumbs1","comment":""},{"message":"Breadcrumbs2","comment":""}]</required_translations>
+        <root_component/>
+        <root_component_config>{ }</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_properties>[ ]</state_properties>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:05</sys_created_on>
+        <sys_id>42c25725a0361110772a4a7e4e0ea04b</sys_id>
+        <sys_name>emergencyAlertInformation</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_ux_macroponent_42c25725a0361110772a4a7e4e0ea04b</sys_update_name>
+    </sys_ux_macroponent>
+    <sys_translated_text action="delete_multiple" query="documentkey=42c25725a0361110772a4a7e4e0ea04b"/>
+</record_update>

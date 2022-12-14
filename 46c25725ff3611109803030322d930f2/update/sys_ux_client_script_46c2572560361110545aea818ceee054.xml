@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Emergency Report Update">8ac25725df3611109c0f7042dfd37656</macroponent>
+        <name>Submit alert information</name>
+        <preset/>
+        <required_translations>[ {
+  "code" : null,
+  "message" : "Required fields cannot be empty",
+  "comment" : ""
+} ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    var mandatoryFields = [];
+    (api.data.emergency_report_update.nowRecordFormBlob.fieldElements).forEach(function(property) {
+        if (property.dictionary.isMandatory == true) {
+            mandatoryFields.push(property.name);
+        }
+    });
+    if (mandatoryFields) {
+        let count = 0;
+        mandatoryFields.forEach(function(property) {
+            if (!api.data.emergency_report_update.nowRecordFormBlob.fields[property].value) {
+                count++;
+                helpers.translate("Required fields cannot be empty").then(value => {
+                    api.data.emergency_report_update.showFieldMessage({
+                        fieldName: property,
+                        message: value,
+                        type: "error"
+                    });
+                });
+            }
+        });
+        if (count) {
+            return;
+        }
+    }
+    api.data.emergency_report_update.save();
+    // helpers.navigate.to("report",{
+    //     "table":api.context.props.table,
+    //     "sysId":api.context.props.sysId
+    // });
+    const route = "report";
+    api.emit('NAV_ITEM_SELECTED', {
+        route,
+        params: {
+            updateEmergency: Date.now()
+        },
+        fields: {
+            "table": api.context.props.table,
+            "sysId": api.context.props.sysId
+        }
+    });
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:09</sys_created_on>
+        <sys_id>46c2572560361110545aea818ceee054</sys_id>
+        <sys_name>Submit alert information</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_ux_client_script_46c2572560361110545aea818ceee054</sys_update_name>
+        <target/>
+        <type/>
+    </sys_ux_client_script>
+</record_update>

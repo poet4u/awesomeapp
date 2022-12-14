@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_composite">
+    <sys_ux_data_broker_composite action="INSERT_OR_UPDATE">
+        <api_name>x_879347_emergen_0.EVAM emergency alert composite databroker</api_name>
+        <data_drivers>{&#13;
+  "compositeQueryMeta": {&#13;
+    "definition" : {&#13;
+      "id" : "83b97b30773300108d070d74c81061f7",&#13;
+      "type" : "GRAPHQL"&#13;
+    },&#13;
+    "elementId" : "compositeQueryMeta",&#13;
+    "inputValues" : {&#13;
+      "evamDefinitionId" : {&#13;
+        "type": "BROKER_INTERNAL_INPUT_BINDING",&#13;
+        "binding": {&#13;
+          "address": [&#13;
+            "evamDefinitionId"&#13;
+          ]&#13;
+        }&#13;
+      }&#13;
+    },&#13;
+    "elementLabel" : "Metadata defining the Composite Data Query"&#13;
+  },&#13;
+  "compositeDataEntities": {&#13;
+    "definition" : {&#13;
+      "id" : "eaafa603773300108d070d74c81061b6",&#13;
+      "type" : "GRAPHQL"&#13;
+    },&#13;
+    "elementId" : "compositeDataEntities",&#13;
+    "inputValues" : {&#13;
+      "evamMetadata" : {&#13;
+        "type": "BROKER_INTERNAL_STATE_BINDING",&#13;
+        "binding": {&#13;
+          "address": [&#13;
+            "compositeQueryMeta",&#13;
+            "output",&#13;
+            "data",&#13;
+            "GlideCompositeDataMetadata_Query",&#13;
+            "getMetadata"&#13;
+          ]&#13;
+        }&#13;
+      },&#13;
+      "pageNumber" : {&#13;
+          "type": "BROKER_INTERNAL_INPUT_BINDING",&#13;
+          "binding": {&#13;
+            "address": [&#13;
+              "pageNumber"&#13;
+            ]&#13;
+          }&#13;
+      },&#13;
+      "pageSize" : {&#13;
+          "type": "BROKER_INTERNAL_INPUT_BINDING",&#13;
+          "binding": {&#13;
+            "address": [&#13;
+              "pageSize"&#13;
+            ]&#13;
+          }&#13;
+      },&#13;
+      "pageCursor" : {&#13;
+          "type": "BROKER_INTERNAL_INPUT_BINDING",&#13;
+          "binding": {&#13;
+            "address": [&#13;
+              "pageCursor"&#13;
+            ]&#13;
+          }&#13;
+      },&#13;
+      "filterPreference" : {&#13;
+          "type": "BROKER_INTERNAL_INPUT_BINDING",&#13;
+          "binding": {&#13;
+            "address": [&#13;
+              "filterPreference"&#13;
+            ]&#13;
+          }&#13;
+      }&#13;
+    },&#13;
+    "elementLabel" : "Collated records from Composite Data Query"&#13;
+  },&#13;
+  "compositeDataViews": {&#13;
+    "definition" : {&#13;
+      "id" : "c2c25725e436111057f6f1a0715206a7",&#13;
+      "type" : "TRANSFORM"&#13;
+    },&#13;
+    "elementId" : "compositeDataViews",&#13;
+    "inputValues" : {&#13;
+      "graphqlData" : {&#13;
+        "type": "BROKER_INTERNAL_STATE_BINDING",&#13;
+        "binding": {&#13;
+          "address": [&#13;
+            "compositeDataEntities",&#13;
+            "output"&#13;
+          ]&#13;
+        }&#13;
+      }&#13;
+    },&#13;
+    "elementLabel" : "Composite Data as View objects"&#13;
+  }&#13;
+}</data_drivers>
+        <description/>
+        <name>EVAM emergency alert composite databroker</name>
+        <operations/>
+        <output_properties>[&#13;
+ {&#13;
+    "name": "compositeDataViews",&#13;
+    "label": "EVAM Data",&#13;
+    "description": "Stream of data objects from EVAM sources",&#13;
+    "origin": {&#13;
+       "type": "data",&#13;
+       "id": "compositeDataViews"&#13;
+    }&#13;
+  }&#13;
+]</output_properties>
+        <private>false</private>
+        <props>[&#13;
+{&#13;
+  "name": "evamDefinitionId",&#13;
+  "label": "EVAM Definition",&#13;
+  "description": "Select an EVAM definition record",&#13;
+"readOnly": false,&#13;
+"fieldType": "reference",&#13;
+  "mandatory": true,&#13;
+  "typeMetadata": {&#13;
+      "reference": "sys_ux_composite_data"&#13;
+    }&#13;
+},&#13;
+{&#13;
+  "name": "pageCursor",&#13;
+  "label": "Page Cursor",&#13;
+  "description": "Page cursor for EVAM pagination",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "string",&#13;
+  "mandatory": false,&#13;
+  "defaultValue": ""&#13;
+},&#13;
+{&#13;
+  "name": "pageSize",&#13;
+  "label": "Page Size",&#13;
+  "description": "Page size for EVAM pagination",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "string",&#13;
+  "mandatory": false,&#13;
+  "defaultValue": "20"&#13;
+},&#13;
+{&#13;
+  "name": "pageNumber",&#13;
+  "label": "Page Number",&#13;
+  "description": "Page number for EVAM pagination",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "string",&#13;
+  "mandatory": false,&#13;
+  "defaultValue": "0"&#13;
+},&#13;
+{&#13;
+  "name": "filterPreference",&#13;
+  "label": "EVAM Filter Preference",&#13;
+  "description": "Shows sys_ids for EVAM data filter",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "string",&#13;
+  "mandatory": false,&#13;
+  "defaultValue": ""&#13;
+}&#13;
+]</props>
+        <required_translations>[{"message":"Page size for EVAM pagination","comment":""},{"message":"Page number for EVAM pagination","comment":""},{"message":"EVAM Filter Preference","comment":""},{"message":"Page Number","comment":""},{"message":"Select an EVAM definition record","comment":""},{"message":"Page Cursor","comment":""},{"message":"Page Size","comment":""},{"message":"Shows sys_ids for EVAM data filter","comment":""},{"message":"EVAM Definition","comment":""},{"message":"Page cursor for EVAM pagination","comment":""}]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_data_broker_composite</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:58:55</sys_created_on>
+        <sys_id>c6c257256f3611108ffb8792f494b050</sys_id>
+        <sys_name>EVAM emergency alert composite databroker</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_ux_data_broker_composite_c6c257256f3611108ffb8792f494b050</sys_update_name>
+    </sys_ux_data_broker_composite>
+    <sys_translated_text action="delete_multiple" query="documentkey=c6c257256f3611108ffb8792f494b050"/>
+</record_update>

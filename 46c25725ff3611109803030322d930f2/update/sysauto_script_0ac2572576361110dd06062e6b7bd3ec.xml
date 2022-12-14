@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition><![CDATA[answer = false;
+
+var time = new GlideTime();
+time.setValue("48:00:00"); // 4days to make it inactive
+var communityAlerts = new GlideRecord('x_879347_emergen_0_community_alerts');
+communityAlerts.addActiveQuery();
+communityAlerts.query();
+while (communityAlerts.next()) {
+    var created = new GlideDateTime(communityAlerts.getValue('sys_created_on'));
+    var todays = new GlideDateTime().getNumericValue();
+    created.add(time);
+    if (todays >= created.getNumericValue()) {
+        answer = true;
+    }
+}]]></condition>
+        <conditional>false</conditional>
+        <entered_time>1970-01-01 00:00:00</entered_time>
+        <name>De-activate the alerts after 4 days from creation</name>
+        <offset/>
+        <offset_type/>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2020-11-01 07:28:18</run_start>
+        <run_time>1970-01-01 08:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[var time = new GlideTime();
+time.setValue("96:00:00"); // 4days to make it inactive
+var communityAlerts = new GlideRecord('x_879347_emergen_0_emergency_alert');
+communityAlerts.addActiveQuery();
+communityAlerts.query();
+while (communityAlerts.next()) {
+    var created = new GlideDateTime(communityAlerts.getValue('sys_created_on'));
+    var todays = new GlideDateTime().getNumericValue();
+    created.add(time);
+    if (todays >= created.getNumericValue()) {
+        communityAlerts.active=false;
+		communityAlerts.update();
+    }
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:04</sys_created_on>
+        <sys_id>0ac2572576361110dd06062e6b7bd3ec</sys_id>
+        <sys_name>De-activate the alerts after 4 days from creation</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sysauto_script_0ac2572576361110dd06062e6b7bd3ec</sys_update_name>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_input">
+    <sys_sg_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <autofill_variable display_value="who_else_was_affected">06c257250f361110410b4033213f8294</autofill_variable>
+        <category/>
+        <description/>
+        <label>Who else was affected?</label>
+        <mandatory>false</mandatory>
+        <name>who_else_was_affected</name>
+        <order>90</order>
+        <page/>
+        <parameter_screen display_value="Edit">42c25725693611104ddcb430e0576694</parameter_screen>
+        <parameter_section/>
+        <placeholder/>
+        <readonly>false</readonly>
+        <sys_class_name>sys_sg_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:58:52</sys_created_on>
+        <sys_id>c6c257252f36111005a3f3a8eedc9f94</sys_id>
+        <sys_name>Who else was affected?</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_input_c6c257252f36111005a3f3a8eedc9f94</sys_update_name>
+        <type display_value="Reference">770c605517021010f2b43b9fadb95900</type>
+    </sys_sg_input>
+</record_update>

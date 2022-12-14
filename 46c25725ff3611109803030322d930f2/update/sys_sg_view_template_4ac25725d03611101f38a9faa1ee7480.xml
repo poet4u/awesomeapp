@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_template">
+    <sys_sg_view_template action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>for emergency and comm alerts</description>
+        <name>Community Alerts</name>
+        <preview_image/>
+        <root_view_attrs_json/>
+        <sys_class_name>sys_sg_view_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:01</sys_created_on>
+        <sys_id>4ac25725d03611101f38a9faa1ee7480</sys_id>
+        <sys_name>Community Alerts</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_view_template_4ac25725d03611101f38a9faa1ee7480</sys_update_name>
+        <template_json>{"Type":"ViewGroup","Margin":{"Top":16,"Bottom":16},"Orientation":"Horizontal","Alignment":"Center","Distribution":"Auto","Id":"view_group_01","Children":[{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":13},"MaxLines":1,"CellId":"text_08","Id":"text_08"},{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Left","Distribution":"Auto","Width":25,"Id":"viewgroup_01","Children":[{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":24},"MaxLines":1,"CellId":"text_06","Id":"text_06"}]},{"Type":"ViewGroup","Id":"view_group_02","Orientation":"Horizontal","Alignment":"Left","Distribution":"Auto","Children":[{"Type":"ViewGroup","Id":"view_group_03","Margin":{"Left":16},"Orientation":"Vertical","Alignment":"Left","Distribution":"Auto","Children":[{"Type":"Text","TextColor":"#333e3f","Font":{"Weight":"bold","Size":18},"MaxLines":2,"CellId":"text_01","Id":"text_01","Margin":{"Bottom":4}},{"Type":"Text","TextColor":"#637274","Font":{"Weight":"regular","Size":14},"MaxLines":2,"Margin":{"Top":4},"CellId":"text_02","Id":"text_02"}]}]}]}</template_json>
+    </sys_sg_view_template>
+    <sys_translated_text action="delete_multiple" query="documentkey=4ac25725d03611101f38a9faa1ee7480"/>
+</record_update>

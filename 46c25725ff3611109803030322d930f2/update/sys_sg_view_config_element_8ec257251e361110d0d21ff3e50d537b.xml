@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_config_element">
+    <sys_sg_view_config_element action="INSERT_OR_UPDATE">
+        <name>text_08_element</name>
+        <sys_class_name>sys_sg_view_config_element</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:17</sys_created_on>
+        <sys_id>8ec257251e361110d0d21ff3e50d537b</sys_id>
+        <sys_name>text_08_element</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_view_config_element_8ec257251e361110d0d21ff3e50d537b</sys_update_name>
+        <view_config display_value="Emergency Update  View Config">0ac25725f736111068e2bb63158ef78e</view_config>
+        <view_template_slot display_value="text_08">42c257259536111006ad4d22335d657c</view_template_slot>
+    </sys_sg_view_config_element>
+</record_update>

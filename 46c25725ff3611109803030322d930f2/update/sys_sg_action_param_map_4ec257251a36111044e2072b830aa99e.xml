@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_action_param_map">
+    <sys_sg_action_param_map action="INSERT_OR_UPDATE">
+        <button display_value="Report an Emergency">8ec257255e361110bfcefa3399916fa0</button>
+        <item_parameter display_value="End date">46c25725ad361110e600d3ee11fa019e</item_parameter>
+        <sys_class_name>sys_sg_action_param_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:12</sys_created_on>
+        <sys_id>4ec257251a36111044e2072b830aa99e</sys_id>
+        <sys_name>46c25725ad361110e600d3ee11fa019e</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_action_param_map_4ec257251a36111044e2072b830aa99e</sys_update_name>
+        <ui_parameter display_value="End date">86c257258e36111059531063dfb4769f</ui_parameter>
+    </sys_sg_action_param_map>
+</record_update>

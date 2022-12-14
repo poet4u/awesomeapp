@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_datasource_filter">
+    <sys_ux_composite_datasource_filter action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <base_condition/>
+        <condition table="x_snc_emergency_0_status_report">status=submitted^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <datasource display_value="Self Reports">0ac25725d23611107c9a0ead81e6ef51</datasource>
+        <datasource_table>x_snc_emergency_0_status_report</datasource_table>
+        <filter display_value="Submitted">82c257257e361110c42e90dc1dfe4651</filter>
+        <name>submitted reports</name>
+        <sys_class_name>sys_ux_composite_datasource_filter</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:11</sys_created_on>
+        <sys_id>42c25725c83611108d535e34f7332a51</sys_id>
+        <sys_name>submitted reports</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_ux_composite_datasource_filter_42c25725c83611108d535e34f7332a51</sys_update_name>
+    </sys_ux_composite_datasource_filter>
+</record_update>

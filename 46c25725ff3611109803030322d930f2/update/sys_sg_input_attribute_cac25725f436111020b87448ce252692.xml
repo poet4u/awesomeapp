@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_input_attribute">
+    <sys_sg_input_attribute action="INSERT_OR_UPDATE">
+        <input display_value="Type of emergency">46c257253b361110814c113c6336f293</input>
+        <name>Field</name>
+        <sys_class_name>sys_sg_input_attribute</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:09</sys_created_on>
+        <sys_id>cac25725f436111020b87448ce252692</sys_id>
+        <sys_name>Field</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_input_attribute_cac25725f436111020b87448ce252692</sys_update_name>
+        <value>type_of_emergency</value>
+    </sys_sg_input_attribute>
+</record_update>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_declarative_action_payload_mapping">
+    <sys_declarative_action_payload_mapping action="INSERT_OR_UPDATE">
+        <action_payload_definition/>
+        <label>Open Community alert form  List</label>
+        <model display_value="List">c3547169534723003eddddeeff7b126c</model>
+        <payload_map>fields@table={{table}}^route=modal_page^fields@sysId={{sysId}}^EQ</payload_map>
+        <sys_class_name>sys_declarative_action_payload_mapping</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:58:52</sys_created_on>
+        <sys_id>46c2572570361110645271d4c515e6dd</sys_id>
+        <sys_name>Open Community alert form  List</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_declarative_action_payload_mapping_46c2572570361110645271d4c515e6dd</sys_update_name>
+    </sys_declarative_action_payload_mapping>
+</record_update>

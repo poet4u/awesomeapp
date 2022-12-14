@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_theme_asset">
+    <sys_ux_theme_asset action="INSERT_OR_UPDATE">
+        <category>image</category>
+        <name>Emergency Alerts Company Logo</name>
+        <sys_class_name>sys_ux_theme_asset</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cac257251d361110762d43ca338d9847</sys_id>
+        <sys_name>Emergency Alerts Company Logo</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_ux_theme_asset_cac257251d361110762d43ca338d9847</sys_update_name>
+    </sys_ux_theme_asset>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/svg+xml</content_type>
+        <file_name>03_Emergency-Empty.svg</file_name>
+        <hash>7ef1ddff403197f7b3bb3f1c8b140c33c67bcb7531b534847874c82a846b2b00</hash>
+        <image_height/>
+        <image_width/>
+        <size_bytes>4411</size_bytes>
+        <size_compressed>1897</size_compressed>
+        <state>available_conditionally</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:17</sys_created_on>
+        <sys_id>82c257259b3611101eccff3f7c825047</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-27 15:59:17</sys_updated_on>
+        <table_name>sys_ux_theme_asset</table_name>
+        <table_sys_id>cac257251d361110762d43ca338d9847</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="03_Emergency-Empty.svg" sys_id="82c257259b3611101eccff3f7c825047">82c257259b3611101eccff3f7c825047</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:17</sys_created_on>
+        <sys_id>46c2572505361110d34c00406be2bb47</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>2516</length>
+        <position>1</position>
+        <sys_attachment display_value="03_Emergency-Empty.svg" sys_id="82c257259b3611101eccff3f7c825047">82c257259b3611101eccff3f7c825047</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:17</sys_created_on>
+        <sys_id>c2c25725e4361110ad2689ec4b338e47</sys_id>
+    </sys_attachment_doc>
+</record_update>

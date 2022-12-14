@@ -1,0 +1,1365 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types/>
+        <category>page</category>
+        <component_dependencies/>
+        <composition>[ {
+  "elementId" : "container_1",
+  "elementLabel" : "Bodycontainer",
+  "propertyValues" : { },
+  "eventMappings" : [ ],
+  "slot" : "Main",
+  "definition" : {
+    "id" : "d356d14b6e293a3020a244b63d278d8f",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ {
+      "elementId" : "container_3",
+      "elementLabel" : "Container 3",
+      "propertyValues" : { },
+      "eventMappings" : [ ],
+      "slot" : "Sidebar 1",
+      "definition" : {
+        "id" : "d356d14b6e293a3020a244b63d278d8f",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : {
+        "composition" : [ {
+          "elementId" : "related_content_1",
+          "elementLabel" : "Related content 1",
+          "propertyValues" : {
+            "heading" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Community Alerts",
+                    "comment" : ""
+                  }
+                },
+                "variant" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "header-tertiary"
+                },
+                "level" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "2"
+                }
+              }
+            },
+            "items" : {
+              "type" : "LIST_CONTAINER",
+              "container" : [ {
+                "type" : "MAP_CONTAINER",
+                "container" : {
+                  "icon" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "circle-exclamation-outline"
+                  },
+                  "title" : {
+                    "type" : "MAP_CONTAINER",
+                    "container" : {
+                      "label" : {
+                        "type" : "TRANSLATION_LITERAL",
+                        "value" : {
+                          "message" : "COVID-19 pandemic: due to the raise in number in NM, please self report",
+                          "comment" : ""
+                        }
+                      },
+                      "href" : {
+                        "type" : "JSON_LITERAL",
+                        "value" : "https://servicenow.com"
+                      },
+                      "opensWindow" : {
+                        "type" : "JSON_LITERAL",
+                        "value" : true
+                      },
+                      "variant" : {
+                        "type" : "JSON_LITERAL",
+                        "value" : "primary"
+                      }
+                    }
+                  },
+                  "fields" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : [ {
+                      "text" : "Emergency Information",
+                      "type" : "string"
+                    }, {
+                      "text" : "August 10",
+                      "type" : "string"
+                    } ]
+                  }
+                }
+              }, {
+                "type" : "MAP_CONTAINER",
+                "container" : {
+                  "icon" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : "circle-exclamation-outline"
+                  },
+                  "title" : {
+                    "type" : "MAP_CONTAINER",
+                    "container" : {
+                      "label" : {
+                        "type" : "TRANSLATION_LITERAL",
+                        "value" : {
+                          "message" : "COVID-19 pandemic: due to the raise in number in NM, please self report",
+                          "comment" : ""
+                        }
+                      },
+                      "href" : {
+                        "type" : "JSON_LITERAL",
+                        "value" : "https://servicenow.com"
+                      },
+                      "opensWindow" : {
+                        "type" : "JSON_LITERAL",
+                        "value" : true
+                      },
+                      "variant" : {
+                        "type" : "JSON_LITERAL",
+                        "value" : "primary"
+                      }
+                    }
+                  },
+                  "fields" : {
+                    "type" : "JSON_LITERAL",
+                    "value" : [ {
+                      "text" : "Emergency Information",
+                      "type" : "string"
+                    }, {
+                      "text" : "August 10",
+                      "type" : "string"
+                    } ]
+                  }
+                }
+              } ]
+            },
+            "maxItems" : {
+              "type" : "JSON_LITERAL",
+              "value" : 5
+            },
+            "fieldsSeparator" : {
+              "type" : "JSON_LITERAL",
+              "value" : "•"
+            },
+            "noContentMessage" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "message" : "No content to display",
+                "comment" : ""
+              }
+            },
+            "hideIfEmpty" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "fieldDelimiter" : {
+              "type" : "JSON_LITERAL",
+              "value" : "•"
+            }
+          },
+          "eventMappings" : [ ],
+          "slot" : "Main",
+          "definition" : {
+            "id" : "24f94bc9c371c54b1800625cebb5c9cf",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isNonDestructive" : false,
+          "styles" : { }
+        } ],
+        "layout" : {
+          "default" : {
+            "children" : null,
+            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","justify-content":"space-around"}}],
+            "root" : null,
+            "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
+            "styles" : null,
+            "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+            "type" : "grid"
+          }
+        }
+      },
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : { }
+    }, {
+      "elementId" : "alert_5",
+      "elementLabel" : "Alert 5",
+      "propertyValues" : {
+        "status" : {
+          "type" : "JSON_LITERAL",
+          "value" : "info"
+        },
+        "content" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "message" : "This needs your attention",
+            "comment" : ""
+          }
+        },
+        "icon" : {
+          "type" : "JSON_LITERAL",
+          "value" : "circle-info-outline"
+        },
+        "header" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "message" : "Heads up",
+            "comment" : ""
+          }
+        },
+        "textLinkProps" : {
+          "type" : "MAP_CONTAINER",
+          "container" : {
+            "label" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "message" : "Link label",
+                "comment" : ""
+              }
+            },
+            "href" : {
+              "type" : "JSON_LITERAL",
+              "value" : "dummyHref"
+            }
+          }
+        },
+        "action" : {
+          "type" : "MAP_CONTAINER",
+          "container" : {
+            "type" : {
+              "type" : "JSON_LITERAL",
+              "value" : "open"
+            },
+            "href" : {
+              "type" : "JSON_LITERAL",
+              "value" : "emergency-information/x_879347_emergen_0_emergency_alert/22a89dbbdb5c2010a92f5a75dc9619fd"
+            },
+            "label" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "message" : "Read",
+                "comment" : ""
+              }
+            }
+          }
+        },
+        "expanded" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "maxHeight" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : "Main",
+      "definition" : {
+        "id" : "553e398f150099fe18ece6938b5bea46",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : { }
+    }, {
+      "elementId" : "container_4",
+      "elementLabel" : "Container 4",
+      "propertyValues" : { },
+      "eventMappings" : [ ],
+      "slot" : "Main",
+      "definition" : {
+        "id" : "d356d14b6e293a3020a244b63d278d8f",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : {
+        "composition" : [ {
+          "elementId" : "alert_1",
+          "elementLabel" : "Alert 1",
+          "propertyValues" : {
+            "status" : {
+              "type" : "JSON_LITERAL",
+              "value" : "high"
+            },
+            "content" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "message" : "Your manager is requesting emergency status from you",
+                "comment" : ""
+              }
+            },
+            "icon" : {
+              "type" : "JSON_LITERAL",
+              "value" : "bell-outline"
+            },
+            "header" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "message" : "Update your emergency status",
+                "comment" : ""
+              }
+            },
+            "textLinkProps" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "action" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "type" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "open"
+                },
+                "href" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "emergency-information/x_879347_emergen_0_emergency_alert/22a89dbbdb5c2010a92f5a75dc9619fd"
+                },
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Read",
+                    "comment" : ""
+                  }
+                }
+              }
+            },
+            "expanded" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "maxHeight" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            }
+          },
+          "eventMappings" : [ {
+            "eventMappingId" : "ckhmafddggffaaaaaarddhhhirjbkaagvg",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "sn_alert.NOW_ALERT#ACTION_CLICKED",
+            "sourceEventDefinition" : {
+              "apiName" : "sn_alert.NOW_ALERT#ACTION_CLICKED",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : {
+                "sysId" : "06c2572563361110ce495812ca39df52"
+              },
+              "declarativeAction" : null,
+              "event" : null,
+              "operation" : null,
+              "targetId" : "ckhmafddggffaaaaaasddhhhiwwccmvsyff",
+              "type" : "CLIENT_SCRIPT"
+            } ]
+          } ],
+          "slot" : "Main",
+          "definition" : {
+            "id" : "553e398f150099fe18ece6938b5bea46",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isNonDestructive" : false,
+          "styles" : {
+            "margin" : "20px",
+            "margin-bottom" : "-15px"
+          }
+        }, {
+          "elementId" : "alert_2",
+          "elementLabel" : "Alert 2",
+          "propertyValues" : {
+            "status" : {
+              "type" : "JSON_LITERAL",
+              "value" : "info"
+            },
+            "content" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "message" : "This needs your attention",
+                "comment" : ""
+              }
+            },
+            "icon" : {
+              "type" : "JSON_LITERAL",
+              "value" : "circle-info-outline"
+            },
+            "header" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "message" : "Heads up",
+                "comment" : ""
+              }
+            },
+            "textLinkProps" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Link label",
+                    "comment" : ""
+                  }
+                },
+                "href" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "dummyHref"
+                }
+              }
+            },
+            "action" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "type" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "acknowledge"
+                },
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Custom ok",
+                    "comment" : ""
+                  }
+                }
+              }
+            },
+            "expanded" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "maxHeight" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            }
+          },
+          "eventMappings" : [ {
+            "eventMappingId" : "ckhlvaaiiaaqaaaaaalddhhhmiayhhjjmpu",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "sn_alert.NOW_ALERT#ACTION_CLICKED",
+            "sourceEventDefinition" : {
+              "apiName" : "sn_alert.NOW_ALERT#ACTION_CLICKED",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : {
+                "sysId" : "86c25725e4361110f5f41840beac9d56"
+              },
+              "declarativeAction" : null,
+              "event" : null,
+              "operation" : null,
+              "targetId" : "ckhlvaaiiaaraaaaaamddhhhmjjbnddewg",
+              "type" : "CLIENT_SCRIPT"
+            } ]
+          } ],
+          "slot" : "Main",
+          "definition" : {
+            "id" : "553e398f150099fe18ece6938b5bea46",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "STATE_BINDING",
+            "binding" : {
+              "address" : [ "hideSubmittedAlert" ]
+            }
+          },
+          "isNonDestructive" : false,
+          "styles" : {
+            "margin" : "20px",
+            "margin-bottom" : "-15px"
+          }
+        }, {
+          "elementId" : "alert_3",
+          "elementLabel" : "Alert 3",
+          "propertyValues" : {
+            "status" : {
+              "type" : "JSON_LITERAL",
+              "value" : "info"
+            },
+            "content" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "message" : "This needs your attention",
+                "comment" : ""
+              }
+            },
+            "icon" : {
+              "type" : "JSON_LITERAL",
+              "value" : "circle-info-outline"
+            },
+            "header" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "message" : "Heads up",
+                "comment" : ""
+              }
+            },
+            "textLinkProps" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Link label",
+                    "comment" : ""
+                  }
+                },
+                "href" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "dummyHref"
+                }
+              }
+            },
+            "action" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "type" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "acknowledge"
+                },
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Custom ok",
+                    "comment" : ""
+                  }
+                }
+              }
+            },
+            "expanded" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "maxHeight" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            }
+          },
+          "eventMappings" : [ {
+            "eventMappingId" : "ckhvucmffdaaaabbsccaiiccwetaffeebi",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "sn_alert.NOW_ALERT#EXPANDED_SET",
+            "sourceEventDefinition" : {
+              "apiName" : "sn_alert.NOW_ALERT#EXPANDED_SET",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : null,
+              "declarativeAction" : null,
+              "event" : {
+                "apiName" : null,
+                "payload" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : { }
+                },
+                "sysId" : null
+              },
+              "operation" : null,
+              "targetId" : "ckhvucmffdaaaabbtccaiiccahnkggvrgg",
+              "type" : "EVENT"
+            }, {
+              "broker" : null,
+              "clientScript" : null,
+              "declarativeAction" : null,
+              "event" : {
+                "apiName" : null,
+                "payload" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : { }
+                },
+                "sysId" : null
+              },
+              "operation" : null,
+              "targetId" : "ckhvufpyaaaaaabbwccaiicchhewiirjvy",
+              "type" : "EVENT"
+            } ]
+          } ],
+          "slot" : "Main",
+          "definition" : {
+            "id" : "553e398f150099fe18ece6938b5bea46",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isNonDestructive" : false,
+          "styles" : {
+            "margin" : "20px",
+            "margin-bottom" : "-15px"
+          }
+        }, {
+          "elementId" : "alert_4",
+          "elementLabel" : "Alert 4",
+          "propertyValues" : {
+            "status" : {
+              "type" : "JSON_LITERAL",
+              "value" : "info"
+            },
+            "content" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "message" : "This needs your attention",
+                "comment" : ""
+              }
+            },
+            "icon" : {
+              "type" : "JSON_LITERAL",
+              "value" : "circle-info-outline"
+            },
+            "header" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "message" : "Heads up",
+                "comment" : ""
+              }
+            },
+            "textLinkProps" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Link label",
+                    "comment" : ""
+                  }
+                },
+                "href" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "dummyHref"
+                }
+              }
+            },
+            "action" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "type" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "acknowledge"
+                },
+                "label" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "message" : "Custom ok",
+                    "comment" : ""
+                  }
+                }
+              }
+            },
+            "expanded" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "maxHeight" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            }
+          },
+          "eventMappings" : [ {
+            "eventMappingId" : "ckhvngdimaaaaaatddhhhiwrzwaacac",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "sn_alert.NOW_ALERT#ACTION_CLICKED",
+            "sourceEventDefinition" : {
+              "apiName" : "sn_alert.NOW_ALERT#ACTION_CLICKED",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : {
+                "sysId" : "86c25725e4361110f5f41840beac9d56"
+              },
+              "declarativeAction" : null,
+              "event" : null,
+              "operation" : null,
+              "targetId" : "ckhvngdimaaaaaauddhhhidoaajgzfg",
+              "type" : "CLIENT_SCRIPT"
+            } ]
+          } ],
+          "slot" : "Main",
+          "definition" : {
+            "id" : "553e398f150099fe18ece6938b5bea46",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isNonDestructive" : false,
+          "styles" : {
+            "margin" : "20px",
+            "margin-bottom" : "-15px"
+          }
+        }, {
+          "elementId" : "data_set_1",
+          "elementLabel" : "Data set 1",
+          "propertyValues" : {
+            "title" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "message" : "Your status report",
+                "comment" : ""
+              }
+            },
+            "data" : {
+              "type" : "DATA_OUTPUT_BINDING",
+              "binding" : {
+                "address" : [ "evam_emergency_alert_composite_databroker_1", "compositeDataViews" ]
+              }
+            },
+            "toggleView" : {
+              "type" : "JSON_LITERAL",
+              "value" : true
+            },
+            "defaultView" : {
+              "type" : "JSON_LITERAL",
+              "value" : "grid"
+            },
+            "cardHeight" : {
+              "type" : "JSON_LITERAL",
+              "value" : "lg"
+            },
+            "maxCardsPerRow" : {
+              "type" : "JSON_LITERAL",
+              "value" : "3"
+            },
+            "minCardWidth" : {
+              "type" : "JSON_LITERAL",
+              "value" : "125"
+            },
+            "emptyMessage" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "message" : "No content to display",
+                "comment" : ""
+              }
+            },
+            "hideFilter" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "hidePaginationControls" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "daClientActionContract" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            }
+          },
+          "eventMappings" : [ ],
+          "slot" : "Main",
+          "definition" : {
+            "id" : "dec0b89ec87f44e66126f8cc78e53891",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isNonDestructive" : false,
+          "styles" : {
+            "white-space" : "pre-wrap"
+          }
+        } ],
+        "layout" : {
+          "default" : {
+            "children" : null,
+            "items" : [{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","flex-wrap":"wrap"}}],
+            "root" : null,
+            "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"1rem","height":"100%"},
+            "styles" : null,
+            "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+            "type" : "grid"
+          }
+        }
+      },
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : { }
+    } ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "items" : [{"slotName":"Sidebar 1","rules":{"grid-area":"sidebar1"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column"}}],
+        "root" : null,
+        "rules" : {"grid-template-rows":"auto","grid-template-columns":"4fr 8fr","grid-template-areas":"\"sidebar1 main\"","grid-gap":"0rem","height":"100%"},
+        "styles" : null,
+        "templateId" : "7579b58153071010e6bcddeeff7b1290",
+        "type" : "grid"
+      }
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isNonDestructive" : false,
+  "styles" : { }
+}, {
+  "elementId" : "container_2",
+  "elementLabel" : "Banner",
+  "propertyValues" : { },
+  "eventMappings" : [ ],
+  "slot" : "Header",
+  "definition" : {
+    "id" : "d356d14b6e293a3020a244b63d278d8f",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ {
+      "elementId" : "heading_1",
+      "elementLabel" : "Heading 1",
+      "propertyValues" : {
+        "label" : {
+          "type" : "DATA_OUTPUT_BINDING",
+          "binding" : {
+            "address" : [ "logged_in_user_1", "output", "logInMessage" ]
+          }
+        },
+        "level" : {
+          "type" : "JSON_LITERAL",
+          "value" : "1"
+        },
+        "variant" : {
+          "type" : "JSON_LITERAL",
+          "value" : "header-secondary"
+        },
+        "wontWrap" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "hasNoMargin" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : "Column 1",
+      "definition" : {
+        "id" : "1f6e0643eca7a637e36bd7833549ec9e",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : {
+        "margin" : "20px"
+      }
+    }, {
+      "elementId" : "button_1",
+      "elementLabel" : "Button 1",
+      "propertyValues" : {
+        "variant" : {
+          "type" : "JSON_LITERAL",
+          "value" : "primary-negative"
+        },
+        "size" : {
+          "type" : "JSON_LITERAL",
+          "value" : "md"
+        },
+        "label" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "message" : "Report an emergency",
+            "comment" : ""
+          }
+        },
+        "icon" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "disabled" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "tooltipContent" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "message" : "Enter a label",
+            "comment" : ""
+          }
+        },
+        "configAria" : {
+          "type" : "MAP_CONTAINER",
+          "container" : { }
+        }
+      },
+      "eventMappings" : [ {
+        "eventMappingId" : "ckhggbiddzhhaaaaggffddhhhiwmgcxexs",
+        "isConfiguration" : false,
+        "offRowStorageId" : null,
+        "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
+        "sourceEventDefinition" : {
+          "apiName" : "sn_button.NOW_BUTTON#CLICKED",
+          "id" : null,
+          "type" : "UXEVENT"
+        },
+        "sourceEventSysId" : null,
+        "targets" : [ {
+          "broker" : null,
+          "clientScript" : {
+            "sysId" : "86c25725e4361110f5f41840beac9d56"
+          },
+          "declarativeAction" : null,
+          "event" : null,
+          "operation" : null,
+          "targetId" : "ckhmaffnweeaaaabbsddhhhmsmpggbccoy",
+          "type" : "CLIENT_SCRIPT"
+        } ]
+      } ],
+      "slot" : "Column 2",
+      "definition" : {
+        "id" : "d37ce8abca89d02905fed903c8e34d8e",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : {
+        "margin" : "20px"
+      }
+    }, {
+      "elementId" : "button_2",
+      "elementLabel" : "Button 2",
+      "propertyValues" : {
+        "variant" : {
+          "type" : "JSON_LITERAL",
+          "value" : "secondary"
+        },
+        "size" : {
+          "type" : "JSON_LITERAL",
+          "value" : "md"
+        },
+        "label" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "message" : "Close Test",
+            "comment" : ""
+          }
+        },
+        "icon" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
+        "disabled" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "tooltipContent" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "message" : "Close this report",
+            "comment" : ""
+          }
+        },
+        "configAria" : {
+          "type" : "MAP_CONTAINER",
+          "container" : { }
+        }
+      },
+      "eventMappings" : [ {
+        "eventMappingId" : "ckhvugrrhhaaaabbyccaiiccdiicczrgqa",
+        "isConfiguration" : false,
+        "offRowStorageId" : null,
+        "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
+        "sourceEventDefinition" : {
+          "apiName" : "sn_button.NOW_BUTTON#CLICKED",
+          "id" : null,
+          "type" : "UXEVENT"
+        },
+        "sourceEventSysId" : null,
+        "targets" : [ {
+          "broker" : null,
+          "clientScript" : null,
+          "declarativeAction" : null,
+          "event" : {
+            "apiName" : "x_879347_emergen_0.MODAL_SELECTED_RELAY_46c2572562361110001d774b33b19256",
+            "payload" : {
+              "type" : "JSON_LITERAL",
+              "value" : {
+                "modalId" : "[component-id$='confirm_1']",
+                "showModal" : true,
+                "displayOptions" : null,
+                "bare" : null
+              }
+            },
+            "sysId" : "cac2572530361110d483e46f418c764f"
+          },
+          "operation" : null,
+          "targetId" : "ckhvvnlsmaaaaaalccaiideeofftlbffr",
+          "type" : "EVENT"
+        }, {
+          "broker" : null,
+          "clientScript" : null,
+          "declarativeAction" : null,
+          "event" : {
+            "apiName" : null,
+            "payload" : {
+              "type" : "JSON_LITERAL",
+              "value" : { }
+            },
+            "sysId" : null
+          },
+          "operation" : null,
+          "targetId" : "ckhvvpvliaaaaaawccaiiduffhhaalxku",
+          "type" : "EVENT"
+        }, {
+          "broker" : null,
+          "clientScript" : null,
+          "declarativeAction" : null,
+          "event" : {
+            "apiName" : null,
+            "payload" : {
+              "type" : "JSON_LITERAL",
+              "value" : { }
+            },
+            "sysId" : null
+          },
+          "operation" : null,
+          "targetId" : "ckhvvvrhhyaaaabbaccaiidkreehwxkb",
+          "type" : "EVENT"
+        } ]
+      } ],
+      "slot" : "Column 2",
+      "definition" : {
+        "id" : "d37ce8abca89d02905fed903c8e34d8e",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : ""
+      },
+      "isNonDestructive" : false,
+      "styles" : { }
+    } ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "items" : [{"slotName":"Column 1","rules":{"grid-area":"column1"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Column 2","rules":{"grid-area":"column2"},"styles":{"display":"flex","flex-direction":"row-reverse","justify-content":"flex-start","align-items":"stretch"}}],
+        "root" : null,
+        "rules" : {"grid-template-rows":"auto","grid-template-columns":"1fr 1fr","grid-template-areas":"\"column1 column2\"","grid-gap":"0rem","height":"100%"},
+        "styles" : null,
+        "templateId" : "a653f1cd53c31010e6bcddeeff7b128c",
+        "type" : "grid"
+      }
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isNonDestructive" : false,
+  "styles" : {
+    "background-color" : "#c4d1d3"
+  }
+}, {
+  "elementId" : "confirm_1",
+  "elementLabel" : "close_report",
+  "propertyValues" : {
+    "headerLabel" : {
+      "type" : "JSON_LITERAL",
+      "value" : "Are you sure you want to close this report?"
+    },
+    "content" : {
+      "type" : "JSON_LITERAL",
+      "value" : "You won't be able to reopen the report once it's closed"
+    },
+    "primaryButtonLabel" : {
+      "type" : "JSON_LITERAL",
+      "value" : "Yes"
+    },
+    "secondaryButtonLabel" : {
+      "type" : "JSON_LITERAL",
+      "value" : "No"
+    },
+    "size" : {
+      "type" : "JSON_LITERAL",
+      "value" : "sm"
+    },
+    "preventDefaultPrimaryAction" : {
+      "type" : "JSON_LITERAL",
+      "value" : true
+    },
+    "preventDefaultSecondaryAction" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "defer" : {
+      "type" : "JSON_LITERAL",
+      "value" : true
+    }
+  },
+  "eventMappings" : [ {
+    "eventMappingId" : "ckhvvrlheeaaaaaayccaiiduiiffffynbbcc",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_canvas_chrome.NOW_CONFIRM_MODAL#NEGATIVE_BUTTON_CLICKED",
+    "sourceEventDefinition" : {
+      "apiName" : "sn_canvas_chrome.NOW_CONFIRM_MODAL#NEGATIVE_BUTTON_CLICKED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : null,
+        "payload" : {
+          "type" : "JSON_LITERAL",
+          "value" : { }
+        },
+        "sysId" : null
+      },
+      "operation" : null,
+      "targetId" : "ckhvvrlhffaaaaaazccaiidklxcbbecf",
+      "type" : "EVENT"
+    } ]
+  }, {
+    "eventMappingId" : "ckhvviareeaaaaccbccaiiccofuxkkhn",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_canvas_chrome.NOW_CONFIRM_MODAL#POSITIVE_BUTTON_CLICKED",
+    "sourceEventDefinition" : {
+      "apiName" : "sn_canvas_chrome.NOW_CONFIRM_MODAL#POSITIVE_BUTTON_CLICKED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : {
+        "dataBrokerId" : "9b4b978353211010cbc2ddeeff7b1245",
+        "operationName" : "EXECUTE",
+        "parentResourceId" : "update_record_1",
+        "payload" : {
+          "type" : "JSON_LITERAL",
+          "value" : {
+            "table" : "x_879347_emergen_0_status_report",
+            "recordId" : "10824b6ddb202010a92f5a75dc9619e9",
+            "templateFields" : "status=closed",
+            "useSetDisplayValue" : null
+          }
+        }
+      },
+      "targetId" : "ckhvviarffaaaacccccaiiccaaaaamndbii",
+      "type" : "DATABROKER_OP"
+    } ]
+  } ],
+  "slot" : null,
+  "definition" : {
+    "id" : "13ecfe155b630010b913cbd59b81c7d6",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : null,
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isNonDestructive" : false,
+  "styles" : { }
+} ]</composition>
+        <da_relay_models/>
+        <data>[ {
+  "definition" : {
+    "id" : "cec25725be36111017090e42c56fc0a6",
+    "type" : "TRANSFORM"
+  },
+  "elementId" : "logged_in_user_1",
+  "elementLabel" : "Logged in User 1",
+  "eventMappings" : [ ],
+  "inputValues" : { },
+  "readEvaluationMode" : "EAGER"
+}, {
+  "definition" : {
+    "id" : "cec25725be36111017090e42c56fc0a6",
+    "type" : "TRANSFORM"
+  },
+  "elementId" : "logged_in_user_2",
+  "elementLabel" : "Logged in User 2",
+  "eventMappings" : [ ],
+  "inputValues" : { },
+  "readEvaluationMode" : "EAGER"
+}, {
+  "definition" : {
+    "id" : "c6c257256f3611108ffb8792f494b050",
+    "type" : "COMPOSITE"
+  },
+  "elementId" : "evam_emergency_alert_composite_databroker_1",
+  "elementLabel" : "EVAM emergency alert composite databroker 1",
+  "eventMappings" : [ ],
+  "inputValues" : {
+    "evamDefinitionId" : {
+      "type" : "JSON_LITERAL",
+      "value" : "0ec25725f6361110f0a9bf40ccebff51"
+    },
+    "pageCursor" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "pageSize" : {
+      "type" : "JSON_LITERAL",
+      "value" : "20"
+    },
+    "pageNumber" : {
+      "type" : "JSON_LITERAL",
+      "value" : "0"
+    },
+    "filterPreference" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    }
+  },
+  "readEvaluationMode" : "EAGER"
+}, {
+  "definition" : {
+    "id" : "06c25725af36111076e4af6f55665aa7",
+    "type" : "TRANSFORM"
+  },
+  "elementId" : "show_emergency_alert_1",
+  "elementLabel" : "Show Emergency Alert 1",
+  "eventMappings" : [ ],
+  "inputValues" : { },
+  "readEvaluationMode" : "EAGER"
+}, {
+  "definition" : {
+    "id" : "0ec257256536111007e9c2b5161554a5",
+    "type" : "TRANSFORM"
+  },
+  "elementId" : "self_report_summary_1",
+  "elementLabel" : "Self report Summary 1",
+  "eventMappings" : [ ],
+  "inputValues" : {
+    "table" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    },
+    "recordId" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    }
+  },
+  "readEvaluationMode" : "EAGER"
+}, {
+  "definition" : {
+    "id" : "9b4b978353211010cbc2ddeeff7b1245",
+    "type" : "GRAPHQL"
+  },
+  "elementId" : "update_record_1",
+  "elementLabel" : "Update Record 1",
+  "eventMappings" : [ ],
+  "inputValues" : { },
+  "readEvaluationMode" : "EAGER"
+} ]</data>
+        <description/>
+        <dispatched_events>cac2572530361110d483e46f418c764f,c6c25725e436111090a29142e26b784f</dispatched_events>
+        <ext_controller_dep/>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{
+  "MACROPONENT_READY" : [ {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "86c257254a361110f8627e290fc6ab53"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "ckhkpinwuaaaaddeddhhhmjjjjkiffvfh",
+    "type" : "CLIENT_SCRIPT"
+  } ]
+}</internal_event_mappings>
+        <layout>{
+  "default" : {
+    "children" : null,
+    "items" : [{"slotName":"Header","rules":{"grid-area":"header"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column"}}],
+    "root" : null,
+    "rules" : {"grid-template-rows":"minmax(50px, auto) minmax(400px, auto)","grid-template-columns":"1fr","grid-template-areas":"\"header\" \"main\"","grid-gap":"0rem","height":"100%"},
+    "styles" : null,
+    "templateId" : "3b7ced8953c31010e6bcddeeff7b12ef",
+    "type" : "grid"
+  }
+}</layout>
+        <macroponent_dependencies/>
+        <name>portal-landing</name>
+        <output_prop_mapping/>
+        <props>[ ]</props>
+        <required_translations>[{"message":"Heads up","comment":""},{"message":"Close this report","comment":""},{"message":"Report an emergency","comment":""},{"message":"Community Alerts","comment":""},{"message":"This needs your attention","comment":""},{"message":"Update your emergency status","comment":""},{"message":"Read","comment":""},{"message":"Close Test","comment":""},{"message":"Custom ok","comment":""},{"message":"Your status report","comment":""},{"message":"Link label","comment":""},{"message":"Your manager is requesting emergency status from you","comment":""},{"message":"COVID-19 pandemic: due to the raise in number in NM, please self report","comment":""},{"message":"Enter a label","comment":""},{"message":"No content to display","comment":""}]</required_translations>
+        <root_component/>
+        <root_component_config>{ }</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_properties>[ {
+  "name" : "hideSubmittedAlert",
+  "label" : "hideSubmittedAlert",
+  "fieldType" : "boolean",
+  "valueType" : "boolean",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : true
+  }
+} ]</state_properties>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:25</sys_created_on>
+        <sys_id>46c2572562361110001d774b33b19256</sys_id>
+        <sys_name>portal-landing</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_ux_macroponent_46c2572562361110001d774b33b19256</sys_update_name>
+    </sys_ux_macroponent>
+    <sys_translated_text action="delete_multiple" query="documentkey=46c2572562361110001d774b33b19256"/>
+</record_update>

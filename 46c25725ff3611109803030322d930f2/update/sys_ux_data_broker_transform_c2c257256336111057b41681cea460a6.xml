@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_879347_emergen_0.Get Kb Article Title Details</api_name>
+        <description/>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Get Kb Article Title Details</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[
+  {
+  "name": "table",
+  "label": "Table",
+  "description": "Table to look up",
+  "readOnly": false,
+  "fieldType": "table_name",
+  "mandatory": true
+},
+{
+  "name": "recordId",
+  "label": "Record",
+  "description": "Record to look up (sys_id or display value)",
+  "readOnly": false,
+  "fieldType": "string",
+  "mandatory": true,
+  "defaultValue": ""
+}
+]</props>
+        <required_translations>[ {
+  "message" : "Record",
+  "comment" : ""
+}, {
+  "message" : "Record to look up (sys_id or display value)",
+  "comment" : ""
+}, {
+  "message" : "Table",
+  "comment" : ""
+}, {
+  "message" : "Table to look up",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+    var tableName = input['table'],
+        alertID = input['recordId'];
+    var output = {};
+    var month = {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+    };
+    var communityAlert = new GlideRecord(tableName);
+    if (communityAlert.get(alertID)) {
+        var kb = new GlideRecord('kb_knowledge');
+        if (kb.get(communityAlert.kb_article)) {
+            var type = ((communityAlert.type).getDisplayValue()).toString();
+            var title = (kb.short_description).toString();
+            var date = new GlideDateTime(kb.sys_created_on).getDisplayValue();
+			//var internalDate = date.getDisplayValueInternal();
+            //var gDate = date.getDate();
+            //var getOnlyDate = gDate.getByFormat("MM/dd/yyyy");
+            //var result = ["Created on " + month[date.getMonthLocalTime()], date.getDayOfMonthLocalTime(), date.getYearLocalTime()].join(' ');
+            /*var nowDate = new GlideDateTime();
+            var duration = GlideDateTime.subtract(date, nowDate);
+            var days = (duration.getDisplayValue()).split(' ');
+            var rem = "";
+            if (days[0] > 365) {
+                rem = days[0] / 365;
+                result = ["Created", Math.round(rem), "years ago"].join(' ');
+            } else if (days[0] > 30) {
+                rem = days[0] / 30;
+                result = ["Created", Math.round(rem), "months ago"].join(' ');
+            } else {
+                result = ["Created", Math.round(days[0]), "days ago"].join(' ');
+            }*/
+            var fDate = date.split(' ')[0].toString();
+            var created = gs.getMessage("Created on {0}", fDate);
+            var breadcrumb = [{
+                "label": gs.getMessage("Home"),
+                "href": "x/879347/x_879347_emergen_0/portal/home"
+            }, {
+                "label": type
+            }];
+        }
+        var articleID = (communityAlert.kb_article).toString();
+        output = {
+            "type": type,
+            "title": title,
+            "created": created,
+            "path": breadcrumb
+        };
+    }
+    return output;
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:09</sys_created_on>
+        <sys_id>c2c257256336111057b41681cea460a6</sys_id>
+        <sys_name>Get Kb Article Title Details</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_c2c257256336111057b41681cea460a6</sys_update_name>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=c2c257256336111057b41681cea460a6"/>
+</record_update>

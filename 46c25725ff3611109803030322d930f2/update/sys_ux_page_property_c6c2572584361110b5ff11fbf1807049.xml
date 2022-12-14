@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <name>routeConfigId</name>
+        <page display_value="Emergency Alert - Workspace">cac25725e4361110e3b94e358281bff1</page>
+        <required_translations>[]</required_translations>
+        <route display_value="Search Results">c2c25725ae361110962534709adf7359</route>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>c6c2572584361110b5ff11fbf1807049</sys_id>
+        <sys_name>routeConfigId</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_ux_page_property_c6c2572584361110b5ff11fbf1807049</sys_update_name>
+        <type>string</type>
+        <unique_name>x_879347_emergen_0.cac25725e4361110e3b94e358281bff1.route.routeConfigId.c2c25725ae361110962534709adf7359</unique_name>
+        <value>76a302f10b131010a8b1c96237673a61</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=c6c2572584361110b5ff11fbf1807049"/>
+</record_update>

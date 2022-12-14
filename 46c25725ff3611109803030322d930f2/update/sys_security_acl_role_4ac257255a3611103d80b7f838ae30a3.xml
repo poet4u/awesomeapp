@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:05</sys_created_on>
+        <sys_id>4ac257255a3611103d80b7f838ae30a3</sys_id>
+        <sys_name/>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_security_acl display_value="x_879347_emergen_0_status_report_requests">8ac257252736111081fda5c27e4e76a7</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_4ac257255a3611103d80b7f838ae30a3</sys_update_name>
+        <sys_user_role display_value="x_879347_emergen_0.emergency_alert_admin" name="x_879347_emergen_0.emergency_alert_admin">02c257255936111081be2f66d9ff0ef2</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

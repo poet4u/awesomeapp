@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action_layout_group">
+    <sys_ux_form_action_layout_group action="INSERT_OR_UPDATE">
+        <actions>4ac25725803611106e3270e7e868c24e,c6c25725c2361110395da53bf228194e</actions>
+        <active>true</active>
+        <description/>
+        <name>Approve/Reject</name>
+        <sys_class_name>sys_ux_form_action_layout_group</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:07</sys_created_on>
+        <sys_id>4ec25725d0361110d46d677cacfba44d</sys_id>
+        <sys_name>Approve/Reject</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_ux_form_action_layout_group_4ec25725d0361110d46d677cacfba44d</sys_update_name>
+        <table>x_879347_emergen_0_work_status_request_task</table>
+        <type>0</type>
+    </sys_ux_form_action_layout_group>
+</record_update>

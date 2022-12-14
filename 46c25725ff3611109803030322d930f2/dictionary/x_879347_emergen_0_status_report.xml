@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="92c29725473611100d1593bd436d4371" label="Self Report" max_length="40" name="x_879347_emergen_0_status_report" text_index="true" type="collection">
+        <element label="Comments" max_length="4000" name="comments" type="journal_input"/>
+        <element label="Emergency details" mandatory="true" max_length="4000" name="emergency_details" type="string"/>
+        <element label="Emergency Start/End" max_length="40" name="emergency_start_end" type="glide_duration"/>
+        <element label="Emergency update" max_length="4000" name="emergency_update" type="string"/>
+        <element label="End date" max_length="40" name="end_date" type="glide_date"/>
+        <element label="Manager" max_length="32" name="manager" read_only="true" reference="sys_user" type="reference"/>
+        <element label="Name" mandatory="true" max_length="32" name="name" read_only="true" reference="sys_user" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Start date" mandatory="true" max_length="40" name="start_date" type="glide_date"/>
+        <element choice="3" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Status requested" sequence="1" value="status_requested"/>
+                <element inactive_on_update="false" label="Submitted" sequence="2" value="submitted"/>
+                <element inactive_on_update="false" label="At risk" sequence="3" value="at_risk"/>
+                <element inactive_on_update="false" label="Closed" sequence="4" value="closed"/>
+            </choice>
+        </element>
+        <element choice="1" label="Status Matrix" max_length="40" name="status_matrix" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Danger" sequence="10" value="3"/>
+                <element inactive_on_update="false" label="Ok" sequence="20" value="1"/>
+                <element inactive_on_update="false" label="Warning" sequence="30" value="2"/>
+            </choice>
+        </element>
+        <element label="Status Report Request" max_length="32" name="status_report_request" reference="x_879347_emergen_0_status_report_requests" type="reference"/>
+        <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
+        <element choice="1" label="Type of emergency" mandatory="true" max_length="40" name="type_of_emergency" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Aliens" value="aliens"/>
+                <element inactive_on_update="false" label="Blizzard" value="blizzard"/>
+                <element inactive_on_update="false" label="Earthquake" value="earthquake"/>
+                <element inactive_on_update="false" label="Exposure to contagion" value="exposure_to_contagion"/>
+                <element inactive_on_update="false" label="Fire" value="fire"/>
+                <element inactive_on_update="false" label="Flood" value="flood"/>
+                <element inactive_on_update="false" label="Hurricane" value="hurricane"/>
+                <element inactive_on_update="false" label="Illness/injury" value="illness_injury"/>
+                <element inactive_on_update="false" label="Other" value="other"/>
+                <element inactive_on_update="false" label="Tornado" value="tornado"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Check here if others were affected" max_length="40" name="were_other_employees_affected_by_this_emergency" type="boolean"/>
+        <element label="Who else was affected?" max_length="4000" name="who_else_was_affected" reference="sys_user" reference_qual="javascript:&quot;sys_id!=&quot;+gs.getUserID();" type="glide_list" use_reference_qualifier="advanced"/>
+        <element label="Work notes" max_length="4000" name="work_notes" type="journal_input"/>
+        <element label="Work Status Reason" max_length="400" name="work_status_reason" type="string"/>
+        <element choice="1" label="Health status" mandatory="true" max_length="40" name="your_health_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Healthy/safe" sequence="1" value="healthy_safe"/>
+                <element inactive_on_update="false" label="Sick" sequence="2" value="sick"/>
+                <element inactive_on_update="false" label="In danger" sequence="3" value="in_danger"/>
+                <element inactive_on_update="false" label="Injured" sequence="4" value="injured"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Work status" mandatory="true" max_length="40" name="your_work_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Able to stay at work" sequence="1" value="at_work"/>
+                <element inactive_on_update="false" label="Work from Home" sequence="2" value="wfh"/>
+                <element inactive_on_update="false" label="Time off" sequence="3" value="timeoff"/>
+                <element inactive_on_update="false" label="Unknown" sequence="4" value="unknown"/>
+                <element inactive_on_update="false" label="Returned to work" sequence="5" value="returned"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="manager"/>
+        </index>
+        <index name="index2">
+            <element name="name"/>
+        </index>
+        <index name="index3">
+            <element name="status_report_request"/>
+        </index>
+        <index name="index4">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

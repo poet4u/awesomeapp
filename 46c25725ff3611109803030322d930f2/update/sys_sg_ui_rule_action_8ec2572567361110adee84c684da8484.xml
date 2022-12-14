@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_ui_rule_action">
+    <sys_sg_ui_rule_action action="INSERT_OR_UPDATE">
+        <operation display_value="Set UI Style">1fc6ba105b431010da168d8fa881c7bb</operation>
+        <order>10</order>
+        <sys_class_name>sys_sg_ui_rule_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:58:44</sys_created_on>
+        <sys_id>8ec2572567361110adee84c684da8484</sys_id>
+        <sys_name/>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_ui_rule_action_8ec2572567361110adee84c684da8484</sys_update_name>
+        <target>viewgroup_03</target>
+        <ui_rule display_value="Not Responded Closed (Form)">4ac257257b361110c43bc0bfb7000c87</ui_rule>
+        <value>{"BackgroundColor":"#d9d9d9", "FontColor":"#161b1c"}</value>
+    </sys_sg_ui_rule_action>
+</record_update>

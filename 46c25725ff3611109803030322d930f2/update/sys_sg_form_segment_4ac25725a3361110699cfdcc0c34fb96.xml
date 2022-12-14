@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_form_segment">
+    <sys_sg_form_segment action="INSERT_OR_UPDATE">
+        <embedded_screen display_value="Details">8ec2572562361110f8864dd2a24b4b98</embedded_screen>
+        <form display_value="Dashboard records Form">46c2572505361110a9edeed462252a96</form>
+        <header_view_config/>
+        <is_sticky>false</is_sticky>
+        <order>10</order>
+        <sys_class_name>sys_sg_form_segment</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:01</sys_created_on>
+        <sys_id>4ac25725a3361110699cfdcc0c34fb96</sys_id>
+        <sys_name/>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_form_segment_4ac25725a3361110699cfdcc0c34fb96</sys_update_name>
+    </sys_sg_form_segment>
+</record_update>

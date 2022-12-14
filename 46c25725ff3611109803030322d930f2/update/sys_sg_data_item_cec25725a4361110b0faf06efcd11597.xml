@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_data_item">
+    <sys_sg_data_item action="INSERT_OR_UPDATE">
+        <condition_type>declarative</condition_type>
+        <description>Team's Status Report</description>
+        <group_by/>
+        <instance_relative_url_qc/>
+        <name>Team's Status Report</name>
+        <offline_query_condition/>
+        <offline_query_condition_script/>
+        <query_condition table="x_879347_emergen_0_status_report">managerDYNAMIC90d1921e5f510100a9ad2572f2b477fe<item endquery="false" field="manager" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/>
+        </query_condition>
+        <query_condition_script/>
+        <sys_class_name>sys_sg_data_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:11</sys_created_on>
+        <sys_id>cec25725a4361110b0faf06efcd11597</sys_id>
+        <sys_name>Team's Status Report</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_data_item_cec25725a4361110b0faf06efcd11597</sys_update_name>
+        <table>x_879347_emergen_0_status_report</table>
+    </sys_sg_data_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=cec25725a4361110b0faf06efcd11597"/>
+</record_update>

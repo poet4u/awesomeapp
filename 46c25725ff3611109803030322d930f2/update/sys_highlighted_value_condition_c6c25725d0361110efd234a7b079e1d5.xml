@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_highlighted_value_condition">
+    <sys_highlighted_value_condition action="INSERT_OR_UPDATE">
+        <color/>
+        <conditions table="x_879347_emergen_0_status_report">status=at_risk^EQ<item display_value="At risk" endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="at_risk"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <highlighted_value display_value="status">4ec25725873611100f95fa8abcd96fd5</highlighted_value>
+        <icon/>
+        <order>0</order>
+        <show_icon>true</show_icon>
+        <status>critical</status>
+        <sys_class_name>sys_highlighted_value_condition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:58:53</sys_created_on>
+        <sys_id>c6c25725d0361110efd234a7b079e1d5</sys_id>
+        <sys_name/>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_highlighted_value_condition_c6c25725d0361110efd234a7b079e1d5</sys_update_name>
+        <value_override/>
+        <variant/>
+    </sys_highlighted_value_condition>
+</record_update>

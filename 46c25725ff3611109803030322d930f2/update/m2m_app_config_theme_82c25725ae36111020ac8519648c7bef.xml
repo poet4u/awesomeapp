@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_app_config_theme">
+    <m2m_app_config_theme action="INSERT_OR_UPDATE">
+        <applicability/>
+        <order>0</order>
+        <sys_class_name>m2m_app_config_theme</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>82c25725ae36111020ac8519648c7bef</sys_id>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>m2m_app_config_theme_82c25725ae36111020ac8519648c7bef</sys_update_name>
+        <theme display_value="emergency portal theme">86c257254d3611102d34bd57ce36e9ef</theme>
+        <ux_app_configuration display_value="Emergency Alert - Portal Config">4ec25725a3361110e8f8d8c037d9d7f1</ux_app_configuration>
+    </m2m_app_config_theme>
+</record_update>

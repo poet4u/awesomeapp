@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_stream_m2m_master_item">
+    <sys_sg_item_stream_m2m_master_item action="INSERT_OR_UPDATE">
+        <item_stream display_value="Your Status Reports Item Stream">cac257259e361110d5ff4b5609bde490</item_stream>
+        <master_item display_value="Your Status Reports Main Item">4ec2572564361110d5e99a90a2def590</master_item>
+        <sys_class_name>sys_sg_item_stream_m2m_master_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:09</sys_created_on>
+        <sys_id>0ec2572545361110eb7eaaa83d80ca90</sys_id>
+        <sys_name/>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_item_stream_m2m_master_item_0ec2572545361110eb7eaaa83d80ca90</sys_update_name>
+    </sys_sg_item_stream_m2m_master_item>
+</record_update>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_ui_policy_rule">
+    <sys_sg_ui_policy_rule action="INSERT_OR_UPDATE">
+        <disabled>ignore</disabled>
+        <field>who_else_was_affected</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_sg_ui_policy_rule</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:11</sys_created_on>
+        <sys_id>0ec25725c83611102eab8ab6b52d688a</sys_id>
+        <sys_name>who_else_was_affected</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_ui_policy_rule_0ec25725c83611102eab8ab6b52d688a</sys_update_name>
+        <table>x_879347_emergen_0_status_report</table>
+        <ui_policy display_value="Show Who else was affected if checked">4ec257252a36111023769569c501c98a</ui_policy>
+        <visible>true</visible>
+    </sys_sg_ui_policy_rule>
+</record_update>

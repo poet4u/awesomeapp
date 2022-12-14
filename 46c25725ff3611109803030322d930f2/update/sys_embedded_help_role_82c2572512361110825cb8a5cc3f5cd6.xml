@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>100</order>
+        <role display_value="x_879347_emergen_0.emergency_alert_manager" name="x_879347_emergen_0.emergency_alert_manager">cec25725683611106aa33861567a99f1</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:00</sys_created_on>
+        <sys_id>82c2572512361110825cb8a5cc3f5cd6</sys_id>
+        <sys_name>cec25725683611106aa33861567a99f1</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_embedded_help_role_82c2572512361110825cb8a5cc3f5cd6</sys_update_name>
+    </sys_embedded_help_role>
+</record_update>

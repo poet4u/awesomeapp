@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="contentportallanding">02c2572586361110babe98e636d96b5d</macroponent>
+        <name>refreshDataBroker</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    
+    if (event.payload.name !== 'reportSubmitted'&& event.payload.name !== 'statusUpdated' && event.payload.name !== 'emergencyInformation') {
+        return;
+    }
+    if (!event.payload.value) {
+        return;
+    }
+   
+
+    if (event.payload.name=='reportSubmitted') {
+        console.log('reportsubmitted');
+        api.data.evam_emergency_alert_composite_databroker_1.refresh();
+        api.data.show_emergency_alert_1.refresh();
+        api.setState('hideReportSubmitAlert', false);
+    } else if (event.payload.name=='statusUpdated') {
+        console.log('statusUpdated');
+        api.data.evam_emergency_alert_composite_databroker_1.refresh();
+        api.data.show_emergency_alert_1.refresh();
+        api.setState('hideStatusUpdateAlert', false);
+    } else if(event.payload.name == 'emergencyInformation'){
+        api.data.show_emergency_alert_1.refresh();
+
+    }
+    
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:12</sys_created_on>
+        <sys_id>8ec2572542361110011fc04d1334ad56</sys_id>
+        <sys_name>refreshDataBroker</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_ux_client_script_8ec2572542361110011fc04d1334ad56</sys_update_name>
+        <target/>
+        <type/>
+    </sys_ux_client_script>
+</record_update>

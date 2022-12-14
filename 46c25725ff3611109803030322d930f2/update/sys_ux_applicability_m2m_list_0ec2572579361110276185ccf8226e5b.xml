@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_list">
+    <sys_ux_applicability_m2m_list action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applicability display_value="Emergency Alert Admin">cec2572563361110de816d7e07d04a5b</applicability>
+        <list display_value="Reports older than 30 days">46c257258f3611109bba19f85143da5b</list>
+        <order>0</order>
+        <sys_class_name>sys_ux_applicability_m2m_list</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:58:45</sys_created_on>
+        <sys_id>0ec2572579361110276185ccf8226e5b</sys_id>
+        <sys_name/>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_ux_applicability_m2m_list_0ec2572579361110276185ccf8226e5b</sys_update_name>
+    </sys_ux_applicability_m2m_list>
+</record_update>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_action_param_map">
+    <sys_sg_action_param_map action="INSERT_OR_UPDATE">
+        <button display_value="Send emergency alert">0ac25725e7361110f51f4a42fe4b7da1</button>
+        <item_parameter display_value="Emergency alert title">06c2572562361110cda4134fca324ca1</item_parameter>
+        <sys_class_name>sys_sg_action_param_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:58:58</sys_created_on>
+        <sys_id>c6c257251a361110a4d984b5e4cf3aa1</sys_id>
+        <sys_name>06c2572562361110cda4134fca324ca1</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_action_param_map_c6c257251a361110a4d984b5e4cf3aa1</sys_update_name>
+        <ui_parameter display_value="Emergency alert title">46c25725d33611109495b958b51f07a1</ui_parameter>
+    </sys_sg_action_param_map>
+</record_update>

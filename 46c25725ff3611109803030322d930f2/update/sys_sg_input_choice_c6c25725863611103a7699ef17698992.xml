@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_input_choice">
+    <sys_sg_input_choice action="INSERT_OR_UPDATE">
+        <image_url/>
+        <input display_value="Work status">46c2572588361110f5615a1871ca7094</input>
+        <label>Work from Home</label>
+        <order>20</order>
+        <selected_image_url/>
+        <sys_class_name>sys_sg_input_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:26</sys_created_on>
+        <sys_id>c6c25725863611103a7699ef17698992</sys_id>
+        <sys_name>Work from Home</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_input_choice_c6c25725863611103a7699ef17698992</sys_update_name>
+        <value>wfh</value>
+    </sys_sg_input_choice>
+</record_update>

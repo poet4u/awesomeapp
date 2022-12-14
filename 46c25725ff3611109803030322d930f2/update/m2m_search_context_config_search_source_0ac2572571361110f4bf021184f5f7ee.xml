@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_search_context_config_search_source">
+    <m2m_search_context_config_search_source action="INSERT_OR_UPDATE">
+        <order>300</order>
+        <search_context_config display_value="Emergency alert Workspace">4ac25725fc3611100d189df1d8e916ee</search_context_config>
+        <source display_value="Users">494cc0a0532203003eddddeeff7b12db</source>
+        <sys_class_name>m2m_search_context_config_search_source</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:02</sys_created_on>
+        <sys_id>0ac2572571361110f4bf021184f5f7ee</sys_id>
+        <sys_name/>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>m2m_search_context_config_search_source_0ac2572571361110f4bf021184f5f7ee</sys_update_name>
+    </m2m_search_context_config_search_source>
+</record_update>

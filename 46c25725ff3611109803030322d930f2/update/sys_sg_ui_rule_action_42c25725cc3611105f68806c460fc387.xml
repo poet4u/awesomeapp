@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_ui_rule_action">
+    <sys_sg_ui_rule_action action="INSERT_OR_UPDATE">
+        <operation display_value="Set UI Style">1fc6ba105b431010da168d8fa881c7bb</operation>
+        <order>10</order>
+        <sys_class_name>sys_sg_ui_rule_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:58:51</sys_created_on>
+        <sys_id>42c25725cc3611105f68806c460fc387</sys_id>
+        <sys_name/>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_ui_rule_action_42c25725cc3611105f68806c460fc387</sys_update_name>
+        <target>viewgroup_01</target>
+        <ui_rule display_value="My Status reports AtRisk (Form)">c6c25725af361110e7e1059d9a1e7a89</ui_rule>
+        <value>{"BackgroundColor":"#f0cecd", "FontColor":"#161b1c"}</value>
+    </sys_sg_ui_rule_action>
+</record_update>

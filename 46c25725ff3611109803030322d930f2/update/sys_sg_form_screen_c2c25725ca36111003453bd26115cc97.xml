@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_form_screen">
+    <sys_sg_form_screen action="INSERT_OR_UPDATE">
+        <alert/>
+        <available_offline>true</available_offline>
+        <data_item/>
+        <description/>
+        <dynamic_prefetch_count/>
+        <empty_state/>
+        <fetch_type>not_required</fetch_type>
+        <filter/>
+        <hide_filters>false</hide_filters>
+        <hide_screen_name>false</hide_screen_name>
+        <icon display_value="My Status Reports Form Icon">42c257259d36111078fb273b9cb67f97</icon>
+        <item_view/>
+        <name>My Status Reports Form</name>
+        <override_context_with_data_item>false</override_context_with_data_item>
+        <roles_override/>
+        <segments_height>medium</segments_height>
+        <segments_min_width>medium</segments_min_width>
+        <sys_class_name>sys_sg_form_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:08</sys_created_on>
+        <sys_id>c2c25725ca36111003453bd26115cc97</sys_id>
+        <sys_name>My Status Reports Form</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_form_screen_c2c25725ca36111003453bd26115cc97</sys_update_name>
+        <table>x_879347_emergen_0_status_report</table>
+        <use_view_config>true</use_view_config>
+        <view_config display_value="My Status Reports Form View Config">8ac2572552361110715e2556e2df2296</view_config>
+    </sys_sg_form_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=c2c25725ca36111003453bd26115cc97"/>
+</record_update>

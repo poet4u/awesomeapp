@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="report-emergency">82c25725f0361110d3e59d5246b6cd57</macroponent>
+        <name>OnSubmit</name>
+        <preset/>
+        <required_translations>[ {
+  "code" : null,
+  "message" : "Required fields cannot be empty",
+  "comment" : ""
+} ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    let startDate = new Date(api.data.report_emergency.nowRecordFormBlob.fields.start_date.value);
+    let endDate = new Date(api.data.report_emergency.nowRecordFormBlob.fields.end_date.value);
+    let othersAffected = api.data.report_emergency.nowRecordFormBlob.fields.were_other_employees_affected_by_this_emergency.value;
+    var mandatoryFields = [];
+    if(othersAffected == 'true'){
+        mandatoryFields.push("who_else_was_affected");
+    }
+    (api.data.report_emergency.nowRecordFormBlob.fieldElements).forEach(function(property) {
+        if (property.dictionary.isMandatory == true) {
+            mandatoryFields.push(property.name);
+        }
+    });
+    if (mandatoryFields) {
+        let count = 0;
+        mandatoryFields.forEach(function(property) {
+            if (!api.data.report_emergency.nowRecordFormBlob.fields[property].value) {
+                count++;
+                helpers.translate("Required fields cannot be empty").then(value => {
+                    api.data.report_emergency.showFieldMessage({
+                        fieldName: property,
+                        message: value,
+                        type: "error"
+                    });
+                });
+            }
+        });
+        if (count) {
+            return;
+        }
+    }
+    /*if (endDate.getTime() < startDate.getTime()) {
+        helpers.translate("End date should not be less than start date").then(value => {
+            api.data.report_emergency.showFieldMessage({
+                fieldName: "end_date",
+                message: value,
+                type: "error"
+            });
+        });
+        return;
+    }*/
+
+    api.data.report_emergency.setValue({
+        "fieldName": "status",
+        "value": "submitted"
+    });
+    api.data.report_emergency.save();
+    const route = "home";
+    api.emit('NAV_ITEM_SELECTED', {
+        route,
+        params: {
+            reportSubmitted: Date.now()
+        },
+        fields: {}
+    });
+
+
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:05</sys_created_on>
+        <sys_id>c2c25725ec361110eea769e4a3441356</sys_id>
+        <sys_name>OnSubmit</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_ux_client_script_c2c25725ec361110eea769e4a3441356</sys_update_name>
+        <target/>
+        <type/>
+    </sys_ux_client_script>
+</record_update>

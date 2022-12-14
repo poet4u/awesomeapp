@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>sys_search_context_config&#13;
+b94a42fe518d0550f8771641a3fed27e</description>
+        <name>globalSearchDataConfigId</name>
+        <page display_value="Emergency Alert - Workspace">cac25725e4361110e3b94e358281bff1</page>
+        <required_translations>[]</required_translations>
+        <route/>
+        <suffix>null</suffix>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>06c2572513361110d06af74f6591d64a</sys_id>
+        <sys_name>globalSearchDataConfigId</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy>null</sys_policy>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_ux_page_property_06c2572513361110d06af74f6591d64a</sys_update_name>
+        <type>string</type>
+        <unique_name>x_879347_emergen_0.cac25725e4361110e3b94e358281bff1.root.globalSearchDataConfigId</unique_name>
+        <value>4ac25725fc3611100d189df1d8e916ee</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=06c2572513361110d06af74f6591d64a"/>
+</record_update>

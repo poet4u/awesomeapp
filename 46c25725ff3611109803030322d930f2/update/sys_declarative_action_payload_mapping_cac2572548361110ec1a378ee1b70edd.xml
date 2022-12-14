@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_declarative_action_payload_mapping">
+    <sys_declarative_action_payload_mapping action="INSERT_OR_UPDATE">
+        <action_payload_definition display_value="open new alert tab">0ec2572559361110a78d23c9c655afe0</action_payload_definition>
+        <label>open new alert tab List</label>
+        <model display_value="List">c3547169534723003eddddeeff7b126c</model>
+        <payload_map>fields@table={{table}}^route=modal_page^fields@sysId={{sysId}}^EQ</payload_map>
+        <sys_class_name>sys_declarative_action_payload_mapping</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:20</sys_created_on>
+        <sys_id>cac2572548361110ec1a378ee1b70edd</sys_id>
+        <sys_name>open new alert tab List</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_declarative_action_payload_mapping_cac2572548361110ec1a378ee1b70edd</sys_update_name>
+    </sys_declarative_action_payload_mapping>
+</record_update>

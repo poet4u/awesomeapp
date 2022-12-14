@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="cac25725473611100d1593bd436d43f3" label="Work Status Request Task" max_length="40" name="x_879347_emergen_0_work_status_request_task" text_index="true" type="collection">
+        <element label="Assigned to" mandatory="true" max_length="32" name="assigned_to" read_only="true" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" choice_field="type_of_emergency" choice_table="x_879347_emergen_0_status_report" label="Emergency" mandatory="true" max_length="40" name="emergency" read_only="true" type="choice">
+            <choice/>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Reject reason" max_length="80" name="reject_reason" type="string"/>
+        <element label="Requestor" mandatory="true" max_length="32" name="requestor" read_only="true" reference="sys_user" type="reference"/>
+        <element label="Self report" mandatory="true" max_length="32" name="self_report" read_only="true" reference="x_879347_emergen_0_status_report" type="reference"/>
+        <element choice="3" default="Requested" label="State" mandatory="true" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Approved" value="Approved"/>
+                <element inactive_on_update="false" label="Canceled" value="Canceled"/>
+                <element inactive_on_update="false" label="Rejected" value="Rejected"/>
+                <element inactive_on_update="false" label="Requested" value="Requested"/>
+            </choice>
+        </element>
+        <element label="Work status reason" mandatory="true" max_length="40" name="work_status_reason" read_only="true" type="string"/>
+        <element choice="1" choice_field="your_work_status" choice_table="x_879347_emergen_0_status_report" label="Work status request" mandatory="true" max_length="40" name="work_status_request" read_only="true" type="choice">
+            <choice/>
+        </element>
+        <index name="index">
+            <element name="assigned_to"/>
+        </index>
+        <index name="index2">
+            <element name="requestor"/>
+        </index>
+        <index name="index3">
+            <element name="self_report"/>
+        </index>
+    </element>
+</database>

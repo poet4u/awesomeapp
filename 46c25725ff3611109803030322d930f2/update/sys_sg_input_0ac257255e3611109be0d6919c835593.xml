@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_input">
+    <sys_sg_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <autofill_variable display_value="your_health_status">8ac257257b36111049d37e00b8b01a93</autofill_variable>
+        <category/>
+        <description/>
+        <label>Health status</label>
+        <mandatory>false</mandatory>
+        <name>your_health_status</name>
+        <order>40</order>
+        <page/>
+        <parameter_screen display_value="Edit">42c25725693611104ddcb430e0576694</parameter_screen>
+        <parameter_section/>
+        <placeholder/>
+        <readonly>false</readonly>
+        <sys_class_name>sys_sg_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:58:58</sys_created_on>
+        <sys_id>0ac257255e3611109be0d6919c835593</sys_id>
+        <sys_name>Health status</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_input_0ac257255e3611109be0d6919c835593</sys_update_name>
+        <type display_value="Choice">8dfb205517021010f2b43b9fadb9592e</type>
+    </sys_sg_input>
+</record_update>

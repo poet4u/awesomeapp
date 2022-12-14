@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_879347_emergen_0.DateTimeValidationUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>DateTimeValidationUtils</name>
+        <script><![CDATA[var DateTimeValidationUtils = Class.create();
+DateTimeValidationUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    /*_________________________________________________________________
+   * Description:
+   * @startDate: Start date in UTC format
+   * @endDate: End date in UTC fomat
+   * Returns:
+   ________________________________________________________________*/
+    isStartDateLessThanEndDate: function(startDate, endDate) {
+        startDate = this.getParameter('sysparm_start_date') || startDate;
+        endDate = this.getParameter('sysparm_end_date') || endDate;
+		startDate = this.loggedInUserDateformat(startDate);
+		endDate = this.loggedInUserDateformat(endDate);
+		startDate = new GlideDateTime(startDate);
+		endDate = new GlideDateTime(endDate);
+		
+        return startDate.getNumericValue() <= endDate.getNumericValue();
+    },
+    loggedInUserDateformat: function(date, userID) {
+        var dateFormat = '';
+        userID = userID || gs.getUserID();
+        var userObj = new GlideRecord('sys_user');
+        if (userObj.get(userID)) {
+            dateFormat = userObj.getValue('date_format');
+        }
+        if (dateFormat == null || dateFormat == '') {
+            return date + ' ' + "00:00:00";
+        } else if (dateFormat.indexOf("MM-dd-yyyy") == "0") {
+            date = date.split(' ');
+            formatTime = date[1] || "00:00:00";
+            formatDate = date[0];
+            formatDate = formatDate.split('-');
+            date = formatDate[2] + "-" + formatDate[0] + "-" + formatDate[1] + ' ' + formatTime;
+            return date;
+        } else if (dateFormat.indexOf("dd-MM-yyyy") == "0") {
+            date = date.split(' ');
+            formatTime = date[1] || "00:00:00";
+            formatDate = date[0];
+            formatDate = formatDate.split('-');
+            date = formatDate[2] + "-" + formatDate[1] + "-" + formatDate[0] + ' ' + formatTime;
+            return date;
+
+        } else if (dateFormat.indexOf("yyyy-MM-dd") == "0") {
+            date = date.split(' ');
+            formatTime = date[1] || "00:00:00";
+            formatDate = date[0];
+            formatDate = formatDate.split('-');
+            date = formatDate[0] + "-" + formatDate[1] + "-" + formatDate[2] + ' ' + formatTime;
+            return date;
+        } else if (dateFormat.indexOf("dd/MM/yyyy") == "0") {
+            date = date.split(' ');
+            formatTime = date[1] || "00:00:00";
+            formatDate = date[0];
+            formatDate = formatDate.split('/');
+            date = formatDate[2] + "-" + formatDate[1] + "-" + formatDate[0] + ' ' + formatTime;
+            return date;
+        } else if (dateFormat.indexOf("dd.MM.yyyy") == "0") {
+            date = date.split(' ');
+            formatTime = date[1] || "00:00:00";
+            formatDate = date[0];
+            formatDate = formatDate.split('.');
+            date = formatDate[2] + "-" + formatDate[1] + "-" + formatDate[0] + ' ' + formatTime;
+            return date;
+        }
+    },
+
+
+    type: 'DateTimeValidationUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:20</sys_created_on>
+        <sys_id>8ec25725d6361110a119448047a1a8a7</sys_id>
+        <sys_name>DateTimeValidationUtils</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_script_include_8ec25725d6361110a119448047a1a8a7</sys_update_name>
+    </sys_script_include>
+</record_update>

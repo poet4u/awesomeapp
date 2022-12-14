@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_highlighted_value_config">
+    <sys_ux_highlighted_value_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <name>EmergencyAlertHighlightedConfigID</name>
+        <sys_class_name>sys_ux_highlighted_value_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:24</sys_created_on>
+        <sys_id>c6c257258e3611106908d35ccbcd824d</sys_id>
+        <sys_name>EmergencyAlertHighlightedConfigID</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_ux_highlighted_value_config_c6c257258e3611106908d35ccbcd824d</sys_update_name>
+    </sys_ux_highlighted_value_config>
+</record_update>

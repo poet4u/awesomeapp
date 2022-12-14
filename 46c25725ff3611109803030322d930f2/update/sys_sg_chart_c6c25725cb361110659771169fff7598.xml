@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_chart">
+    <sys_sg_chart action="INSERT_OR_UPDATE">
+        <jump_to_screen display_value="Requested">8ec2572551361110c916f356f3eeb99b</jump_to_screen>
+        <name>Requested (Emergency Alert)</name>
+        <report display_value="Requested (Emergency Alert)">86c2572500361110cae813de1ccb63ab</report>
+        <sys_class_name>sys_sg_chart</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:06</sys_created_on>
+        <sys_id>c6c25725cb361110659771169fff7598</sys_id>
+        <sys_name>Requested (Emergency Alert)</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_chart_c6c25725cb361110659771169fff7598</sys_update_name>
+        <title>Requested</title>
+        <type>report</type>
+        <widget/>
+    </sys_sg_chart>
+</record_update>

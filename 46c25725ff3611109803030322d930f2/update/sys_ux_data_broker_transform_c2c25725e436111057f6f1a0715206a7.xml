@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_879347_emergen_0.Bind emergency alert data to component prop</api_name>
+        <description/>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Bind emergency alert data to component prop</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+    {&#13;
+        "name": "graphqlData",&#13;
+        "label": "GraphQL Data",&#13;
+        "description": "",&#13;
+        "readOnly": false,&#13;
+        "fieldType": "object",&#13;
+        "mandatory": true,&#13;
+        "defaultValue": ""&#13;
+    }&#13;
+]</props>
+        <required_translations>[{"message":"GraphQL Data","comment":""}]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+    var compositeData = input
+        .graphqlData
+        .data
+        .GlideCompositeData_Query
+        .getCompositeData;
+
+    if (!compositeData) {
+        return null;
+    }
+
+    var templateIds = [];
+
+    compositeData
+        .items
+        .forEach(function(item) {
+            if (templateIds.indexOf(item.template) === -1) {
+                templateIds.push(item.template);
+            }
+        });
+
+    var templates = [];
+    var gr = new GlideRecord("sys_ux_composite_data_template");
+    gr.addQuery("sys_id", "IN", templateIds.toString());
+    gr.addActiveQuery();
+    gr.query();
+    while (gr.next()) {
+        var template = {
+            "id": gr.getUniqueValue(),
+            "template": JSON.parse(gr.getValue("template"))
+        };
+
+        templates.push(template);
+    }
+
+    var result = [];
+    compositeData
+        .items
+        .forEach(function(item) {
+            for (template in templates) {
+                templateObj = templates[template];
+                if (templateObj.id.indexOf(item.template) > -1) {
+                    var propMap = {};
+                    item.props.forEach(function(fieldValue) {
+                        if (fieldValue.name === 'sys_id')
+                            propMap['sysId'] = fieldValue.value;
+                        propMap[fieldValue.name] = fieldValue.value;
+                    });
+
+                    var templateResult = {
+                        "template": templateObj.template.component,
+                        "propValues": getPropValues(propMap, item.actions, templateObj.template)
+                    };
+
+                    result.push(templateResult);
+                }
+            }
+        });
+
+
+    function getPropValues(propMap, actions, template) {
+        var propValues = {};
+        getPropsFromFieldMappings(propValues, propMap, template.mappings);
+        getPropsFromStaticValues(propValues, template.staticValues);
+        getPropsFromActionMappings(propValues, propMap, actions, template.actionMappings);
+        return propValues;
+    }
+
+    function getPropsFromFieldMappings(result, propMap, propFieldMappings) {
+        for (var prop in propFieldMappings) {
+            if (propFieldMappings.hasOwnProperty(prop)) {
+                if (prop == "textHeaderLabel") {
+                    var gd = new GlideDate();
+                    if (result["highlightedHeaderLabel"] == "Status requested") {
+                        gd.setValue(propMap[propFieldMappings[prop]]);
+                        result[prop] = gs.getMessage("Requested {0}", gd.getDisplayValue()|| '');
+                    } else {
+                        gd.setValue(propMap[propFieldMappings[prop]]);
+                        result[prop] = gs.getMessage("Updated {0}" , gd.getDisplayValue() || '');
+                    }
+                } else
+                    result[prop] = propMap[propFieldMappings[prop]] || '';
+            }
+        }
+    }
+
+    function getPropsFromStaticValues(result, staticPropValues) {
+        var statesColors = {
+            "Submitted": "positive",
+            "Status requested": "high",
+            "At risk": "critical",
+            "Closed": "low",
+			"CHC: Submitted": "positive",
+            "CHC: Status requested": "high",
+            "CHC: At risk": "critical",
+            "CHC: Closed": "low"
+        };
+        var headerIcons = {
+            "Submitted": "check-fill",
+            "Status requested": "presence-fill",
+            "At risk": "circle-info-outline",
+            "Closed": "presence-fill",
+			"CHC: Submitted": "check-fill",
+            "CHC: Status requested": "presence-fill",
+            "CHC: At risk": "circle-info-outline",
+            "CHC: Closed": "presence-fill"
+        };
+        for (var prop in staticPropValues) {
+            if (staticPropValues.hasOwnProperty(prop)) {
+                if (prop == "highlightedHeaderIcon") {
+                    result[prop] = GlideStringUtil.escapeHTML(headerIcons[result["highlightedHeaderLabel"]]);
+                } else if (prop == "highlightedHeaderBkgColor") {
+                    result[prop] = GlideStringUtil.escapeHTML(statesColors[result["highlightedHeaderLabel"]]);
+                } else
+                    result[prop] = GlideStringUtil.escapeHTML(staticPropValues[prop]);
+                if (result["highlightedHeaderLabel"] != "Status requested" || result["highlightedHeaderLabel"] != "CHC: Status requested")
+                    result["mainActions"] = [];
+            }
+        }
+    }
+
+    function getPropsFromActionMappings(result, propMap, actions, actionMappings) {
+        var actionMap = {};
+        actions.forEach(function(action) {
+            actionMap[action.name] = action;
+        });
+
+        for (var prop in actionMappings) {
+
+            if (actionMappings.hasOwnProperty(prop)) {
+                var mappedActions = actionMappings[prop];
+
+                if (Array.isArray(mappedActions)) {
+                    var actionArr = [];
+                    mappedActions.forEach(function(actionName) {
+                        var processedAction = getProcessedAction(actionMap, actionName, propMap);
+                        if (result["highlightedHeaderLabel"] == "Status requested" || result["highlightedHeaderLabel"] == "CHC: Status requested")
+                            if (processedAction)
+                                actionArr.push(processedAction);
+                    });
+                    result[prop] = actionArr;
+                } else {
+                    result[prop] = getProcessedAction(actionMap, mappedActions, propMap);
+                }
+            }
+        }
+        result['model'] = propMap;
+    }
+
+    function getProcessedAction(actionMap, actionName, propMap) {
+        try {
+            var action = actionMap[actionName] ? JSON.parse(JSON.stringify(actionMap[actionName])) : null;
+            if (action === null) {
+                return null;
+            }
+            var actionType = action.actionType;
+            if (actionType !== "uxf_client_action") {
+                return action;
+            }
+
+            var actionPayloadMapFieldValues = action.actionPayloadMap;
+            action.actionPayload = resolveActionPayloadDataBinding(propMap, JSON.parse(action.actionPayload), actionPayloadMapFieldValues);
+            delete(action.actionPayloadMap);
+
+            return action;
+        } catch (e) {
+            gs.logError("Error resolving/processing declarative action: " + e);
+            return null;
+        }
+    }
+
+    function resolveActionPayloadDataBinding(propMap, actionPayload, actionPayloadMapFieldValues) {
+        var actionPayloadMap = {};
+        actionPayloadMapFieldValues.forEach(function(fieldValue) {
+            var key = fieldValue.name;
+            var value = fieldValue.value;
+            if (/{{.*}}/.test(value)) {
+                var dynamicBindingVar = value.match(/{{(.*)}}/)[1];
+                value = propMap[dynamicBindingVar] || '';
+            } else {
+                value = GlideStringUtil.escapeHTML(value);
+            }
+            actionPayloadMap[key] = value;
+        });
+        var resolvedActionPayload = {};
+        for (var key in actionPayload) {
+            if (actionPayload.hasOwnProperty(key)) {
+                var value = actionPayload[key];
+                if (/{{.*}}/.test(value)) {
+                    resolvedActionPayload[key] = actionPayloadMap[key] || '';
+                } else {
+                    resolvedActionPayload[key] = GlideStringUtil.escapeHTML(value);
+                }
+            }
+        }
+        return resolvedActionPayload;
+    }
+    var compositeDataObject = {
+        page_cursor: compositeData.page_cursor,
+        page_size: compositeData.page_size,
+        page_number: compositeData.page_number,
+        is_last_page: compositeData.is_last_page,
+        all_actions: compositeData.all_actions,
+        selected_filter: compositeData.selected_filter,
+        items: result,
+        available_filters: compositeData.filters
+    };
+    compositeDataObject.available_filters[0]["label"] = gs.getMessage("All");
+    var items = [];
+    compositeDataObject.items.forEach(function(item) {
+		item["propValues"]["detailLabelOne"] = gs.getMessage("{0}",item["propValues"]["detailLabelOne"]);
+		item["propValues"]["detailLabelTwo"] = gs.getMessage("{0}",item["propValues"]["detailLabelTwo"]);
+		item["propValues"]["detailLabelThree"] = gs.getMessage("{0}",item["propValues"]["detailLabelThree"]);
+        if (item["propValues"]["highlightedHeaderLabel"] != "Status requested" || item["propValues"]["highlightedHeaderLabel"] != "CHC: Status requested") {
+            var emStatus = new GlideRecord("x_879347_emergen_0_work_status_request_task");
+            if (emStatus.get("self_report", item["propValues"]["model"]["sys_id"])) {
+                item["propValues"]["detailValueThree"] = gs.getMessage("{0}",emStatus.getDisplayValue("state").toString());
+            }else{
+				item["propValues"]["detailValueThree"] = gs.getMessage("Requested");
+			}
+        }
+        if (item["propValues"]["highlightedHeaderLabel"] == "Status requested" || item["propValues"]["highlightedHeaderLabel"] == "CHC: Status requested") {
+            item["propValues"]["detailLabelOne"] = gs.getMessage("Emergency");
+            item["propValues"]["detailValueOne"] = item["propValues"]["titleLabel"];
+            item["propValues"]["titleLabel"] = gs.getMessage("Your status has been requested");
+            item["propValues"]["detailLabelTwo"] = "";
+            item["propValues"]["detailValueTwo"] = "";
+            item["propValues"]["detailLabelThree"] = "";
+            item["propValues"]["detailValueThree"] = ""; //imageType
+        }
+        items.push(item);
+    });
+    compositeDataObject.items = items;
+    return compositeDataObject;
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:21</sys_created_on>
+        <sys_id>c2c25725e436111057f6f1a0715206a7</sys_id>
+        <sys_name>Bind emergency alert data to component prop</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_c2c25725e436111057f6f1a0715206a7</sys_update_name>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=c2c25725e436111057f6f1a0715206a7"/>
+</record_update>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_m2m_highlighted_value_config">
+    <sys_ux_m2m_highlighted_value_config action="INSERT_OR_UPDATE">
+        <highlighted_value display_value="status">4ec25725873611100f95fa8abcd96fd5</highlighted_value>
+        <highlighted_value_config display_value="EmergencyAlertHighlightedConfigID">c6c257258e3611106908d35ccbcd824d</highlighted_value_config>
+        <order>0</order>
+        <sys_class_name>sys_ux_m2m_highlighted_value_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:58:45</sys_created_on>
+        <sys_id>42c257250236111093457a096d4e8f4c</sys_id>
+        <sys_name/>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_ux_m2m_highlighted_value_config_42c257250236111093457a096d4e8f4c</sys_update_name>
+    </sys_ux_m2m_highlighted_value_config>
+</record_update>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_m2m_action_layout_item">
+    <sys_ux_m2m_action_layout_item action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <sys_class_name>sys_ux_m2m_action_layout_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:58:54</sys_created_on>
+        <sys_id>0ac2572599361110ece78f091ce1b24c</sys_id>
+        <sys_name/>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_ux_m2m_action_layout_item_0ac2572599361110ece78f091ce1b24c</sys_update_name>
+        <table>x_879347_emergen_0_work_status_request_task</table>
+        <ux_form_action_layout display_value="Work Status Form Actions">82c257258d3611106cdaf2f69e38864e</ux_form_action_layout>
+        <ux_form_action_layout_item display_value="Respond to request">8ec25725ce3611101391456e9ee5c04d</ux_form_action_layout_item>
+    </sys_ux_m2m_action_layout_item>
+</record_update>

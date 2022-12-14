@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_master_item">
+    <sys_sg_master_item action="INSERT_OR_UPDATE">
+        <condition_order/>
+        <datasource_table>x_879347_emergen_0_status_report</datasource_table>
+        <datasource_table_condition table="x_879347_emergen_0_status_report">name.managerDYNAMIC90d1921e5f510100a9ad2572f2b477fe<item endquery="false" field="name.manager" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/>
+        </datasource_table_condition>
+        <embedded_screen display_value="Requested Form">02c257251e36111076cc069d2f52bf97</embedded_screen>
+        <item_view/>
+        <name>Requested Main Item</name>
+        <sys_class_name>sys_sg_master_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:13</sys_created_on>
+        <sys_id>cec25725f7361110f1284a9e93f42690</sys_id>
+        <sys_name>Requested Main Item</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_master_item_cec25725f7361110f1284a9e93f42690</sys_update_name>
+        <use_view_config>true</use_view_config>
+        <view_config display_value="Requested View Config">4ac257259c3611100173e8ff89cc478e</view_config>
+    </sys_sg_master_item>
+</record_update>

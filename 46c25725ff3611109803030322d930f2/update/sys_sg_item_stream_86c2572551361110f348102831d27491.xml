@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_stream">
+    <sys_sg_item_stream action="INSERT_OR_UPDATE">
+        <data_item display_value="Need your attention">4ec2572569361110cd7f443052a5f197</data_item>
+        <interleaved_field/>
+        <name>Dashboard records Item Stream</name>
+        <sys_class_name>sys_sg_item_stream</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:24</sys_created_on>
+        <sys_id>86c2572551361110f348102831d27491</sys_id>
+        <sys_name>Dashboard records Item Stream</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_item_stream_86c2572551361110f348102831d27491</sys_update_name>
+        <table>x_879347_emergen_0_work_status_request_task</table>
+    </sys_sg_item_stream>
+</record_update>

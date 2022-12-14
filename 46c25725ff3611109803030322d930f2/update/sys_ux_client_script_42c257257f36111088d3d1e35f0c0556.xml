@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="update-report">cec2572552361110d48632414c5b3555</macroponent>
+        <name>Update Report save</name>
+        <preset/>
+        <required_translations>[ {
+  "code" : null,
+  "message" : "Required fields cannot be empty",
+  "comment" : ""
+} ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    
+    var mandatoryFields = [];
+	let othersAffected = api.data.update_status.nowRecordFormBlob.fields.were_other_employees_affected_by_this_emergency.value;
+    if(othersAffected == 'true'){
+        mandatoryFields.push('who_else_was_affected');
+    }
+    (api.data.update_status.nowRecordFormBlob.fieldElements).forEach(function(property) {
+        if (property.dictionary.isMandatory == true) {
+            mandatoryFields.push(property.name);
+        }
+    });
+    if (mandatoryFields) {
+        let count = 0;
+        mandatoryFields.forEach(function(property) {
+            if (!api.data.update_status.nowRecordFormBlob.fields[property].value) {
+                count++;
+                helpers.translate("Required fields cannot be empty").then(value => {
+                    api.data.update_status.showFieldMessage({
+                        fieldName: property,
+                        message: value,
+                        type: "error"
+                    });
+                });
+            }
+        });
+        if (count) {
+            return;
+        }
+    }
+    
+    api.data.update_status.setValue({
+        "fieldName": "status",
+        "value": "submitted"
+    });
+
+    api.data.update_status.save();
+    const route = "home";
+    api.emit('NAV_ITEM_SELECTED', {
+        route,
+        params: {
+            statusUpdated: Date.now()
+        },
+        fields: {}
+    });
+
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:58:44</sys_created_on>
+        <sys_id>42c257257f36111088d3d1e35f0c0556</sys_id>
+        <sys_name>Update Report save</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_ux_client_script_42c257257f36111088d3d1e35f0c0556</sys_update_name>
+        <target/>
+        <type/>
+    </sys_ux_client_script>
+</record_update>

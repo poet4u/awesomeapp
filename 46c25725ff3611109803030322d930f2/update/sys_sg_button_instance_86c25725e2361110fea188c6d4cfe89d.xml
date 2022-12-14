@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_button_instance">
+    <sys_sg_button_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <button display_value="Request a report">c2c257256f361110d00a99bc580630a1</button>
+        <color_theme>primary</color_theme>
+        <description>Request a report</description>
+        <disable_offline>false</disable_offline>
+        <field_name/>
+        <icon display_value="icon-File-Solid">82c25725233611104d33afe3c0d1379a</icon>
+        <label>Request a report</label>
+        <location>quick_action</location>
+        <name>Request a report</name>
+        <order/>
+        <parent>4ec257254936111056a122cad09c859d</parent>
+        <parent_table>sys_sg_applet_launcher</parent_table>
+        <sys_class_name>sys_sg_button_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:05</sys_created_on>
+        <sys_id>86c25725e2361110fea188c6d4cfe89d</sys_id>
+        <sys_name>Request a report</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_button_instance_86c25725e2361110fea188c6d4cfe89d</sys_update_name>
+        <table/>
+    </sys_sg_button_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=86c25725e2361110fea188c6d4cfe89d"/>
+</record_update>

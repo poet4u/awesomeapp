@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_879347_emergen_0.WorkStatusRequestTask</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>WorkStatusRequestTask</name>
+        <script><![CDATA[var WorkStatusRequestTask = Class.create();
+WorkStatusRequestTask.prototype = {
+    initialize: function() {},
+    isRequested: function(current) {
+        if (current.status == "closed") {
+            return false;
+        }
+        var statusGR = new GlideRecord("x_879347_emergen_0_work_status_request_task");
+        statusGR.addQuery("self_report", current.sys_id);
+        statusGR.addQuery("state", "Requested");
+        statusGR.query();
+        if (statusGR.next()) {
+            return true;
+        } else {
+            return false;
+        }
+    },
+    type: 'WorkStatusRequestTask'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:21</sys_created_on>
+        <sys_id>cec2572557361110cfe370557c8118a7</sys_id>
+        <sys_name>WorkStatusRequestTask</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_script_include_cec2572557361110cfe370557c8118a7</sys_update_name>
+    </sys_script_include>
+</record_update>

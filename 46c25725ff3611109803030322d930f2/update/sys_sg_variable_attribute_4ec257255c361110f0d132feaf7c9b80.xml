@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_variable_attribute">
+    <sys_sg_variable_attribute action="INSERT_OR_UPDATE">
+        <name>FieldName</name>
+        <sys_class_name>sys_sg_variable_attribute</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:01</sys_created_on>
+        <sys_id>4ec257255c361110f0d132feaf7c9b80</sys_id>
+        <sys_name>FieldName</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_variable_attribute_4ec257255c361110f0d132feaf7c9b80</sys_update_name>
+        <value>status</value>
+        <variable display_value="status">0ac25725043611105fb24da97013a394</variable>
+    </sys_sg_variable_attribute>
+</record_update>

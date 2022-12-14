@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_template">
+    <sys_sg_view_template action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Emergency Alert Manger Card Template</description>
+        <name>Emergency Alert Manger 2</name>
+        <preview_image/>
+        <root_view_attrs_json/>
+        <sys_class_name>sys_sg_view_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:58:50</sys_created_on>
+        <sys_id>8ac25725ba361110e7bf21d717004680</sys_id>
+        <sys_name>Emergency Alert Manger 2</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_view_template_8ac25725ba361110e7bf21d717004680</sys_update_name>
+        <template_json>{"Type":"ViewGroup","Margin":{"Top":15,"Bottom":17},"Orientation":"Vertical","Alignment":"Left","Distribution":"Auto","Id":"Root","Children":[{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Id":"viewgroup_01","Children":[{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":20},"MaxLines":3,"CellId":"text_01","Id":"text_01"}]},{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Margin":{"Top":10},"Id":"viewgroup_02","Children":[{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","CornerRadius":3,"Id":"viewgroup_03","Children":[{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":10},"MaxLines":1,"Margin":{"Top":3,"Right":5,"Bottom":3,"Left":5},"CellId":"text_02","Id":"text_02"},{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":13},"MaxLines":1,"Margin":{"Top":3,"Right":5,"Bottom":3},"CellId":"text_03","Id":"text_03"}]},{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Id":"viewgroup_04","Children":[{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":13},"MaxLines":1,"Margin":{"Right":4,"Left":4},"CellId":"text_04","Id":"text_04"},{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"bold","Size":13},"MaxLines":1,"CellId":"text_05","Id":"text_05"}]}]},{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Center","Distribution":"Auto","Margin":{"Top":15},"Id":"viewgroup_05","Children":[{"Type":"Image","Scaling":"Fill","Height":20,"Width":20,"CornerRadius":10,"Margin":{"Right":4,"Left":4},"CellId":"image_02","Id":"image_02"},{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Id":"viewgroup_06","Children":[{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":13},"MaxLines":1,"Margin":{"Right":4,"Left":4},"CellId":"text_06","Id":"text_06"},{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":13},"MaxLines":1,"Margin":{"Left":4},"CellId":"text_07","Id":"text_07"}]}]}]}</template_json>
+    </sys_sg_view_template>
+    <sys_translated_text action="delete_multiple" query="documentkey=8ac25725ba361110e7bf21d717004680"/>
+</record_update>

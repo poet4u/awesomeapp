@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_ui_policy">
+    <sys_sg_ui_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_879347_emergen_0_status_report">were_other_employees_affected_by_this_emergency=true^EQ<item endquery="false" field="were_other_employees_affected_by_this_emergency" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name>Show Who else was affected if checked</name>
+        <order>10</order>
+        <reverse_if_false>true</reverse_if_false>
+        <short_description>Show  Who else was affected if "Check here if others were affected" true</short_description>
+        <sys_class_name>sys_sg_ui_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:22</sys_created_on>
+        <sys_id>4ec257252a36111023769569c501c98a</sys_id>
+        <sys_name>Show Who else was affected if checked</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_ui_policy_4ec257252a36111023769569c501c98a</sys_update_name>
+        <table>x_879347_emergen_0_status_report</table>
+    </sys_sg_ui_policy>
+</record_update>

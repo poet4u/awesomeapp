@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description/>
+        <event_name>DATA_SET_UPDATE_EMERGENCY</event_name>
+        <interfaces/>
+        <label>Data Set Update emergency</label>
+        <props>[{"name":"table","fieldType":"","label":"Table","interfaceApiName":"","typeMetadata":null,"mandatory":false,"readOnly":false},{"name":"sysId","fieldType":"","label":"Sys ID","interfaceApiName":"","typeMetadata":null,"mandatory":false,"readOnly":false}]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:24</sys_created_on>
+        <sys_id>0ec2572562361110c6aa740797bed45c</sys_id>
+        <sys_name>Data Set Update emergency</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_ux_event_0ec2572562361110c6aa740797bed45c</sys_update_name>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=0ec2572562361110c6aa740797bed45c"/>
+</record_update>

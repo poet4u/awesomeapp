@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d6c29725473611100d1593bd436d4316" label="Emergency alert" max_length="40" name="x_879347_emergen_0_emergency_alert" text_index="true" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Emergency alert message" mandatory="true" max_length="8000" name="emergency_alert_message" type="string"/>
+        <element display="true" label="Emergency alert title" mandatory="true" max_length="200" name="emergency_alert_title" type="string"/>
+        <element label="KB Article" max_length="32" name="kb_article" reference="kb_knowledge" type="reference"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="List of read users" max_length="1024" name="list_of_read_users" reference="sys_user" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Type" mandatory="true" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Community update" value="community_update"/>
+                <element inactive_on_update="false" label="Emergency information" value="emergency_information"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="kb_article"/>
+        </index>
+    </element>
+</database>

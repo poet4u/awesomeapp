@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="4ac2572544361110725ffbb671ef8461" sys_domain="global" table="x_879347_emergen_0_status_report" version="3" view="activity_view_x_879347_emergen_0">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>comments</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-27 15:59:02</sys_created_on>
+            <sys_id>cec25725903611102920d26477878c61</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_879347_emergen_0_status_report" sys_domain="global" view="c6c25725b1361110828a90b7bf1d3061">4ac2572544361110725ffbb671ef8461</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-27 15:59:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>worknotes</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-27 15:59:02</sys_created_on>
+            <sys_id>8ec2572571361110b704491abaa4c161</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_879347_emergen_0_status_report" sys_domain="global" view="c6c25725b1361110828a90b7bf1d3061">4ac2572544361110725ffbb671ef8461</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-27 15:59:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>activity.xml</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-27 15:59:02</sys_created_on>
+            <sys_id>8ac257251b361110f273c1f06b76e461</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="">630a48aeb8fba0108b1ace29b406c4b9</sys_ui_formatter>
+            <sys_ui_section caption="NULL" display_value="" name="x_879347_emergen_0_status_report" sys_domain="global" view="c6c25725b1361110828a90b7bf1d3061">4ac2572544361110725ffbb671ef8461</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-10-27 15:59:02</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_879347_emergen_0_status_report</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-27 15:59:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4ac2572544361110725ffbb671ef8461</sys_id>
+            <sys_name>x_879347_emergen_0_status_report</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+            <sys_update_name>sys_ui_section_4ac2572544361110725ffbb671ef8461</sys_update_name>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Activity View (x_879347_emergen_0)" name="activity_view_x_879347_emergen_0">c6c25725b1361110828a90b7bf1d3061</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

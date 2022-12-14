@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_master_item">
+    <sys_sg_master_item action="INSERT_OR_UPDATE">
+        <condition_order/>
+        <datasource_table>x_879347_emergen_0_emergency_alert</datasource_table>
+        <datasource_table_condition/>
+        <embedded_screen display_value="Community Alerts Form">42c25725a636111029bd485730b4af96</embedded_screen>
+        <item_view/>
+        <name>Emergency Update  Main Item</name>
+        <sys_class_name>sys_sg_master_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:26</sys_created_on>
+        <sys_id>86c25725cd361110e15e19eb9c1ba590</sys_id>
+        <sys_name>Emergency Update  Main Item</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_master_item_86c25725cd361110e15e19eb9c1ba590</sys_update_name>
+        <use_view_config>true</use_view_config>
+        <view_config display_value="Emergency Update  View Config">0ac25725f736111068e2bb63158ef78e</view_config>
+    </sys_sg_master_item>
+</record_update>

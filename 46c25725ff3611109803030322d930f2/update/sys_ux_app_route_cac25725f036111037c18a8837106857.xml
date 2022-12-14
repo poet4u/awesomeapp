@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config display_value="Emergency Alert - Workspace Config">0ec25725b8361110624fba1e7d94cbf1</app_config>
+        <description/>
+        <extension_point/>
+        <fields>details</fields>
+        <icon/>
+        <name>Record Details Tab</name>
+        <optional_parameters/>
+        <order>100</order>
+        <parent_macroponent display_value="sendEmergencyAlert">42c257255c3611101d22ac2b3710fe59</parent_macroponent>
+        <parent_macroponent_composition_element_id>record_tabs_1_ckiiwfdnffoaaaabbbbddghhdamgvmbbbba</parent_macroponent_composition_element_id>
+        <route_type>details</route_type>
+        <screen_type display_value="Record Details Tab">42c2572564361110ba9ea5f886cc7958</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:58:57</sys_created_on>
+        <sys_id>cac25725f036111037c18a8837106857</sys_id>
+        <sys_name>Record Details Tab</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_ux_app_route_cac25725f036111037c18a8837106857</sys_update_name>
+    </sys_ux_app_route>
+    <sys_translated_text action="delete_multiple" query="documentkey=cac25725f036111037c18a8837106857"/>
+</record_update>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_template">
+    <sys_sg_view_template action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Emergency update  </description>
+        <name>Emergency Update  </name>
+        <preview_image/>
+        <root_view_attrs_json/>
+        <sys_class_name>sys_sg_view_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:11</sys_created_on>
+        <sys_id>46c25725fc361110ba0e6b83659d1d73</sys_id>
+        <sys_name>Emergency Update</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_view_template_46c25725fc361110ba0e6b83659d1d73</sys_update_name>
+        <template_json>{"Type":"ViewGroup","Margin":{"Top":"","Bottom":""},"Orientation":"Vertical","Alignment":"Left","Distribution":"Auto","Id":"Root","Children":[{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Left","Distribution":"Auto","Id":"viewgroup_01","Margin":{"Top":"","Bottom":""},"Children":[{"Type":"ViewGroup","Orientation":"Vertical","Alignment":"Top","Distribution":"Auto","Margin":{"Right":""},"Id":"viewgroup_02","Children":[{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":13},"MaxLines":1,"CellId":"text_01","Id":"text_01"},{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Id":"viewgroup_09"}]},{"Type":"ViewGroup","Orientation":"Vertical","Alignment":"Center","Distribution":"Auto","Id":"viewgroup_03","Children":[{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Id":"viewgroup_04","Children":[{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"bold","Size":18},"MaxLines":1,"CellId":"text_03","Id":"text_03"}]},{"Type":"ViewGroup","Orientation":"Horizontal","Alignment":"Stretch","Distribution":"Auto","Id":"viewgroup_06","Children":[{"Type":"Text","TextColor":"#293E40","Font":{"Weight":"regular","Size":13},"MaxLines":2,"CellId":"text_04","Id":"text_04"}]}]}]}]}</template_json>
+    </sys_sg_view_template>
+    <sys_translated_text action="delete_multiple" query="documentkey=46c25725fc361110ba0e6b83659d1d73"/>
+</record_update>

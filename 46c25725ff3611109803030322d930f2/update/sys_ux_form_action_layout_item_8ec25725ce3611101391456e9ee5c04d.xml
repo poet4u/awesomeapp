@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action_layout_item">
+    <sys_ux_form_action_layout_item action="INSERT_OR_UPDATE">
+        <action/>
+        <active>true</active>
+        <color>primary</color>
+        <description/>
+        <item_type>group</item_type>
+        <label>Respond to request</label>
+        <layout_group display_value="Approve/Reject">4ec25725d0361110d46d677cacfba44d</layout_group>
+        <name>respond_to_request</name>
+        <order>0</order>
+        <overflow>false</overflow>
+        <sys_class_name>sys_ux_form_action_layout_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:58:51</sys_created_on>
+        <sys_id>8ec25725ce3611101391456e9ee5c04d</sys_id>
+        <sys_name>Respond to request</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_ux_form_action_layout_item_8ec25725ce3611101391456e9ee5c04d</sys_update_name>
+        <table>x_879347_emergen_0_work_status_request_task</table>
+    </sys_ux_form_action_layout_item>
+</record_update>

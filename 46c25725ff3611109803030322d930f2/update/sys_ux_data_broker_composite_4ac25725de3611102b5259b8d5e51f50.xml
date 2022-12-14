@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_composite">
+    <sys_ux_data_broker_composite action="INSERT_OR_UPDATE">
+        <api_name>x_879347_emergen_0.Get Self Report Record</api_name>
+        <data_drivers>{&#13;
+  "recordQuery": {&#13;
+    "definition" : {&#13;
+      "id" : "54e9c8d25310101024e5ddeeff7b12db",&#13;
+      "type" : "GRAPHQL"&#13;
+    },&#13;
+    "elementId" : "recordQuery",&#13;
+    "inputValues" : {&#13;
+      "table" : {&#13;
+        "type": "BROKER_INTERNAL_INPUT_BINDING",&#13;
+        "binding": {&#13;
+          "address": [&#13;
+            "table"&#13;
+          ]&#13;
+        }&#13;
+      },&#13;
+     "recordId" : {&#13;
+        "type": "BROKER_INTERNAL_INPUT_BINDING",&#13;
+        "binding": {&#13;
+          "address": [&#13;
+            "recordId"&#13;
+          ]&#13;
+        }&#13;
+      },&#13;
+     "returnFields" : {&#13;
+        "type": "BROKER_INTERNAL_INPUT_BINDING",&#13;
+        "binding": {&#13;
+          "address": [&#13;
+            "returnFields"&#13;
+          ]&#13;
+        }&#13;
+      },&#13;
+     "returnTableMetadata" : {&#13;
+         "type": "BROKER_INTERNAL_INPUT_BINDING",&#13;
+          "binding": {&#13;
+            "address": [&#13;
+              "returnTableMetadata"&#13;
+          ]&#13;
+        }&#13;
+      },&#13;
+     "returnFieldMetadata" : {&#13;
+         "type": "BROKER_INTERNAL_INPUT_BINDING",&#13;
+          "binding": {&#13;
+            "address": [&#13;
+              "returnFieldMetadata"&#13;
+          ]&#13;
+        }&#13;
+      }&#13;
+    },&#13;
+    "elementLabel" : "Record Query"&#13;
+  },&#13;
+  "result": {&#13;
+    "definition" : {&#13;
+      "id" : "49595ad153131010c495ddeeff7b1225",&#13;
+      "type" : "SCRIPTLET"&#13;
+    },&#13;
+    "elementId" : "result",&#13;
+    "inputValues" : {&#13;
+      "query" : {&#13;
+        "type": "BROKER_INTERNAL_STATE_BINDING",&#13;
+        "binding": {&#13;
+          "address": [&#13;
+            "recordQuery",&#13;
+            "output"&#13;
+          ]&#13;
+        }&#13;
+      },&#13;
+     "first" : {&#13;
+        "type": "JSON_LITERAL",&#13;
+        "value": true&#13;
+      }&#13;
+    },&#13;
+    "elementLabel" : "Result"&#13;
+  },&#13;
+  "items": {&#13;
+    "definition" : {&#13;
+      "id" : "11e9dad153131010c495ddeeff7b1283",&#13;
+      "type" : "SCRIPTLET"&#13;
+    },&#13;
+    "elementId" : "items",&#13;
+    "inputValues" : {&#13;
+      "query" : {&#13;
+        "type": "BROKER_INTERNAL_STATE_BINDING",&#13;
+        "binding": {&#13;
+          "address": [&#13;
+            "recordQuery",&#13;
+            "output"&#13;
+          ]&#13;
+        }&#13;
+      },&#13;
+     "labelField" : {&#13;
+        "type": "JSON_LITERAL",&#13;
+        "value": "label"&#13;
+      },&#13;
+     "idField" : {&#13;
+        "type": "JSON_LITERAL",&#13;
+        "value": "value"&#13;
+      },&#13;
+     "valueField" : {&#13;
+        "type": "JSON_LITERAL",&#13;
+        "value": "displayValue"&#13;
+      }&#13;
+    },&#13;
+    "elementLabel" : "Items"&#13;
+  }&#13;
+}</data_drivers>
+        <description>DB used for update status screen</description>
+        <name>Get Self Report Record</name>
+        <operations/>
+        <output_properties>[&#13;
+{&#13;
+    "name": "result",&#13;
+    "label": "Result",&#13;
+    "description": "Result",&#13;
+    "origin": {&#13;
+       "type": "data",&#13;
+       "id": "result"&#13;
+    }&#13;
+  },&#13;
+ {&#13;
+    "name": "items",&#13;
+    "label": "Items",&#13;
+    "description": "Items",&#13;
+    "origin": {&#13;
+       "type": "data",&#13;
+       "id": "items"&#13;
+    }&#13;
+  }&#13;
+]</output_properties>
+        <private>false</private>
+        <props>[&#13;
+  {&#13;
+  "name": "table",&#13;
+  "label": "Table",&#13;
+  "description": "Table to look up",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "table_name",&#13;
+  "mandatory": true,&#13;
+  "defaultValue": "x_snc_emergency_al_self_report"&#13;
+},&#13;
+{&#13;
+  "name": "recordId",&#13;
+  "label": "Record",&#13;
+  "description": "Record to look up (sys_id or display value)",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "string",&#13;
+  "mandatory": true,&#13;
+  "defaultValue": ""&#13;
+},&#13;
+{&#13;
+  "name": "returnFields",&#13;
+  "label": "Return fields",&#13;
+  "description": "Returned field values",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "field_list",&#13;
+  "mandatory": false,&#13;
+  "defaultValue": "emergency_report,emergency_start,location,manager",&#13;
+  "typeMetadata": {&#13;
+        "table": "@table"&#13;
+  }&#13;
+},&#13;
+{&#13;
+  "name": "returnTableMetadata",&#13;
+  "label": "Return table metadata",&#13;
+  "description": "Return table metadata",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "boolean",&#13;
+  "mandatory": false,&#13;
+  "defaultValue": false&#13;
+},&#13;
+{&#13;
+  "name": "returnFieldMetadata",&#13;
+  "label": "Return field metadata",&#13;
+  "description": "Return field metadata",&#13;
+  "readOnly": false,&#13;
+  "fieldType": "boolean",&#13;
+  "mandatory": false,&#13;
+  "defaultValue": false&#13;
+}&#13;
+]</props>
+        <required_translations>[{"message":"Table","comment":""},{"message":"Table to look up","comment":""},{"message":"Return field metadata","comment":""},{"message":"Returned field values","comment":""},{"message":"Record","comment":""},{"message":"Return table metadata","comment":""},{"message":"Record to look up (sys_id or display value)","comment":""},{"message":"Return fields","comment":""}]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_data_broker_composite</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:58:46</sys_created_on>
+        <sys_id>4ac25725de3611102b5259b8d5e51f50</sys_id>
+        <sys_name>Get Self Report Record</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_ux_data_broker_composite_4ac25725de3611102b5259b8d5e51f50</sys_update_name>
+    </sys_ux_data_broker_composite>
+    <sys_translated_text action="delete_multiple" query="documentkey=4ac25725de3611102b5259b8d5e51f50"/>
+</record_update>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>x_879347_emergen_0.emapp_coname</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+          /* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+          /* Optional GlideRecord */ event) {
+
+    var coName = 'Emergency Company'; // Hard Coded
+	template.print('<div style="font-family: arial, helvetica, sans serif; font-size: 12pt; color: #ffffff;"><strong>');
+	template.print(coName);
+	template.print('</div></strong>');
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:58:45</sys_created_on>
+        <sys_id>82c257254536111012a561d865b9ada8</sys_id>
+        <sys_name>x_879347_emergen_0.emapp_coname</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_script_email_82c257254536111012a561d865b9ada8</sys_update_name>
+    </sys_script_email>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_879347_emergen_0.sysCommunityAlertsQuery</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>sysCommunityAlertsQuery</name>
+        <script><![CDATA[var sysCommunityAlertsQuery = Class.create();
+sysCommunityAlertsQuery.prototype = {
+    initialize: function() {
+    },
+
+    type: 'sysCommunityAlertsQuery'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:59:00</sys_created_on>
+        <sys_id>0ec25725713611101f67fde8c8246ca7</sys_id>
+        <sys_name>sysCommunityAlertsQuery</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_script_include_0ec25725713611101f67fde8c8246ca7</sys_update_name>
+    </sys_script_include>
+</record_update>

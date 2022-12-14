@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_button_instance">
+    <sys_sg_button_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <button display_value="Report an Emergency">8ec257255e361110bfcefa3399916fa0</button>
+        <color_theme>primary</color_theme>
+        <description/>
+        <disable_offline>false</disable_offline>
+        <field_name/>
+        <icon display_value="icon-Clipboard-Exclamation-Solid">cac2572526361110b4da61b8dc6e4d98</icon>
+        <label>Report an Emergency</label>
+        <location>quick_action</location>
+        <name>Report an Emergency</name>
+        <order/>
+        <parent>0ec25725c23611105504a863e185849d</parent>
+        <parent_table>sys_sg_applet_launcher</parent_table>
+        <sys_class_name>sys_sg_button_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-27 15:58:52</sys_created_on>
+        <sys_id>06c25725a73611109cbaa6333c54809d</sys_id>
+        <sys_name>Report an Emergency</sys_name>
+        <sys_package display_value="Emergency Alert" source="x_879347_emergen_0">46c25725ff3611109803030322d930f2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Emergency Alert">46c25725ff3611109803030322d930f2</sys_scope>
+        <sys_update_name>sys_sg_button_instance_06c25725a73611109cbaa6333c54809d</sys_update_name>
+        <table/>
+    </sys_sg_button_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=06c25725a73611109cbaa6333c54809d"/>
+</record_update>
